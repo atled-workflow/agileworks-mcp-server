@@ -275,51 +275,6 @@ MCPサーバーで使用できるツールは以下の通りです。
 | findFormDefinition | フォーム定義情報取得API |
 | listPublicFolderInfo | 公開フォルダ・公開フォーム取得API |
 
-### 管理者権限不要API
-
-| Tool名 | 説明 |
-|--------|------|
-| notAdminPrepareDocRequest | 新規書類データ作成API |
-| notAdminAddDoc | 新規書類データ保存API |
-| notAdminSelectDoc | 書類検索API |
-| getDocView | 書類表示API |
-| notAdminCountListWorkflowMessage | 回付情報件数一覧取得API |
-| notAdminSelectWorkflowMessage | 回付情報検索API |
-| notAdminStart | 書類作成/申請API |
-| listProxyApplyAppointment | 所有している代理申請権限取得API |
-| notAdminListProxyAppointment | 所有している代理承認権限取得API |
-| notAdminListPublicFolderInfo | 公開フォルダ・公開フォーム取得API |
-| notAdminGetUserInfo | ユーザー情報取得API |
-| notAdminGetVersion | バージョン情報取得API |
-
-### SCIM API
-
-| Tool名 | 説明 |
-|--------|------|
-| sCIMGetUsers | ユーザー情報取得API |
-| sCIMPostUsers | ユーザー情報作成API |
-| sCIMGetUsersId | 指定ユーザー情報取得API |
-| sCIMPostUsersId | ユーザー情報更新API |
-| sCIMPatchUsersId | ユーザー情報一部更新API |
-| sCIMDeleteUsersId | ユーザー情報削除API |
-| sCIMGetGroups | 組織情報取得API |
-| sCIMPostGroups | 組織情報作成API |
-| sCIMGetGroupsId | 指定組織情報取得API |
-| sCIMPutGroups | 組織情報更新API |
-| sCIMPatchGroupsId | 組織情報一部更新API |
-| sCIMDeleteGroupsId | 組織情報削除API |
-| sCIMResourceTypes | リソース情報取得API |
-| sCIMSchemas | スキーマ定義取得API |
-| sCIMService | サービス定義取得API |
-
-### その他
-
-| Tool名 | 説明 |
-|--------|------|
-| model | モデルオブジェクト取得API |
-| nonParameter | サービス実行API |
-| download | ダウンロードAPI |
-
 ## ライセンス
 
 MIT
