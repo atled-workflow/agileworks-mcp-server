@@ -48,6 +48,63 @@ Claude Desktop の場合は `claude_desktop_config.json` に追記します。
 }
 ```
 
+### リモートMCPの構築
+
+Dockerを使用することで、ローカルMCPサーバーをリモートMCPサーバーとして公開できます。
+
+#### 前提条件
+
+- ポート番号 8002 を許可してください
+
+#### ファイル構成
+
+以下のファイルを `dist` と同じ階層に配置します。
+
+```
+├── dist/
+├── Dockerfile
+├── docker-compose.yml
+└── .env
+```
+
+#### 設定手順
+
+1. `.env` ファイルを作成し、以下の内容を記述します。
+
+    ```env
+    SYSTEM_URL=https://sample.co.jp/AgileWorks
+    ACCESS_TOKEN=abcdefghijklmnopqrstuvwxyz
+    ```
+
+2. Dockerコンテナをビルド・起動します。
+
+    ```bash
+    docker compose build
+    docker compose up -d
+    ```
+
+3. MCPクライアント（例: Claude Desktop など）の設定ファイルに、以下の内容を追記します。
+
+    ```json
+    {
+      "mcpServers": {
+        "agileWorksWebAPIR320Server": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "mcp-remote",
+            "http://localhost:8002/sse",
+            "--allow-http"
+          ]
+        }
+      }
+    }
+    ```
+
+> [!TIP]
+> Dockerfile の `CMD` で `--baseUrl` を変更することで、リモートMCPサーバーのエンドポイントを変更できます。
+
+
 ## Tools
 
 MCPサーバーで使用できるツールは以下の通りです。
@@ -57,10 +114,6 @@ MCPサーバーで使用できるツールは以下の通りです。
 > - MCPクライアントに登録するTool数が多すぎると、AIが適切なToolを選択できなくなる場合があります。必要なToolのみを有効にすることを推奨します
 > - 本ツールは現在α版として公開されており、仕様が予告なく変更される場合があります。
 > - 基礎的な動作確認は AgileWorks R3.2.0 で実施していますが、予期しない動作が発生する可能性があります。
-
-
-> [!TIP]
-> Dockerなどを使用することで、ローカルMCPサーバーをリモートMCPサーバーとして公開することも可能です。
 
 ### 書類操作
 
