@@ -62,7 +62,7 @@ Dockerを使用することで、ローカルMCPサーバーをリモートMCP�
 
 #### 前提条件
 
-- ポート番号 8002 を許可してください
+- ポート番号 8002  を許可してください
 
 #### ファイル構成
 
@@ -72,26 +72,28 @@ Dockerを使用することで、ローカルMCPサーバーをリモートMCP�
 ├── dist/
 ├── Dockerfile
 ├── docker-compose.yml
-└── .env
+└── .env (※任意)
 ```
 
 #### 設定手順
 
-1. `.env` ファイルを作成し、以下の内容を記述します。
+1. `.env` ファイルを作成し、以下の内容を記述します（任意）。
 
     ```env
     SYSTEM_URL=https://sample.co.jp/AgileWorks
     ACCESS_TOKEN=abcdefghijklmnopqrstuvwxyz
     ```
 
-2. Dockerコンテナをビルド・起動します。
+2. Docker コンテナをビルド・起動します。
 
     ```bash
     docker compose build
     docker compose up -d
     ```
 
-3. MCPクライアント（例: Claude Desktop など）の設定ファイルに、以下の内容を追記します。
+3. MCP クライアント（例: Claude Desktop など）の設定ファイルに、以下の内容を追記します。
+
+    **`.env` を設定した場合:**
 
     ```json
     {
@@ -104,6 +106,30 @@ Dockerを使用することで、ローカルMCPサーバーをリモートMCP�
             "http://localhost:8002/sse",
             "--allow-http"
           ]
+        }
+      }
+    }
+    ```
+
+    **`.env` を設定しなかった場合:**
+
+    MCP クライアントの設定ファイルで `SYSTEM_URL` と `ACCESS_TOKEN` を指定する必要があります。
+
+    ```json
+    {
+      "mcpServers": {
+        "agileWorksWebAPIR320Server": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "mcp-remote",
+            "http://localhost:8002/sse",
+            "--allow-http"
+          ],
+          "env": {
+            "SYSTEM_URL": "https://sample.co.jp/AgileWorks",
+            "ACCESS_TOKEN": "abcdefghijklmnopqrstuvwxyz"
+          }
         }
       }
     }
