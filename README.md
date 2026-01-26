@@ -30,7 +30,7 @@ Claude Desktop の場合は `claude_desktop_config.json` に追記します。
       ],
       "env": {
         "SYSTEM_URL": "{AgileWorksのシステムURL}",
-        "ACCESS_TOKEN": "{WebAPIで使用するOAuth2.0のアクセストークン}"
+        "ACCESS_TOKEN": "{AgileWorks WebAPIで使用するOAuth2のアクセストークン}"
       }
     }
   }
