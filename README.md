@@ -6,6 +6,14 @@ AgileWorksの公式ローカルMCPサーバーです。
 
 - Node.js (Ver 22.22.0 以上)
 
+## 互換性
+
+本MCPサーバーのバージョンと、対応するAgileWorks Web APIのバージョンは以下の通りです。
+
+| AgileWorks MCP Server タグ | 対応AgileWorksバージョン | 備考 |
+| :--- | :--- | :--- |
+| v0.1.0 | R3.2.0 | 初版 |
+
 ## インストール
 
 MCPクライアント（例: Claude Desktop など）の設定ファイルに、以下の内容を追記してください。
