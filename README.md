@@ -138,6 +138,16 @@ Dockerを使用することで、ローカルMCPサーバーをリモートMCP�
 > [!TIP]
 > Dockerfile の `CMD` で `--baseUrl` を変更することで、リモートMCPサーバーのエンドポイントを変更できます。
 
+#### リモートMCPサーバーのアップデート
+
+1. 最新のビルドを取得します。
+
+2. Docker コンテナを再ビルド・起動します。
+
+    ```bash
+    docker compose build
+    docker compose up -d
+    ```
 
 ## Tools
 
