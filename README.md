@@ -140,14 +140,24 @@ Dockerを使用することで、ローカルMCPサーバーをリモートMCP�
 
 #### リモートMCPサーバーのアップデート
 
-1. 最新のビルドを取得します。
+1. リモートMCPサーバーを停止します。
+```bash
+docker compose down
+```
 
-2. Docker コンテナを再ビルド・起動します。
+2. （任意）docker-compose.yamlとDockerfileのバックアップを行います。
+```bash
+cp docker-compose.yaml docker-compose.yaml.$(date +%s).bak
+cp Dockerfile Dockerfile.$(date +%s).bak
+```
 
-    ```bash
-    docker compose build
-    docker compose up -d
-    ```
+3. 最新のソースコードを取得します。
+
+4. Dockerコンテナを再ビルド・起動します。
+```bash
+docker compose build
+docker compose up -d
+```
 
 ## Tools
 
