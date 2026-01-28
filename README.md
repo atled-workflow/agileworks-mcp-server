@@ -385,6 +385,12 @@ MCPサーバーで使用できるツールは以下の通りです。
 | findFormDefinition | フォーム定義情報取得API |
 | listPublicFolderInfo | 公開フォルダ・公開フォーム取得API |
 
+### 管理者権限不要
+
+| Tool名 | 説明 |
+|--------|------|
+| getVersion | バージョン情報取得API |
+
 ## ライセンス
 
 MIT
