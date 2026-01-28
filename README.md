@@ -4,7 +4,7 @@ AgileWorksの公式ローカルMCPサーバーです。
 
 ## 前提条件
 
-- Node.js (Ver 22.22.0 以上)
+- Node.js (Ver 24.13.0 以上)
 
 ## 互換性
 
