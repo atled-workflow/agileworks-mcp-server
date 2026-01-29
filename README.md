@@ -16,6 +16,15 @@ AgileWorksの公式ローカルMCPサーバーです。
 
 ## インストール
 
+> [!NOTE]
+> リモートMCPサーバーを構築したい場合は、[リモートMCPの構築](#リモートmcpの構築)を参照してください。
+
+必要なモジュールをインストールします。
+
+```bash
+npm install
+```
+
 MCPクライアント（例: Claude Desktop など）の設定ファイルに、以下の内容を追記してください。
 
 Claude Desktop の場合は `claude_desktop_config.json` に追記します。
