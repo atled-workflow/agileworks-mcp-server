@@ -409,7 +409,7 @@ MCPサーバーで使用できるツールは以下の通りです。
 
 | Tool名 | 説明 |
 |--------|------|
-| getVersion | バージョン情報取得API |
+| notAdminGetVersion | バージョン情報取得API |
 
 ## ライセンス
 
