@@ -27,14 +27,14 @@ AgileWorksの公式ローカルMCPサーバーです。
 
 ## インストール
 
-> [!NOTE]
-> リモートMCPサーバーを構築したい場合は、[リモートMCPの構築](#リモートmcpの構築)を参照してください。
-
-必要なモジュールをインストールします。
+依存モジュールをインストールします。この手順はローカルMCPサーバー・リモートMCPサーバーのどちらを構築する場合も共通です。
 
 ```bash
 npm install
 ```
+
+> [!NOTE]
+> リモートMCPサーバーを構築したい場合は、[リモートMCPの構築](#リモートmcpの構築)を参照してください。
 
 MCPクライアント（例: Claude Desktop など）の設定ファイルに、以下の内容を追記してください。
 
@@ -165,9 +165,9 @@ Dockerを使用することで、ローカルMCPサーバーをリモートMCP�
 docker compose down
 ```
 
-2. （任意）docker-compose.yamlとDockerfileのバックアップを行います。
+2. （任意）docker-compose.ymlとDockerfileのバックアップを行います。
 ```bash
-cp docker-compose.yaml docker-compose.yaml.$(date +%s).bak
+cp docker-compose.yml docker-compose.yml.$(date +%s).bak
 cp Dockerfile Dockerfile.$(date +%s).bak
 ```
 
