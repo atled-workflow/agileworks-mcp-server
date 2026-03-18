@@ -6,9 +6,12 @@
         "node": ">=24.13.0 <25.0.0"
     },
     "scripts": {
-        "start": "node ./dist/server.mjs",
-        "inspect": "npx @modelcontextprotocol/inspector node ./dist/server.mjs",
-        "dev": "tsx ./src/server.ts",
+        "start:admin": "node ./dist/generated/admin/server.mjs",
+        "start:notadmin": "node ./dist/generated/notadmin/server.mjs",
+        "inspect:admin": "npx @modelcontextprotocol/inspector node ./dist/generated/admin/server.mjs",
+        "inspect:notadmin": "npx @modelcontextprotocol/inspector node ./dist/generated/notadmin/server.mjs",
+        "dev:admin": "tsx ./src/generated/admin/server.ts",
+        "dev:notadmin": "tsx ./src/generated/notadmin/server.ts",
         "build": "orval",
         "tsdown:build": "tsdown"
     },

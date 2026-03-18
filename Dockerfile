@@ -11,7 +11,7 @@ LABEL org.opencontainers.image.title="AgileWorks MCP Server"
 WORKDIR /app
 
 # Supergatewayをインストール
-RUN npm install -g supergateway
+RUN npm install -g supergateway@3.4.3
 
 # distと同じ階層にこのDockerfileがある前提
 COPY . .
@@ -21,7 +21,7 @@ COPY . .
 # SupergatewayのSSE通信で使用するポート(8002)を公開
 EXPOSE 8002
 
-CMD ["npx", "-y", "supergateway", \
-    "--stdio", "node ./dist/server.js", \
-    "--port", "8002", "--baseUrl", "http://localhost:8002", \
-    "--ssePath" ,"/sse" ,"--messagePath" ,"/message" ,"--logLevel", "debug"]
+CMD ["supergateway", \
+    "--stdio", "node ./dist/generated/admin/server.js", \
+    "--port", "8002", \
+    "--outputTransport", "streamableHttp"]
