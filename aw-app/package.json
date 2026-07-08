@@ -1,0 +1,37 @@
+{
+    "name": "orval-agileworks-mcp",
+    "version": "1.0.0",
+    "main": "index.js",
+    "engines": {
+        "node": ">=24.13.0 <25.0.0"
+    },
+    "scripts": {
+        "start:admin": "node ./dist/custom/admin/server.js",
+        "start:admin-http": "node ./dist/custom/admin/server-http.js",
+        "inspect:admin": "npx @modelcontextprotocol/inspector node ./dist/custom/admin/server.js",
+        "dev:admin": "tsx ./src/custom/admin/server.ts",
+        "dev:admin-http": "tsx ./src/custom/admin/server-http.ts",
+        "build": "orval && tsx src/custom/scripts/generate-register-tools.ts",
+        "tsdown:build": "tsdown",
+        "test": "tsx --test src/custom/__tests__/**/*.test.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "@modelcontextprotocol/inspector": "0.19.0",
+        "@types/express": "4.17.25",
+        "@types/node": "24.10.9",
+        "orval": "7.21.0",
+        "tsdown": "0.11.13",
+        "tsx": "4.19.4",
+        "typescript": "5.8.3"
+    },
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "1.29.0",
+        "dotenv": "17.2.1",
+        "express": "4.21.0",
+        "zod": "3.25.67"
+    }
+}

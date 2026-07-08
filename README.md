@@ -7,10 +7,11 @@ AgileWorksの公式ローカルMCPサーバーです。
 - [前提条件](#前提条件)
 - [互換性](#互換性)
 - [インストール](#インストール)
-  - [設定例](#設定例)
-  - [リモートMCPの構築](#リモートmcpの構築)
+  - [ローカルMCPサーバー](#ローカルmcpサーバー)
+  - [リモートMCPサーバー](#リモートmcpサーバー)
 - [Tools](#tools)
 - [ライセンス](#ライセンス)
+- [免責事項・サポートについて](#免責事項サポートについて)
 
 ## 前提条件
 
@@ -24,71 +25,74 @@ AgileWorksの公式ローカルMCPサーバーです。
 | AgileWorks MCP Server タグ | 対応AgileWorksバージョン | 備考 |
 | :--- | :--- | :--- |
 | v0.1.0 | R3.2.0 | 初版 |
+| v0.1.1 | R3.2.0～R3.3.0 | 第2版 |
 
 ## インストール
 
-依存モジュールをインストールします。この手順はローカルMCPサーバー・リモートMCPサーバーのどちらを構築する場合も共通です。
+### ローカルMCPサーバー
 
-```bash
-npm install
-```
+1. 依存モジュールをインストールします。
 
-> [!NOTE]
-> リモートMCPサーバーを構築したい場合は、[リモートMCPの構築](#リモートmcpの構築)を参照してください。
+    ```bash
+    cd aw-app
+    npm install
+    ```
 
-MCPクライアント（例: Claude Desktop など）の設定ファイルに、以下の内容を追記してください。
+2. MCPクライアント（例: Claude Desktop など）の設定ファイルに、以下の内容を追記してください。
 
-Claude Desktop の場合は `claude_desktop_config.json` に追記します。
+    Claude Desktop の場合は `claude_desktop_config.json` に追記します。
 
-```json
-{
-  "mcpServers": {
-    "agileWorksWebAPIR320Server": {
-      "command": "{nodejsのインストールディレクトリの絶対パス}",
-      "args": [
-        "{server.jsの絶対パス}"
-      ],
-      "env": {
-        "SYSTEM_URL": "{AgileWorksのシステムURL}",
-        "ACCESS_TOKEN": "{AgileWorks WebAPIで使用するOAuth2のアクセストークン}"
-      }
+    ```json
+    {
+        "mcpServers": {
+            "AgileWorks": {
+                "command": "{nodejsのインストールディレクトリの絶対パス}",
+                "args": [
+                    "{aw-app/dist/custom/admin/server.js の絶対パス}"
+                ],
+                "env": {
+                     "SYSTEM_URL": "{AgileWorksのシステムURL}",
+                    "ACCESS_TOKEN": "{AgileWorks WebAPIで使用するOAuth2のアクセストークン}"
+                }
+            }
+        }
     }
-  }
-}
-```
+    ```
 
-### 設定例
+    **設定例:**
 
-```json
-{
-  "mcpServers": {
-    "agileWorksWebAPIR320Server": {
-      "command": "c:\\nvm4w\\nodejs\\node",
-      "args": [
-        "C:\\temp\\agileworks-mcp-server\\dist\\server.js"
-      ],
-      "env": {
-        "SYSTEM_URL": "https://sample.co.jp/AgileWorks",
-        "ACCESS_TOKEN": "abcdefghijklmnopqrstuvwxyz"
-      }
+    ```json
+    {
+        "mcpServers": {
+            "AgileWorks": {
+                "command": "c:\\nvm4w\\nodejs\\node",
+                "args": [
+                    "C:\\temp\\agileworks-mcp-server\\aw-app\\dist\\custom\\admin\\server.js"
+                ],
+                "env": {
+                    "SYSTEM_URL": "https://sample.co.jp/AgileWorks",
+                    "ACCESS_TOKEN": "abcdefghijklmnopqrstuvwxyz"
+                }
+            }
+        }
     }
-  }
-}
-```
+    ```
 
-### リモートMCPの構築
+### リモートMCPサーバー
 
-Dockerを使用することで、ローカルMCPサーバーをリモートMCPサーバーとして公開できます。
+Dockerを使用することで、リモートMCPサーバーとして公開できます。
 
 #### 前提条件
 
-- ポート番号 8002 (デフォルトポート) を許可してください
+- MCPサーバー用のポート番号を許可してください (デフォルトは8002)
+
+> [!NOTE]
+> `.env.example` をリネームして `.env` を作成し、`MCP_PORT` でポート番号を変更できます。
 
 #### ファイル構成
 
-以下のファイルを `dist` と同じ階層に配置します。
-
 ```
+aw-app/
 ├── dist/
 ├── Dockerfile
 ├── docker-compose.yml
@@ -97,71 +101,77 @@ Dockerを使用することで、ローカルMCPサーバーをリモートMCP�
 
 #### 設定手順
 
-1. `.env` ファイルを作成し、以下の内容を記述します（任意）。
-
-    ```env
-    SYSTEM_URL=https://sample.co.jp/AgileWorks
-    ACCESS_TOKEN=abcdefghijklmnopqrstuvwxyz
-    ```
-
-2. Docker コンテナをビルド・起動します。
+1. Docker コンテナをビルド・起動します。
 
     ```bash
+    cd aw-app
     docker compose build
     docker compose up -d
     ```
 
-3. MCP クライアント（例: Claude Desktop など）の設定ファイルに、以下の内容を追記します。
-
-    **`.env` を設定した場合:**
+2. MCP クライアント（例: Claude Desktop など）の設定ファイルに、以下の内容を追記します。
 
     ```json
     {
       "mcpServers": {
-        "agileWorksWebAPIR320Server": {
+        "AgileWorks": {
           "command": "npx",
           "args": [
             "-y",
             "mcp-remote",
-            "http://localhost:8002/sse",
-            "--allow-http"
+            "http(s)://{FQDN}/mcp",
+            "--header",
+            "x-system-url: {AgileWorksのシステムURL}",
+            "--header",
+            "x-access-token: {AgileWorks WebAPIで使用するOAuth2のアクセストークン}"
           ]
         }
       }
     }
     ```
 
-    **`.env` を設定しなかった場合:**
-
-    MCP クライアントの設定ファイルで `SYSTEM_URL` と `ACCESS_TOKEN` を指定する必要があります。
+    **設定例:**
 
     ```json
     {
       "mcpServers": {
-        "agileWorksWebAPIR320Server": {
+        "AgileWorks": {
           "command": "npx",
           "args": [
             "-y",
             "mcp-remote",
-            "http://localhost:8002/sse",
-            "--allow-http"
-          ],
-          "env": {
-            "SYSTEM_URL": "https://sample.co.jp/AgileWorks",
-            "ACCESS_TOKEN": "abcdefghijklmnopqrstuvwxyz"
-          }
+            "https://sample.co.jp/mcp",
+            "--header",
+            "x-system-url: https://example.com/AgileWorks",
+            "--header",
+            "x-access-token: abcdefghijklmnopqrstuvwxyz"
+          ]
         }
       }
     }
     ```
 
+> [!NOTE]
+> ChatGPTなどのAIエージェントでは、`x-system-url` / `x-access-token` をクエリパラメータでも指定できます（リクエストは `/mcp` への **POST**）。
+> ただし URL にトークンを含めるとアクセスログ等に残る可能性があるため、可能な限りヘッダー指定を推奨します。
+>
+> ```
+> http(s)://{FQDN}/mcp?x-system-url={AgileWorksのシステムURL}&x-access-token={AgileWorks WebAPIで使用するOAuth2のアクセストークン}
+> ```
+>
+> 例:
+> ```
+> https://sample.co.jp/mcp?x-system-url=https://example.com/AgileWorks&x-access-token=abcdefghijklmnopqrstuvwxyz
+> ```
+
 > [!TIP]
-> Dockerfile の `CMD` で `--baseUrl` を変更することで、リモートMCPサーバーのエンドポイントを変更できます。
+> nginx / Traefikなどを用いてリバースプロキシを配置することで、リモートMCPサーバーのエンドポイントを変更することができます。
 
 #### リモートMCPサーバーのアップデート
 
 1. リモートMCPサーバーを停止します。
 ```bash
+cd aw-app
 docker compose down
 ```
 
@@ -215,8 +225,8 @@ MCPサーバーで使用できるツールは以下の通りです。
 
 | Tool名 | 説明 |
 |--------|------|
-| addDocAttachment | 書類添付情報追加API |
-| updateDocAttachment | 書類添付情報更新API |
+| addDocAttachment | 書類添付情報追加API (URLのみ添付可) |
+| updateDocAttachment | 書類添付情報更新API (URLのみ添付可) |
 | listDocAttachment | 書類添付情報一覧取得API |
 | deleteDocAttachment | 書類添付情報削除API |
 
