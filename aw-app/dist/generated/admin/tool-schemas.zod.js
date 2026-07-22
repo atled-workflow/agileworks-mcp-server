@@ -393,7 +393,7 @@ exports.selectDocBody = zod_1.z.object({
     "condition": zod_1.z.object({
         "criterionDate": zod_1.z.string().regex(exports.selectDocBodyConditionCriterionDateRegExp).optional().describe('基準日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。'),
         "userCode": zod_1.z.string().optional().describe('ユーザーコード'),
-        "docid": zod_1.z.number().optional().describe('書類ID'),
+        "docId": zod_1.z.number().optional().describe('書類ID'),
         "adminNo": zod_1.z.string().optional().describe('書類管理番号'),
         "formCode": zod_1.z.string().optional().describe('フォームコード'),
         "ruleCode": zod_1.z.string().optional().describe('回付ルールコード'),
