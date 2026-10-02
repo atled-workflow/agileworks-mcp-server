@@ -2,11 +2,17 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.customFetchInstance = exports.tenantContext = void 0;
 exports.getAgileWorksSystemUrl = getAgileWorksSystemUrl;
+const http_status_codes_1 = require("http-status-codes");
 const node_async_hooks_1 = require("node:async_hooks");
+const log_utils_1 = require("./log/log-utils");
+const web_api_client_1 = require("./web-api/web-api-client");
 exports.tenantContext = new node_async_hooks_1.AsyncLocalStorage();
 // ─── stdioモード用フォールバック変数 ──────────────────────────────────────────
-let _accessToken = process.env.ACCESS_TOKEN || null;
+let _accessToken = process.env.ACCESS_TOKEN ?? '';
 let _systemUrl = process.env.SYSTEM_URL?.replace(/\/+$/, '') || 'https://example.com/AgileWorks';
+function getLicenseNo() {
+    return exports.tenantContext.getStore()?.licenseNo;
+}
 // ベースURLを取得する関数（orvalで使用）
 // AsyncLocalStorage → モジュール変数 の優先順位で取得
 // ?? を使い、store 値が undefined の場合のみフォールバックする（空文字はフォールバックしない）
@@ -19,52 +25,28 @@ function getAgileWorksSystemUrl() {
 function getAccessToken() {
     return exports.tenantContext.getStore()?.accessToken ?? _accessToken;
 }
+function useOAuth() {
+    return exports.tenantContext.getStore()?.useOAuth ?? false;
+}
 // Orvalが使用するカスタムインスタンス関数（fetch版）
 // options に任意で responseType: 'json'|'blob'|'text' を渡せます（fetchの標準ではないので独自扱い）
 const customFetchInstance = async (config, options) => {
-    const headers = createHeaders(options);
-    // URLを構築（相対パスの場合はベースURLを付加）
-    const url = buildFullUrl(config);
-    const response = await fetch(url, {
-        ...options,
-        headers,
-    });
+    const accessToken = getAccessToken();
+    // クラウド版の場合は licenseNo、オンプレ版の場合は systemUrl が事前バリデーション済みで必ず値を持つ
+    const webApiClient = process.env.IS_CLOUD === 'true'
+        ? web_api_client_1.WebApiClient.forCloud(getLicenseNo())
+        : web_api_client_1.WebApiClient.forOnPremise(getAgileWorksSystemUrl());
+    const response = await webApiClient.request(config, accessToken, options);
     if (!response.ok) {
-        // 必要に応じてエラー処理を追加
+        (0, log_utils_1.logApiError)(response, getAgileWorksSystemUrl(), config, options);
+        if (response.status === http_status_codes_1.StatusCodes.UNAUTHORIZED && useOAuth()) {
+            throw new Error('AGILEWORKS_AUTH_ERROR');
+        }
         throw new Error(`HTTP error! status: ${response.status}`);
     }
-    return handleResponse(url, response, options);
+    return handleResponse(config, response, options);
 };
 exports.customFetchInstance = customFetchInstance;
-// フルURLを構築するヘルパー関数
-const buildFullUrl = (config) => {
-    const url = typeof config === 'string' ? config : config.url;
-    // 既に完全なURLの場合はそのまま返す
-    if (url.startsWith('http://') || url.startsWith('https://')) {
-        return url;
-    }
-    // 相対パスの場合はベースURLを付加
-    const systemUrl = getAgileWorksSystemUrl();
-    const cleanBaseUrl = systemUrl.endsWith('/') ? systemUrl.slice(0, -1) : systemUrl;
-    const cleanPath = url.startsWith('/') ? url : `/${url}`;
-    return `${cleanBaseUrl}${cleanPath}`;
-};
-// ヘッダーを作成するヘルパー関数
-const createHeaders = (options) => {
-    const baseHeaders = options?.headers || {};
-    const headers = { ...baseHeaders };
-    if (!('Content-Type' in headers) && !(options && options.body instanceof FormData)) {
-        headers['Content-Type'] = 'application/json';
-    }
-    const token = getAccessToken();
-    if (token) {
-        headers['Authorization'] = `Bearer ${token}`;
-    }
-    else {
-        console.warn('AgileWorks access token is not set. API calls may fail.');
-    }
-    return headers;
-};
 // レスポンスを処理するヘルパー関数
 const handleResponse = async (config, response, options) => {
     const override = options && options.responseType;

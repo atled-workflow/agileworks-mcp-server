@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.FindProjectBodyContent = exports.ImportUserMasterBodyStrategy = exports.ImportTinyUserMasterBodyStrategy = exports.FindWorkflowTaskBodyConditionRuleStepType = exports.NotAdminGetDocOwnerType = exports.GetDocOwnerType = exports.SCIMPatchGroupsIdRequestOperationsItemPath = exports.SCIMPatchUsersIdRequestOperationsItemPath = exports.FindUniversalRoleAppointmentRequestConditionColumnValueConditionListEntriesItemColumn = exports.FindUniversalRoleRequestConditionColumnValueConditionListEntriesItemColumn = exports.FindPrivateRoleAppointmentRequestConditionColumnValueConditionListEntriesItemColumn = exports.FindPrivateRoleRequestConditionColumnValueConditionListEntriesItemColumn = exports.UpdatePrivateRoleRequestCandidateListEntriesItemRoleType = exports.UpdatePrivateRoleRequestCandidateListEntriesItemType = exports.AddPrivateRoleRequestCandidateListEntriesItemRoleType = exports.AddPrivateRoleRequestCandidateListEntriesItemType = exports.UpdateDelegationAppointmentRequestTaskUnitPolicy = exports.AddDelegationAppointmentRequestTaskUnitPolicy = exports.FindUnitAppointmentRequestConditionColumnValueConditionListEntriesItemColumn = exports.FindUnitAppointmentRequestConditionUnitDirection = exports.FindSectionRoleGroupRequestConditionColumnValueConditionListEntriesItemColumn = exports.FindSectionRoleRequestConditionColumnValueConditionListEntriesItemColumn = exports.FindUnitRequestConditionColumnValueConditionListEntriesItemColumn = exports.FindUserRequestConditionColumnValueConditionListEntriesItemColumn = exports.NotAdminWorkflowMessageRequestWorkflowMessageType = exports.UpdateDocAttachmentRequestType = exports.AddDocAttachmentRequestType = exports.EnumFieldValueType = exports.EnumRelativeUserType = exports.EnumRelativeType = exports.EnumRangeType = exports.EnumDateConditionType = exports.EnumWorkflowStateType = exports.EnumDocViewColumnType = exports.WorkflowMessageType = exports.EnumDataType = exports.CompareOperatorType = void 0;
+exports.AutoApplyPolicyModelStartPolicy = exports.FlowExpirationModelExpirationActionType = exports.RuleCompleteConditionModelMethod = exports.FlowControlConditionModelMethod = exports.RuleCandidateModelRoleType = exports.RuleCandidateModelType = exports.ControlledOperationModelShareControlType = exports.ControlledOperationModelMemoControlType = exports.ControlledOperationModelCommentControlType = exports.ControlledOperationModelAttachmentControlType = exports.RuleMenuPolicyModelEnableType = exports.RuleMenuPolicyModelEffectorType = exports.StepModelStepType = exports.RulePolicyModelAttachmentPolicy = exports.RulePolicyModelSharePolicy = exports.RulePolicyModelElectionType = exports.RulePolicyModelMenuControlPolicy = exports.NotAdminGetDocOwnerType = exports.GetDocOwnerType = exports.SCIMPatchGroupsIdRequestOperationsItemPath = exports.SCIMPatchUsersIdRequestOperationsItemPath = exports.FindUniversalRoleAppointmentRequestConditionColumnValueConditionListEntriesItemColumn = exports.FindUniversalRoleRequestConditionColumnValueConditionListEntriesItemColumn = exports.FindPrivateRoleAppointmentRequestConditionColumnValueConditionListEntriesItemColumn = exports.FindPrivateRoleRequestConditionColumnValueConditionListEntriesItemColumn = exports.UpdatePrivateRoleRequestCandidateListEntriesItemRoleType = exports.UpdatePrivateRoleRequestCandidateListEntriesItemType = exports.AddPrivateRoleRequestCandidateListEntriesItemRoleType = exports.AddPrivateRoleRequestCandidateListEntriesItemType = exports.UpdateDelegationAppointmentRequestTaskUnitPolicy = exports.AddDelegationAppointmentRequestTaskUnitPolicy = exports.FindUnitAppointmentRequestConditionColumnValueConditionListEntriesItemColumn = exports.FindUnitAppointmentRequestConditionUnitDirection = exports.FindSectionRoleGroupRequestConditionColumnValueConditionListEntriesItemColumn = exports.FindSectionRoleRequestConditionColumnValueConditionListEntriesItemColumn = exports.FindUnitRequestConditionColumnValueConditionListEntriesItemColumn = exports.FindUserRequestConditionColumnValueConditionListEntriesItemColumn = exports.NotAdminWorkflowMessageRequestWorkflowMessageType = exports.UpdateDocAttachmentRequestType = exports.AddDocAttachmentRequestType = exports.EnumFieldValueType = exports.EnumRelativeUserType = exports.EnumRelativeType = exports.EnumRangeType = exports.EnumDateConditionType = exports.EnumWorkflowStateType = exports.EnumDocViewColumnType = exports.WorkflowMessageType = exports.EnumDataType = exports.CompareOperatorType = void 0;
+exports.FindProjectBodyContent = exports.ImportUserMasterBodyStrategy = exports.ImportTinyUserMasterBodyStrategy = exports.FindWorkflowTaskBodyConditionRuleStepType = exports.FlowActivityModelEffectorType = exports.FlowActivityModelEventType = exports.OrgRoleUserComparisonModelType = exports.FormVersionConditionModelLogicalCondition = exports.RuleAutoReferenceModelAutoReferenceType = exports.OutputDocDataModelReOutputType = exports.AutoApplyPolicyModelEnterPolicy = void 0;
 // eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.CompareOperatorType = {
     EQUAL: 'EQUAL',
@@ -451,6 +452,219 @@ exports.GetDocOwnerType = {
 exports.NotAdminGetDocOwnerType = {
     UNIT: 'UNIT',
     USER: 'USER',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.RulePolicyModelMenuControlPolicy = {
+    ALWAYS: 'ALWAYS',
+    REFERENCE_APPROVED: 'REFERENCE_APPROVED',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.RulePolicyModelElectionType = {
+    ALL: 'ALL',
+    FIRST: 'FIRST',
+    LAST: 'LAST',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.RulePolicyModelSharePolicy = {
+    ALLOW: 'ALLOW',
+    DENY: 'DENY',
+    STEP: 'STEP',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.RulePolicyModelAttachmentPolicy = {
+    SELFUSER: 'SELFUSER',
+    ALLUSER: 'ALLUSER',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.StepModelStepType = {
+    START: 'START',
+    CREATE: 'CREATE',
+    APPLY: 'APPLY',
+    APPROVE: 'APPROVE',
+    AUTOAPPLY: 'AUTOAPPLY',
+    OUTPUTDOCDATA: 'OUTPUTDOCDATA',
+    CONFIRM: 'CONFIRM',
+    READ: 'READ',
+    STORE: 'STORE',
+    SWITCH_ROOT: 'SWITCH_ROOT',
+    SWITCH: 'SWITCH',
+    SYNC: 'SYNC',
+    DISTRIBUTE_ROOT: 'DISTRIBUTE_ROOT',
+    DISTRIBUTE: 'DISTRIBUTE',
+    COLLECTION: 'COLLECTION',
+    GOAL: 'GOAL',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.RuleMenuPolicyModelEffectorType = {
+    ADVANCE: 'ADVANCE',
+    ADVANCE_PROXY: 'ADVANCE_PROXY',
+    ADVANCE_WITH_COMMENT: 'ADVANCE_WITH_COMMENT',
+    GET_BACK: 'GET_BACK',
+    REJECT: 'REJECT',
+    REVERSE: 'REVERSE',
+    EDIT: 'EDIT',
+    SAVE: 'SAVE',
+    CANCEL: 'CANCEL',
+    DELETE: 'DELETE',
+    PREVIEW: 'PREVIEW',
+    COPY: 'COPY',
+    REFERENCE: 'REFERENCE',
+    SHARE: 'SHARE',
+    DEPRIVE: 'DEPRIVE',
+    CUSTOM: 'CUSTOM',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.RuleMenuPolicyModelEnableType = {
+    DISAPPROVAL: 'DISAPPROVAL',
+    ALWAYS: 'ALWAYS',
+    EDIT: 'EDIT',
+    NOEDIT: 'NOEDIT',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.ControlledOperationModelAttachmentControlType = {
+    OPTION: 'OPTION',
+    NECESSARY: 'NECESSARY',
+    PROHIBIT: 'PROHIBIT',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.ControlledOperationModelCommentControlType = {
+    OPTION: 'OPTION',
+    NECESSARY: 'NECESSARY',
+    PROHIBIT: 'PROHIBIT',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.ControlledOperationModelMemoControlType = {
+    OPTION: 'OPTION',
+    NECESSARY: 'NECESSARY',
+    PROHIBIT: 'PROHIBIT',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.ControlledOperationModelShareControlType = {
+    ALLOW: 'ALLOW',
+    DENY: 'DENY',
+    STEP: 'STEP',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.RuleCandidateModelType = {
+    USER: 'USER',
+    UNIT: 'UNIT',
+    UNIT_ESCALATE: 'UNIT_ESCALATE',
+    UNIT_CASCADE: 'UNIT_CASCADE',
+    ROLE: 'ROLE',
+    ROLE_GROUP: 'ROLE_GROUP',
+    APPLICANT: 'APPLICANT',
+    APPLICANT_ESCALATE: 'APPLICANT_ESCALATE',
+    OWNER: 'OWNER',
+    OWNER_ESCALATE: 'OWNER_ESCALATE',
+    OWNER_CASCADE: 'OWNER_CASCADE',
+    PLAYER_USER: 'PLAYER_USER',
+    PLAYER_UNIT: 'PLAYER_UNIT',
+    PLAYER_UNIT_ESCALATE: 'PLAYER_UNIT_ESCALATE',
+    PLAYER_UNIT_CASCADE: 'PLAYER_UNIT_CASCADE',
+    PLAYER_UNIT_AND_ROLE: 'PLAYER_UNIT_AND_ROLE',
+    PLAYER_UNIT_ESCALATE_AND_ROLE: 'PLAYER_UNIT_ESCALATE_AND_ROLE',
+    PLAYER_UNIT_CASCADE_AND_ROLE: 'PLAYER_UNIT_CASCADE_AND_ROLE',
+    PLAYER_ROLE: 'PLAYER_ROLE',
+    STEP_USER: 'STEP_USER',
+    STEP_UNIT: 'STEP_UNIT',
+    STEP_UNIT_ESCALATE: 'STEP_UNIT_ESCALATE',
+    STEP_UNIT_CASCADE: 'STEP_UNIT_CASCADE',
+    STEP_UNIT_AND_ROLE: 'STEP_UNIT_AND_ROLE',
+    STEP_UNIT_ESCALATE_AND_ROLE: 'STEP_UNIT_ESCALATE_AND_ROLE',
+    STEP_UNIT_CASCADE_AND_ROLE: 'STEP_UNIT_CASCADE_AND_ROLE',
+    STEP_ROLE: 'STEP_ROLE',
+    NOT_FOUND: 'NOT_FOUND',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.RuleCandidateModelRoleType = {
+    BUILTIN: 'BUILTIN',
+    SECTION: 'SECTION',
+    UNIVERSAL: 'UNIVERSAL',
+    PRIVATE: 'PRIVATE',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.FlowControlConditionModelMethod = {
+    AUTO: 'AUTO',
+    MANUAL: 'MANUAL',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.RuleCompleteConditionModelMethod = {
+    ONE_PERSON: 'ONE_PERSON',
+    ALL_PERSON: 'ALL_PERSON',
+    SPECIFIED: 'SPECIFIED',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.FlowExpirationModelExpirationActionType = {
+    APPROVE: 'APPROVE',
+    SKIP: 'SKIP',
+    REVERSE: 'REVERSE',
+    REJECT: 'REJECT',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.AutoApplyPolicyModelStartPolicy = {
+    START: 'START',
+    DRAFT: 'DRAFT',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.AutoApplyPolicyModelEnterPolicy = {
+    DONOTHING: 'DONOTHING',
+    REDO: 'REDO',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.OutputDocDataModelReOutputType = {
+    NOOUTPUT: 'NOOUTPUT',
+    REOUTPUT: 'REOUTPUT',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.RuleAutoReferenceModelAutoReferenceType = {
+    USER_NAME: 'USER_NAME',
+    UNIT_NAME: 'UNIT_NAME',
+    SECTIONROLE_NAME: 'SECTIONROLE_NAME',
+    PROCESS_DATE: 'PROCESS_DATE',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.FormVersionConditionModelLogicalCondition = {
+    AND: 'AND',
+    OR: 'OR',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.OrgRoleUserComparisonModelType = {
+    APPLY_UNIT: 'APPLY_UNIT',
+    APPLY_ROLE: 'APPLY_ROLE',
+    APPLY_USER: 'APPLY_USER',
+    FIELD: 'FIELD',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.FlowActivityModelEventType = {
+    OPEN: 'OPEN',
+    LOAD: 'LOAD',
+    ELECT: 'ELECT',
+    SAVE: 'SAVE',
+    EFFECT: 'EFFECT',
+    ENTER: 'ENTER',
+    EXIT: 'EXIT',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.FlowActivityModelEffectorType = {
+    CREATE: 'CREATE',
+    APPLY: 'APPLY',
+    APPLY_PROXY: 'APPLY_PROXY',
+    APPROVE: 'APPROVE',
+    APPROVE_WITH_COMMENTS: 'APPROVE_WITH_COMMENTS',
+    REMAND: 'REMAND',
+    REJECT: 'REJECT',
+    CANCEL: 'CANCEL',
+    RETRACT: 'RETRACT',
+    CONFIRM: 'CONFIRM',
+    DELETE: 'DELETE',
+    EDIT: 'EDIT',
+    SAVE: 'SAVE',
+    PDF: 'PDF',
+    COPY: 'COPY',
+    REFERENCE: 'REFERENCE',
+    CUSTOM: 'CUSTOM',
+    DEPRIVE: 'DEPRIVE',
+    SHARE: 'SHARE',
 };
 // eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.FindWorkflowTaskBodyConditionRuleStepType = {

@@ -1,6 +1,6 @@
 {
     "name": "orval-agileworks-mcp",
-    "version": "1.0.0",
+    "version": "0.3.0",
     "main": "index.js",
     "engines": {
         "node": ">=24.13.0 <25.0.0"
@@ -11,7 +11,7 @@
         "inspect:admin": "npx @modelcontextprotocol/inspector node ./dist/custom/admin/server.js",
         "dev:admin": "tsx ./src/custom/admin/server.ts",
         "dev:admin-http": "tsx ./src/custom/admin/server-http.ts",
-        "build": "orval && tsx src/custom/scripts/generate-register-tools.ts",
+        "build": "orval && tsx src/custom/scripts/generate-register-tools.ts && tsx src/custom/scripts/fix-handlers-imports.ts",
         "tsdown:build": "tsdown",
         "test": "tsx --test src/custom/__tests__/**/*.test.ts"
     },
@@ -26,12 +26,16 @@
         "orval": "7.21.0",
         "tsdown": "0.11.13",
         "tsx": "4.19.4",
-        "typescript": "5.8.3"
+        "typescript": "5.8.3",
+        "yaml": "2.8.4"
     },
     "dependencies": {
+        "@aws-sdk/client-dynamodb": "3.1080.0",
+        "@aws-sdk/lib-dynamodb": "3.1080.0",
         "@modelcontextprotocol/sdk": "1.29.0",
         "dotenv": "17.2.1",
         "express": "4.21.0",
+        "http-status-codes": "2.3.0",
         "zod": "3.25.67"
     }
 }

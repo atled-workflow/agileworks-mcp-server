@@ -1,11 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.countListWorkflowMessage = exports.getCountListWorkflowMessageUrl = exports.countWorkflowMessage = exports.getCountWorkflowMessageUrl = exports.openDoc = exports.getOpenDocUrl = exports.deleteDocReference = exports.getDeleteDocReferenceUrl = exports.addDocReference = exports.getAddDocReferenceUrl = exports.listDocReferencer = exports.getListDocReferencerUrl = exports.getDocReferencee = exports.getGetDocReferenceeUrl = exports.deleteDocAttachment = exports.getDeleteDocAttachmentUrl = exports.listDocAttachement = exports.getListDocAttachementUrl = exports.updateDocAttachment = exports.getUpdateDocAttachmentUrl = exports.addDocAttachment = exports.getAddDocAttachmentUrl = exports.deleteDocComment = exports.getDeleteDocCommentUrl = exports.addDocComment = exports.getAddDocCommentUrl = exports.listDocComment = exports.getListDocCommentUrl = exports.getDocPdf = exports.getGetDocPdfUrl = exports.selectDoc = exports.getSelectDocUrl = exports.hardDeleteDoc = exports.getHardDeleteDocUrl = exports.updateDoc = exports.getUpdateDocUrl = exports.addDoc = exports.getAddDocUrl = exports.prepareDocRequest = exports.getPrepareDocRequestUrl = exports.getDoc = exports.getGetDocUrl = exports.getDocHeader = exports.getGetDocHeaderUrl = exports.download = exports.getDownloadUrl = exports.nonParameter = exports.getNonParameterUrl = exports.model = exports.getModelUrl = void 0;
+exports.countListWorkflowMessage = exports.getCountListWorkflowMessageUrl = exports.countWorkflowMessage = exports.getCountWorkflowMessageUrl = exports.openDoc = exports.getOpenDocUrl = exports.deleteDocReference = exports.getDeleteDocReferenceUrl = exports.addDocReference = exports.getAddDocReferenceUrl = exports.listDocReferencer = exports.getListDocReferencerUrl = exports.getDocReference = exports.getGetDocReferenceUrl = exports.deleteDocAttachment = exports.getDeleteDocAttachmentUrl = exports.listDocAttachment = exports.getListDocAttachmentUrl = exports.updateDocAttachment = exports.getUpdateDocAttachmentUrl = exports.addDocAttachment = exports.getAddDocAttachmentUrl = exports.deleteDocComment = exports.getDeleteDocCommentUrl = exports.addDocComment = exports.getAddDocCommentUrl = exports.listDocComment = exports.getListDocCommentUrl = exports.getDocPdf = exports.getGetDocPdfUrl = exports.selectDoc = exports.getSelectDocUrl = exports.hardDeleteDoc = exports.getHardDeleteDocUrl = exports.updateDoc = exports.getUpdateDocUrl = exports.addDoc = exports.getAddDocUrl = exports.prepareDocRequest = exports.getPrepareDocRequestUrl = exports.getDoc = exports.getGetDocUrl = exports.getDocHeader = exports.getGetDocHeaderUrl = exports.download = exports.getDownloadUrl = exports.nonParameter = exports.getNonParameterUrl = exports.model = exports.getModelUrl = void 0;
 exports.findSectionRole = exports.getFindSectionRoleUrl = exports.addSectionRole = exports.getAddSectionRoleUrl = exports.disableUnit = exports.getDisableUnitUrl = exports.deleteUnit = exports.getDeleteUnitUrl = exports.updateUnit = exports.getUpdateUnitUrl = exports.findUnit = exports.getFindUnitUrl = exports.addUnit = exports.getAddUnitUrl = exports.disableUser = exports.getDisableUserUrl = exports.deleteUser = exports.getDeleteUserUrl = exports.updateUser = exports.getUpdateUserUrl = exports.findUser = exports.getFindUserUrl = exports.addUser = exports.getAddUserUrl = exports.listShareJournal = exports.getListShareJournalUrl = exports.listElectJournal = exports.getListElectJournalUrl = exports.listWorkflowJournal = exports.getListWorkflowJournalUrl = exports.findWorkflowTask = exports.getFindWorkflowTaskUrl = exports.getWorkflowInfo = exports.getGetWorkflowInfoUrl = exports.docReject = exports.getDocRejectUrl = exports.docRetract = exports.getDocRetractUrl = exports.docRemand = exports.getDocRemandUrl = exports.docDelete = exports.getDocDeleteUrl = exports.docApprove = exports.getDocApproveUrl = exports.docStart = exports.getDocStartUrl = exports.docDraft = exports.getDocDraftUrl = exports.selectWorkflowMessage = exports.getSelectWorkflowMessageUrl = void 0;
 exports.deleteDelegationAppointment = exports.getDeleteDelegationAppointmentUrl = exports.updateDelegationAppointment = exports.getUpdateDelegationAppointmentUrl = exports.findDelegationAppointment = exports.getFindDelegationAppointmentUrl = exports.addDelegationAppointment = exports.getAddDelegationAppointmentUrl = exports.disableProxyAppointment = exports.getDisableProxyAppointmentUrl = exports.deleteProxyAppointment = exports.getDeleteProxyAppointmentUrl = exports.updateProxyAppointment = exports.getUpdateProxyAppointmentUrl = exports.findProxyAppointment = exports.getFindProxyAppointmentUrl = exports.addProxyAppointment = exports.getAddProxyAppointmentUrl = exports.disableProxyApplyAppointment = exports.getDisableProxyApplyAppointmentUrl = exports.deleteProxyApplyAppointment = exports.getDeleteProxyApplyAppointmentUrl = exports.updateProxyApplyAppointment = exports.getUpdateProxyApplyAppointmentUrl = exports.findProxyApplyAppointment = exports.getFindProxyApplyAppointmentUrl = exports.addProxyApplyAppointment = exports.getAddProxyApplyAppointmentUrl = exports.disableUnitAppointment = exports.getDisableUnitAppointmentUrl = exports.deleteUnitAppointment = exports.getDeleteUnitAppointmentUrl = exports.updateUnitAppointment = exports.getUpdateUnitAppointmentUrl = exports.findUnitAppointment = exports.getFindUnitAppointmentUrl = exports.addUnitAppointment = exports.getAddUnitAppointmentUrl = exports.deleteSectionRoleGroup = exports.getDeleteSectionRoleGroupUrl = exports.updateSectionRoleGroup = exports.getUpdateSectionRoleGroupUrl = exports.findSectionRoleGroup = exports.getFindSectionRoleGroupUrl = exports.addSectionRoleGroup = exports.getAddSectionRoleGroupUrl = exports.deleteSectionRole = exports.getDeleteSectionRoleUrl = exports.updateSectionRole = exports.getUpdateSectionRoleUrl = void 0;
 exports.findProject = exports.getFindProjectUrl = exports.disableUniversalRoleAppointment = exports.getDisableUniversalRoleAppointmentUrl = exports.deleteUniversalRoleAppointment = exports.getDeleteUniversalRoleAppointmentUrl = exports.updateUniversalRoleAppointment = exports.getUpdateUniversalRoleAppointmentUrl = exports.findUniversalRoleAppointment = exports.getFindUniversalRoleAppointmentUrl = exports.addUniversalRoleAppointment = exports.getAddUniversalRoleAppointmentUrl = exports.deleteUniversalRole = exports.getDeleteUniversalRoleUrl = exports.updateUniversalRole = exports.getUpdateUniversalRoleUrl = exports.findUniversalRole = exports.getFindUniversalRoleUrl = exports.addUniversalRole = exports.getAddUniversalRoleUrl = exports.disablePrivateRoleAppointment = exports.getDisablePrivateRoleAppointmentUrl = exports.deletePrivateRoleAppointment = exports.getDeletePrivateRoleAppointmentUrl = exports.updatePrivateRoleAppointment = exports.getUpdatePrivateRoleAppointmentUrl = exports.findPrivateRoleAppointment = exports.getFindPrivateRoleAppointmentUrl = exports.addPrivateRoleAppointment = exports.getAddPrivateRoleAppointmentUrl = exports.deletePrivateRole = exports.getDeletePrivateRoleUrl = exports.updatePrivateRole = exports.getUpdatePrivateRoleUrl = exports.findPrivateRole = exports.getFindPrivateRoleUrl = exports.addPrivateRole = exports.getAddPrivateRoleUrl = exports.disableDeprivationAppointment = exports.getDisableDeprivationAppointmentUrl = exports.deleteDeprivationAppointment = exports.getDeleteDeprivationAppointmentUrl = exports.updateDeprivationAppointment = exports.getUpdateDeprivationAppointmentUrl = exports.findDeprivationAppointment = exports.getFindDeprivationAppointmentUrl = exports.addDeprivationAppointment = exports.getAddDeprivationAppointmentUrl = exports.disableDelegationAppointment = exports.getDisableDelegationAppointmentUrl = void 0;
-exports.sCIMPostUsersId = exports.getSCIMPostUsersIdUrl = exports.sCIMGetUsersId = exports.getSCIMGetUsersIdUrl = exports.sCIMPostUsers = exports.getSCIMPostUsersUrl = exports.sCIMGetUsers = exports.getSCIMGetUsersUrl = exports.notAdminGetVersion = exports.getNotAdminGetVersionUrl = exports.notAdminGetUserInfo = exports.getNotAdminGetUserInfoUrl = exports.notAdminListPublicFolderInfo = exports.getNotAdminListPublicFolderInfoUrl = exports.notAdminListProxyAppointment = exports.getNotAdminListProxyAppointmentUrl = exports.listProxyApplyAppointment = exports.getListProxyApplyAppointmentUrl = exports.notAdminStart = exports.getNotAdminStartUrl = exports.notAdminSelectWorkflowMessage = exports.getNotAdminSelectWorkflowMessageUrl = exports.notAdminCountListWorkflowMessage = exports.getNotAdminCountListWorkflowMessageUrl = exports.getDocView = exports.getGetDocViewUrl = exports.notAdminSelectDoc = exports.getNotAdminSelectDocUrl = exports.notAdminAddDoc = exports.getNotAdminAddDocUrl = exports.notAdminPrepareDocRequest = exports.getNotAdminPrepareDocRequestUrl = exports.listPublicFolderInfo = exports.getListPublicFolderInfoUrl = exports.findFormDefinition = exports.getFindFormDefinitionUrl = exports.listForm = exports.getListFormUrl = exports.listComponentAutoNumber = exports.getListComponentAutoNumberUrl = exports.listComponentMasterWindow = exports.getListComponentMasterWindowUrl = exports.exportUserMaster = exports.getExportUserMasterUrl = exports.importUserMaster = exports.getImportUserMasterUrl = exports.exportTinyUserMaster = exports.getExportTinyUserMasterUrl = exports.importTinyUserMaster = exports.getImportTinyUserMasterUrl = void 0;
-exports.sCIMService = exports.getSCIMServiceUrl = exports.sCIMSchemas = exports.getSCIMSchemasUrl = exports.sCIMResourceTypes = exports.getSCIMResourceTypesUrl = exports.sCIMDeleteGroupsId = exports.getSCIMDeleteGroupsIdUrl = exports.sCIMPatchGroupsId = exports.getSCIMPatchGroupsIdUrl = exports.sCIMPutGroups = exports.getSCIMPutGroupsUrl = exports.sCIMGetGroupsId = exports.getSCIMGetGroupsIdUrl = exports.sCIMPostGroups = exports.getSCIMPostGroupsUrl = exports.sCIMGetGroups = exports.getSCIMGetGroupsUrl = exports.sCIMDeleteUsersId = exports.getSCIMDeleteUsersIdUrl = exports.sCIMPatchUsersId = exports.getSCIMPatchUsersIdUrl = void 0;
+exports.sCIMPostUsers = exports.getSCIMPostUsersUrl = exports.sCIMGetUsers = exports.getSCIMGetUsersUrl = exports.findRule = exports.getFindRuleUrl = exports.createRule = exports.getCreateRuleUrl = exports.notAdminGetVersion = exports.getNotAdminGetVersionUrl = exports.notAdminGetUserInfo = exports.getNotAdminGetUserInfoUrl = exports.notAdminListPublicFolderInfo = exports.getNotAdminListPublicFolderInfoUrl = exports.notAdminListProxyAppointment = exports.getNotAdminListProxyAppointmentUrl = exports.listProxyApplyAppointment = exports.getListProxyApplyAppointmentUrl = exports.notAdminStart = exports.getNotAdminStartUrl = exports.notAdminSelectWorkflowMessage = exports.getNotAdminSelectWorkflowMessageUrl = exports.notAdminCountListWorkflowMessage = exports.getNotAdminCountListWorkflowMessageUrl = exports.getDocView = exports.getGetDocViewUrl = exports.notAdminSelectDoc = exports.getNotAdminSelectDocUrl = exports.notAdminAddDoc = exports.getNotAdminAddDocUrl = exports.notAdminPrepareDocRequest = exports.getNotAdminPrepareDocRequestUrl = exports.listPublicFolderInfo = exports.getListPublicFolderInfoUrl = exports.findFormDefinition = exports.getFindFormDefinitionUrl = exports.listForm = exports.getListFormUrl = exports.listComponentAutoNumber = exports.getListComponentAutoNumberUrl = exports.listComponentMasterWindow = exports.getListComponentMasterWindowUrl = exports.exportUserMaster = exports.getExportUserMasterUrl = exports.importUserMaster = exports.getImportUserMasterUrl = exports.exportTinyUserMaster = exports.getExportTinyUserMasterUrl = exports.importTinyUserMaster = exports.getImportTinyUserMasterUrl = void 0;
+exports.sCIMService = exports.getSCIMServiceUrl = exports.sCIMSchemas = exports.getSCIMSchemasUrl = exports.sCIMResourceTypes = exports.getSCIMResourceTypesUrl = exports.sCIMDeleteGroupsId = exports.getSCIMDeleteGroupsIdUrl = exports.sCIMPatchGroupsId = exports.getSCIMPatchGroupsIdUrl = exports.sCIMPutGroups = exports.getSCIMPutGroupsUrl = exports.sCIMGetGroupsId = exports.getSCIMGetGroupsIdUrl = exports.sCIMPostGroups = exports.getSCIMPostGroupsUrl = exports.sCIMGetGroups = exports.getSCIMGetGroupsUrl = exports.sCIMDeleteUsersId = exports.getSCIMDeleteUsersIdUrl = exports.sCIMPatchUsersId = exports.getSCIMPatchUsersIdUrl = exports.sCIMPostUsersId = exports.getSCIMPostUsersIdUrl = exports.sCIMGetUsersId = exports.getSCIMGetUsersIdUrl = void 0;
 const custom_mcp_instance_1 = require("../../custom/custom-mcp-instance");
 const getModelUrl = (params) => {
     const normalizedParams = new URLSearchParams();
@@ -67,12 +67,12 @@ const getGetDocHeaderUrl = () => {
     return `/Broker/WebApi/Service?name=doc.Doc&method=getDocHeader`;
 };
 exports.getGetDocHeaderUrl = getGetDocHeaderUrl;
-const getDocHeader = async (getDocHeaderBody, options) => {
+const getDocHeader = async (docIdBody, options) => {
     return (0, custom_mcp_instance_1.customFetchInstance)((0, exports.getGetDocHeaderUrl)(), {
         ...options,
         method: 'POST',
         headers: { 'Content-Type': 'application/json', ...options?.headers },
-        body: JSON.stringify(getDocHeaderBody)
+        body: JSON.stringify(docIdBody)
     });
 };
 exports.getDocHeader = getDocHeader;
@@ -80,12 +80,12 @@ const getGetDocUrl = () => {
     return `/Broker/WebApi/Service?name=doc.Doc&method=getDoc`;
 };
 exports.getGetDocUrl = getGetDocUrl;
-const getDoc = async (getDocBody, options) => {
+const getDoc = async (docIdBody, options) => {
     return (0, custom_mcp_instance_1.customFetchInstance)((0, exports.getGetDocUrl)(), {
         ...options,
         method: 'POST',
         headers: { 'Content-Type': 'application/json', ...options?.headers },
-        body: JSON.stringify(getDocBody)
+        body: JSON.stringify(docIdBody)
     });
 };
 exports.getDoc = getDoc;
@@ -132,12 +132,12 @@ const getHardDeleteDocUrl = () => {
     return `/Broker/WebApi/Service?name=doc.Doc&method=hardDeleteDoc`;
 };
 exports.getHardDeleteDocUrl = getHardDeleteDocUrl;
-const hardDeleteDoc = async (hardDeleteDocBody, options) => {
+const hardDeleteDoc = async (docIdBody, options) => {
     return (0, custom_mcp_instance_1.customFetchInstance)((0, exports.getHardDeleteDocUrl)(), {
         ...options,
         method: 'POST',
         headers: { 'Content-Type': 'application/json', ...options?.headers },
-        body: JSON.stringify(hardDeleteDocBody)
+        body: JSON.stringify(docIdBody)
     });
 };
 exports.hardDeleteDoc = hardDeleteDoc;
@@ -171,12 +171,12 @@ const getListDocCommentUrl = () => {
     return `/Broker/WebApi/Service?name=doc.Doc&method=listDocComment`;
 };
 exports.getListDocCommentUrl = getListDocCommentUrl;
-const listDocComment = async (listDocCommentBody, options) => {
+const listDocComment = async (docIdBody, options) => {
     return (0, custom_mcp_instance_1.customFetchInstance)((0, exports.getListDocCommentUrl)(), {
         ...options,
         method: 'POST',
         headers: { 'Content-Type': 'application/json', ...options?.headers },
-        body: JSON.stringify(listDocCommentBody)
+        body: JSON.stringify(docIdBody)
     });
 };
 exports.listDocComment = listDocComment;
@@ -232,19 +232,19 @@ const updateDocAttachment = async (updateDocAttachmentBody, options) => {
     });
 };
 exports.updateDocAttachment = updateDocAttachment;
-const getListDocAttachementUrl = () => {
+const getListDocAttachmentUrl = () => {
     return `/Broker/WebApi/Service?name=doc.Doc&method=listDocAttachment`;
 };
-exports.getListDocAttachementUrl = getListDocAttachementUrl;
-const listDocAttachement = async (listDocAttachementBody, options) => {
-    return (0, custom_mcp_instance_1.customFetchInstance)((0, exports.getListDocAttachementUrl)(), {
+exports.getListDocAttachmentUrl = getListDocAttachmentUrl;
+const listDocAttachment = async (docIdBody, options) => {
+    return (0, custom_mcp_instance_1.customFetchInstance)((0, exports.getListDocAttachmentUrl)(), {
         ...options,
         method: 'POST',
         headers: { 'Content-Type': 'application/json', ...options?.headers },
-        body: JSON.stringify(listDocAttachementBody)
+        body: JSON.stringify(docIdBody)
     });
 };
-exports.listDocAttachement = listDocAttachement;
+exports.listDocAttachment = listDocAttachment;
 const getDeleteDocAttachmentUrl = () => {
     return `/Broker/WebApi/Service?name=doc.Doc&method=deleteDocAttachment`;
 };
@@ -258,29 +258,29 @@ const deleteDocAttachment = async (deleteDocAttachmentBody, options) => {
     });
 };
 exports.deleteDocAttachment = deleteDocAttachment;
-const getGetDocReferenceeUrl = () => {
+const getGetDocReferenceUrl = () => {
     return `/Broker/WebApi/Service?name=doc.Doc&method=getDocReferencee`;
 };
-exports.getGetDocReferenceeUrl = getGetDocReferenceeUrl;
-const getDocReferencee = async (getDocReferenceeBody, options) => {
-    return (0, custom_mcp_instance_1.customFetchInstance)((0, exports.getGetDocReferenceeUrl)(), {
+exports.getGetDocReferenceUrl = getGetDocReferenceUrl;
+const getDocReference = async (docIdBody, options) => {
+    return (0, custom_mcp_instance_1.customFetchInstance)((0, exports.getGetDocReferenceUrl)(), {
         ...options,
         method: 'POST',
         headers: { 'Content-Type': 'application/json', ...options?.headers },
-        body: JSON.stringify(getDocReferenceeBody)
+        body: JSON.stringify(docIdBody)
     });
 };
-exports.getDocReferencee = getDocReferencee;
+exports.getDocReference = getDocReference;
 const getListDocReferencerUrl = () => {
     return `/Broker/WebApi/Service?name=doc.Doc&method=listDocReferencer`;
 };
 exports.getListDocReferencerUrl = getListDocReferencerUrl;
-const listDocReferencer = async (listDocReferencerBody, options) => {
+const listDocReferencer = async (docIdBody, options) => {
     return (0, custom_mcp_instance_1.customFetchInstance)((0, exports.getListDocReferencerUrl)(), {
         ...options,
         method: 'POST',
         headers: { 'Content-Type': 'application/json', ...options?.headers },
-        body: JSON.stringify(listDocReferencerBody)
+        body: JSON.stringify(docIdBody)
     });
 };
 exports.listDocReferencer = listDocReferencer;
@@ -457,12 +457,12 @@ const getGetWorkflowInfoUrl = () => {
     return `/Broker/WebApi/Service?name=workflow.Workflow&method=getWorkflowInfo`;
 };
 exports.getGetWorkflowInfoUrl = getGetWorkflowInfoUrl;
-const getWorkflowInfo = async (getWorkflowInfoBody, options) => {
+const getWorkflowInfo = async (docIdBody, options) => {
     return (0, custom_mcp_instance_1.customFetchInstance)((0, exports.getGetWorkflowInfoUrl)(), {
         ...options,
         method: 'POST',
         headers: { 'Content-Type': 'application/json', ...options?.headers },
-        body: JSON.stringify(getWorkflowInfoBody)
+        body: JSON.stringify(docIdBody)
     });
 };
 exports.getWorkflowInfo = getWorkflowInfo;
@@ -483,12 +483,12 @@ const getListWorkflowJournalUrl = () => {
     return `/Broker/WebApi/Service?name=workflow.Workflow&method=listWorkflowJournal`;
 };
 exports.getListWorkflowJournalUrl = getListWorkflowJournalUrl;
-const listWorkflowJournal = async (listWorkflowJournalBody, options) => {
+const listWorkflowJournal = async (docIdBody, options) => {
     return (0, custom_mcp_instance_1.customFetchInstance)((0, exports.getListWorkflowJournalUrl)(), {
         ...options,
         method: 'POST',
         headers: { 'Content-Type': 'application/json', ...options?.headers },
-        body: JSON.stringify(listWorkflowJournalBody)
+        body: JSON.stringify(docIdBody)
     });
 };
 exports.listWorkflowJournal = listWorkflowJournal;
@@ -496,12 +496,12 @@ const getListElectJournalUrl = () => {
     return `/Broker/WebApi/Service?name=workflow.Workflow&method=listElectJournal`;
 };
 exports.getListElectJournalUrl = getListElectJournalUrl;
-const listElectJournal = async (listElectJournalBody, options) => {
+const listElectJournal = async (docIdBody, options) => {
     return (0, custom_mcp_instance_1.customFetchInstance)((0, exports.getListElectJournalUrl)(), {
         ...options,
         method: 'POST',
         headers: { 'Content-Type': 'application/json', ...options?.headers },
-        body: JSON.stringify(listElectJournalBody)
+        body: JSON.stringify(docIdBody)
     });
 };
 exports.listElectJournal = listElectJournal;
@@ -509,12 +509,12 @@ const getListShareJournalUrl = () => {
     return `/Broker/WebApi/Service?name=workflow.Workflow&method=listShareJournal`;
 };
 exports.getListShareJournalUrl = getListShareJournalUrl;
-const listShareJournal = async (listShareJournalBody, options) => {
+const listShareJournal = async (docIdBody, options) => {
     return (0, custom_mcp_instance_1.customFetchInstance)((0, exports.getListShareJournalUrl)(), {
         ...options,
         method: 'POST',
         headers: { 'Content-Type': 'application/json', ...options?.headers },
-        body: JSON.stringify(listShareJournalBody)
+        body: JSON.stringify(docIdBody)
     });
 };
 exports.listShareJournal = listShareJournal;
@@ -1597,6 +1597,32 @@ const notAdminGetVersion = async (notAdminGetVersionBody, options) => {
     });
 };
 exports.notAdminGetVersion = notAdminGetVersion;
+const getCreateRuleUrl = () => {
+    return `/Broker/WebApi/Service?name=rule.RuleV2&method=createRule`;
+};
+exports.getCreateRuleUrl = getCreateRuleUrl;
+const createRule = async (createRuleBody, options) => {
+    return (0, custom_mcp_instance_1.customFetchInstance)((0, exports.getCreateRuleUrl)(), {
+        ...options,
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', ...options?.headers },
+        body: JSON.stringify(createRuleBody)
+    });
+};
+exports.createRule = createRule;
+const getFindRuleUrl = () => {
+    return `/Broker/WebApi/Service?name=rule.RuleV2&method=findRule`;
+};
+exports.getFindRuleUrl = getFindRuleUrl;
+const findRule = async (findRuleBody, options) => {
+    return (0, custom_mcp_instance_1.customFetchInstance)((0, exports.getFindRuleUrl)(), {
+        ...options,
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', ...options?.headers },
+        body: JSON.stringify(findRuleBody)
+    });
+};
+exports.findRule = findRule;
 const getSCIMGetUsersUrl = (params) => {
     const normalizedParams = new URLSearchParams();
     Object.entries(params || {}).forEach(([key, value]) => {
