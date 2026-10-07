@@ -5,10 +5,10 @@ services:
       context: .
       args:
         BUILD_DATE: ${BUILD_DATE:-unknown}
-        VERSION: v0.3.0
+        VERSION: v0.3.1
         MCP_PORT: ${MCP_PORT:-8002}
         IS_CLOUD: ${IS_CLOUD:-false}
-    image: agileworks-mcp:v0.3.0
+    image: agileworks-mcp:v0.3.1
     container_name: agileworks_mcp
     # .envを用意する場合は以下の設定が必要
     # 反対に.envを用意しない場合はenv_fileを削除すること
