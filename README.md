@@ -1,6 +1,6 @@
 # AgileWorks MCP Server
 
-AgileWorksの公式ローカルMCPサーバーです。
+AgileWorksの公式MCPサーバーです。
 
 ## 目次
 
@@ -17,7 +17,6 @@ AgileWorksの公式ローカルMCPサーバーです。
 
 - AgileWorksのライセンスにWebAPIオプションが含まれていること
 - 管理者権限が必要なToolを利用する場合は、AgileWorksの管理者権限（全権限）を持っていること
-- AgileWorksクラウド版をご利用の場合は、API利用枠オプションを契約していること
 - AgileWorksの管理サイトにて、システムURLが設定されていること
 
 ## 互換性
@@ -26,8 +25,7 @@ AgileWorksの公式ローカルMCPサーバーです。
 
 | AgileWorks MCP Server タグ | 対応AgileWorksバージョン |
 | :--- | :--- |
-| v0.2.0 | R3.3.0a～ |
-| v0.3.0 | R3.3.0a～ |
+| R1.0.0 | R3.3.0a～ |
 
 ## インストール
 
@@ -35,7 +33,7 @@ AgileWorksの公式ローカルMCPサーバーです。
 
 #### 前提条件
 
-- Node.js (v24.13.0 以上) をインストールしていること
+- Node.js (v24.22.3 以上) をインストールしていること
 
 1. 依存モジュールをインストールします。
 
@@ -86,61 +84,157 @@ AgileWorksの公式ローカルMCPサーバーです。
 
 ### リモートMCPサーバー
 
-Dockerを使用することで、リモートMCPサーバーとして公開できます。
+Docker で起動したMCPサーバーを、リバースプロキシ経由で HTTPS で公開します。AIエージェントからは次のURLで接続します。
+
+```
+https://{FQDN}/{AgileWorksのシステムURLをURLエンコードしたもの}/mcp
+```
+
+#### 構成
+
+TLS（HTTPS）を終端する場所によって、次の 2 つの構成があります。
+
+**パターンA: リバースプロキシで TLS を終端する**
+
+```
+AIエージェント ──https:443──▶ リバースプロキシ（nginx 等） ──http──▶ MCPサーバー（Docker, 127.0.0.1:8002） ──▶ AgileWorks
+```
+
+**パターンB: ロードバランサーで TLS を終端する（AWS ALB 等）**
+
+```
+AIエージェント ──https:443──▶ ロードバランサー ──http:80──▶ リバースプロキシ（nginx 等） ──http──▶ MCPサーバー（Docker, 127.0.0.1:8002）
+```
+
+MCPサーバーのポート（8002）は外部に公開せず、同じサーバー上のリバースプロキシからのみ接続させます。
 
 #### 環境構築
 
 ##### 前提条件
 
-- MCPサーバー用のポート番号を許可してください (デフォルトは8002)
+- MCPサーバー専用の FQDN（例: `mcp.example.co.jp`）を用意し、DNS をサーバー（またはロードバランサー）に向けていること
+- パターンAの場合は、その FQDN の SSL/TLS 証明書（サーバー証明書・中間証明書・秘密鍵）があること。パターンBの場合は、ロードバランサー側に証明書があること
+- AIエージェントから 443/tcp で到達できること
+- AgileWorks で OAuth2 のクライアントIDを発行済みであること（[接続方法](#接続方法) 参照）
+- AgileWorks（システムURL）に対して、次の 3 つの経路で HTTPS 通信できること
 
-> [!NOTE]
-> `.env.example` をリネームして `.env` を作成し、`MCP_PORT` でポート番号を変更できます。
+| 通信元 | 通信先（AgileWorks） | 用途 |
+| :--- | :--- | :--- |
+| MCPサーバー（コンテナ） | Web API | ツール実行時の API 呼び出し |
+| 利用者のブラウザ | `/oauth/authorize` | ログイン・認可画面 |
+| AIエージェント | `/oauth/token` | アクセストークンの発行（MCPサーバーは中継しません） |
 
-##### ファイル構成
+> [!IMPORTANT]
+> Claude のカスタムコネクタなど、クラウドで動作するAIエージェントは、エージェント提供元のクラウドからアクセストークンを取得します。AgileWorks が社内ネットワークに閉じている場合は、`/oauth/token` にインターネットから到達できる必要があります。
+
+> [!IMPORTANT]
+> `https://example.co.jp/agileworks-mcp/` のようなサブパス配下では公開できません。OAuth のメタデータ（`/.well-known/oauth-*`）をオリジン直下で返す必要があるため、専用の FQDN のオリジン直下で公開してください。
+
+##### 構築手順
+
+Docker のインストールからリバースプロキシの設定までを、OS ごとの手順書に従って行ってください。
+
+- [Linux](./SETUP_LINUX.md)
+- [Windows Server](./SETUP_WINDOWS.md)
+
+各手順書は、次の流れで構成しています。以降の節は、各手順書から参照する OS 共通の情報です。
+
+1. Docker をインストールする
+2. ソースコードを取得し、`.env` を作成する（[環境変数](#環境変数env)）
+3. Docker コンテナをビルド・起動する
+4. リバースプロキシを設定する（[リバースプロキシの要件](#リバースプロキシの要件)）
+5. 外部から動作を確認する（[動作確認](#動作確認)）
+
+##### 環境変数（.env）
+
+`aw-app/.env.example` をコピーして `aw-app/.env` を作成し、`MCP_SERVER_BASE_URL` を書き換えます。
 
 ```
 aw-app/
 ├── dist/
 ├── Dockerfile
 ├── docker-compose.yml
-└── .env (※任意)
+├── .env.example
+└── .env          ← .env.example をコピーして作成
 ```
 
-##### 設定手順
+| 変数名 | 必須 | 説明 |
+| :--- | :---: | :--- |
+| `MCP_SERVER_BASE_URL` | ○ | 外部から見たMCPサーバーのURL。`https://` で始まり、パスと末尾のスラッシュを含めない形式（例: `https://mcp.example.co.jp`）。パターンBの場合も `https://` で記載します |
+| `MCP_PORT` | | MCPサーバーの待ち受けポート（既定値: `8002`） |
+| `CORS_ALLOW_ORIGIN` | | CORS の `Access-Control-Allow-Origin`（既定値: `*`） |
 
-1. Docker コンテナをビルド・起動します。
+> [!IMPORTANT]
+> `MCP_SERVER_BASE_URL` は OAuth のメタデータと `WWW-Authenticate` ヘッダーに使われます。未設定の場合は `http://localhost:8002` が返り、AIエージェントから認可を行えません。
 
-    ```bash
-    cd aw-app
-    docker compose build
-    docker compose up -d
-    ```
+> [!NOTE]
+> AgileWorks のサーバー証明書がプライベート CA で発行されている場合、コンテナ内の Node.js はその CA を信頼しないため、API 呼び出しに失敗します。CA 証明書をコンテナにマウントし、`.env` に `NODE_EXTRA_CA_CERTS={コンテナ内の CA 証明書のパス}` を設定してください。
 
-> [!TIP]
-> nginx / Traefikなどを用いてリバースプロキシを配置することで、リモートMCPサーバーのエンドポイントを変更することができます。
+##### リバースプロキシの要件
+
+OS ごとの手順書に記載のないリバースプロキシを使う場合も、次の点を満たすように設定してください。
+
+- オリジン直下（`/`）へのリクエストをすべてMCPサーバーに転送する（`/{システムURL}/mcp` と `/.well-known/oauth-*` の両方が必要）
+- URL 中のエンコード済みスラッシュ（`%2F`）をデコードせずに転送する
+- レスポンス（Server-Sent Events）をバッファリングせず、逐次返す
+- 読み取りタイムアウトを 300 秒程度に延長する（ロードバランサーを使う場合は、そのアイドルタイムアウトも）
+- リバースプロキシで設定するホスト名と、`MCP_SERVER_BASE_URL` のホスト名を一致させる
+
+##### 動作確認
+
+外部の端末から実行します。`mcp.example.co.jp` と `https%3A%2F%2Fsample.co.jp%2FAgileWorks` は、お使いの FQDN と、URLエンコードしたシステムURLに置き換えてください。
+
+```bash
+# 1. ヘルスチェック（{"status":"OK",...} が返ること）
+curl https://mcp.example.co.jp/health
+
+# 2. OAuth メタデータ（resource と authorization_servers が https://mcp.example.co.jp/... であること）
+curl "https://mcp.example.co.jp/.well-known/oauth-protected-resource/https%3A%2F%2Fsample.co.jp%2FAgileWorks/mcp"
+
+# 3. 未認証のリクエストに 401 と WWW-Authenticate ヘッダーが返ること
+curl -i -X POST "https://mcp.example.co.jp/https%3A%2F%2Fsample.co.jp%2FAgileWorks/mcp" \
+  -H "Content-Type: application/json" \
+  -d '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{}}'
+
+# 4. （パターンAの場合）証明書チェーン（Verify return code: 0 (ok) であること）
+openssl s_client -connect mcp.example.co.jp:443 -servername mcp.example.co.jp < /dev/null 2>/dev/null \
+  | grep -E "Verify return code|subject=|issuer="
+```
 
 ##### アップデート手順
 
+`.env` は Git の管理対象外のため、アップデートで上書きされません。
+
 1. リモートMCPサーバーを停止します。
-```bash
-cd aw-app
-docker compose down
-```
 
-2. （任意）docker-compose.ymlとDockerfileのバックアップを行います。
-```bash
-cp docker-compose.yml docker-compose.yml.$(date +%s).bak
-cp Dockerfile Dockerfile.$(date +%s).bak
-```
+    ```bash
+    cd aw-app
+    docker compose down
+    ```
 
-3. 最新のソースコードを取得します。
+2. （`docker-compose.yml` を変更している場合）バックアップし、変更を元に戻します。
 
-4. Dockerコンテナを再ビルド・起動します。
-```bash
-docker compose build
-docker compose up -d
-```
+    ```bash
+    cp docker-compose.yml docker-compose.yml.$(date +%Y%m%d).bak
+    git checkout -- docker-compose.yml
+    ```
+
+3. 新しいリリースタグのソースコードを取得します。`RX.Y.Z` は新しいリリースタグに置き換えてください。
+
+    ```bash
+    git fetch --tags
+    git checkout RX.Y.Z
+    ```
+
+4. 手順 2 でバックアップした場合は、変更を新しい `docker-compose.yml` に反映します。
+
+5. Docker コンテナを再ビルド・起動します。
+
+    ```bash
+    docker compose build
+    docker compose up -d
+    curl http://127.0.0.1:8002/health
+    ```
 
 #### 接続方法
 
@@ -187,6 +281,19 @@ Claudeの「カスタムコネクタ」機能を使って接続する利用例�
 7. ログインが完了すると接続が確立し、チャットより本MCPのツールが利用可能になります。
 
 ほかのAIエージェントをご利用の場合も、おおむね同じ形式の設定項目を入力してください。
+
+#### トラブルシューティング
+
+OS 固有の症状は、各 OS の環境構築手順も参照してください。
+
+| 症状 | 原因と対処 |
+| :--- | :--- |
+| AIエージェントで OAuth の画面に進まない／OAuth メタデータに `http://localhost:8002` が表示される | `.env` に `MCP_SERVER_BASE_URL` が設定されていません。設定後、`docker compose up -d` でコンテナを作り直してください |
+| `docker compose up` が `env file ... not found` で失敗する | `.env` がありません。`.env.example` をコピーして作成してください（[環境変数](#環境変数env) 参照） |
+| `/health` は応答するが、`/{システムURL}/mcp` だけ 404 になる | リバースプロキシが `%2F` をデコードしています。OS ごとの手順のリバースプロキシの設定を確認してください |
+| ブラウザでは開けるが、AIエージェントでのコネクタ追加に失敗する | 中間証明書が設定されていない可能性があります。[動作確認](#動作確認) の 4 で証明書チェーンを確認してください |
+| しばらくすると応答が途切れる | リバースプロキシの読み取りタイムアウト、ロードバランサーのアイドルタイムアウトを延長してください |
+| ツール実行時に AgileWorks への接続エラーになる | OS ごとの手順書にある、コンテナから AgileWorks への接続確認を行ってください。AgileWorks の証明書がプライベート CA の場合は `NODE_EXTRA_CA_CERTS` を設定してください |
 
 ## Tools
 

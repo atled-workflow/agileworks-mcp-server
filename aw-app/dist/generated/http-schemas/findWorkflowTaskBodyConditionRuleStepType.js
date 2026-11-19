@@ -9,9 +9,18 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.FindWorkflowTaskBodyConditionRuleStepType = void 0;
 // eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.FindWorkflowTaskBodyConditionRuleStepType = {
+    START: 'START',
     CREATE: 'CREATE',
     APPLY: 'APPLY',
     APPROVE: 'APPROVE',
+    AUTOAPPLY: 'AUTOAPPLY',
+    OUTPUTDOCDATA: 'OUTPUTDOCDATA',
     CONFIRM: 'CONFIRM',
     READ: 'READ',
+    STORE: 'STORE',
+    SWITCH: 'SWITCH',
+    SYNC: 'SYNC',
+    DISTRIBUTE: 'DISTRIBUTE',
+    COLLECTION: 'COLLECTION',
+    END: 'END',
 };

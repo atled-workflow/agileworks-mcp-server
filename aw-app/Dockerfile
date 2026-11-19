@@ -1,7 +1,7 @@
 # ARGをFROMより前に宣言することでFROM命令内で使用可能になる
 ARG IS_CLOUD=false
 
-FROM node:24.13.0 AS base
+FROM node:24.22.3 AS base
 
 ARG BUILD_DATE
 ARG VERSION
@@ -13,7 +13,7 @@ WORKDIR /app
 
 # 全依存関係をインストール（typescript含む）
 COPY package*.json ./
-RUN npm install
+RUN npm ci
 
 # IS_CLOUD=true: TypeScript ソースをコピーしてビルド
 FROM base AS true

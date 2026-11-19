@@ -47,7 +47,7 @@ function startUpstream() {
                 };
                 brokerRequests.push(record);
                 res.writeHead(brokerStatus, { 'Content-Type': 'application/json' });
-                res.end(JSON.stringify({ versionInfo: { versionInfo: 'test-version' } }));
+                res.end(JSON.stringify({ versionInfo: { version: 'test-version' } }));
             });
         });
         upstream.listen(0, '127.0.0.1', () => {

@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.listDocAttachmentResponse = exports.listDocAttachmentResponseDocAttachmentListEntriesItemOperationInfoModifyDateRegExp = exports.listDocAttachmentResponseDocAttachmentListEntriesItemOperationInfoRegistrationDateRegExp = exports.listDocAttachmentResponseDocAttachmentListEntriesItemRuleStepHeaderTypeRegExp = exports.listDocAttachmentResponseDocAttachmentListEntriesItemTypeRegExp = exports.listDocAttachmentBody = exports.updateDocAttachmentResponse = exports.updateDocAttachmentResponseDocAttachmentOperationInfoModifyDateRegExp = exports.updateDocAttachmentResponseDocAttachmentOperationInfoRegistrationDateRegExp = exports.updateDocAttachmentResponseDocAttachmentRuleStepHeaderTypeRegExp = exports.updateDocAttachmentResponseDocAttachmentTypeRegExp = exports.updateDocAttachmentBody = exports.addDocAttachmentResponse = exports.addDocAttachmentResponseDocAttachmentOperationInfoModifyDateRegExp = exports.addDocAttachmentResponseDocAttachmentOperationInfoRegistrationDateRegExp = exports.addDocAttachmentResponseDocAttachmentRuleStepHeaderTypeRegExp = exports.addDocAttachmentResponseDocAttachmentTypeRegExp = exports.addDocAttachmentBody = exports.addDocCommentResponse = exports.addDocCommentResponseDocCommentOperationInfoModifyDateRegExp = exports.addDocCommentResponseDocCommentOperationInfoRegistrationDateRegExp = exports.addDocCommentResponseDocCommentEffectorTypeRegExpOne = exports.addDocCommentResponseDocCommentRuleStepHeaderTypeRegExp = exports.addDocCommentBody = exports.listDocCommentResponse = exports.listDocCommentResponseDocCommentListEntriesItemOperationInfoModifyDateRegExp = exports.listDocCommentResponseDocCommentListEntriesItemOperationInfoRegistrationDateRegExp = exports.listDocCommentResponseDocCommentListEntriesItemEffectorTypeRegExpOne = exports.listDocCommentResponseDocCommentListEntriesItemRuleStepHeaderTypeRegExp = exports.listDocCommentBody = exports.selectDocResponse = exports.selectDocBody = exports.selectDocBodyConditionDateConditionToRegExp = exports.selectDocBodyConditionDateConditionFromRegExp = exports.selectDocBodyConditionCriterionDateRegExp = exports.updateDocResponse = exports.updateDocResponseDocCriterionDateRegExp = exports.updateDocBody = exports.updateDocBodyCriterionDateRegExp = exports.addDocResponse = exports.addDocResponseDocCriterionDateRegExp = exports.addDocBody = exports.addDocBodyCriterionDateRegExp = exports.prepareDocRequestResponse = exports.prepareDocRequestResponseDocCriterionDateRegExp = exports.prepareDocRequestBody = exports.prepareDocRequestBodyCriterionDateRegExp = exports.getDocResponse = exports.getDocResponseDocCriterionDateRegExp = exports.getDocBody = void 0;
-exports.findUserResponseUserListEntriesItemValidityDateToRegExp = exports.findUserBody = exports.findUserBodyConditionCriterionDateRegExp = exports.listWorkflowJournalResponse = exports.listWorkflowJournalResponseWorkflowJournalListEntriesItemRuleStepHeaderTypeRegExp = exports.listWorkflowJournalResponseWorkflowJournalListEntriesItemRuleEffectorTypeRegExpOne = exports.listWorkflowJournalResponseWorkflowJournalListEntriesItemCreateDateRegExp = exports.listWorkflowJournalBody = exports.findWorkflowTaskResponse = exports.findWorkflowTaskResponseWorkflowTaskListEntriesItemRuleStepHeaderTypeRegExp = exports.findWorkflowTaskResponseWorkflowTaskListEntriesItemDeprivedRuleStepHeaderTypeRegExp = exports.findWorkflowTaskResponseWorkflowTaskListEntriesItemEffectDateRegExp = exports.findWorkflowTaskResponseWorkflowTaskListEntriesItemRuleEffectorTypeRegExpOne = exports.findWorkflowTaskResponseWorkflowTaskListEntriesItemStateRegExp = exports.findWorkflowTaskBody = exports.getWorkflowInfoResponse = exports.getWorkflowInfoResponseWorkflowInfoLastOperateDateRegExp = exports.getWorkflowInfoResponseWorkflowInfoApplyDateRegExp = exports.getWorkflowInfoResponseWorkflowInfoApprovedDateRegExp = exports.getWorkflowInfoResponseWorkflowInfoCreateDateRegExp = exports.getWorkflowInfoResponseWorkflowInfoCriterionDateRegExp = exports.getWorkflowInfoResponseWorkflowInfoCurrentRuleStepHeaderListEntriesItemTypeRegExp = exports.getWorkflowInfoBody = exports.docRetractResponse = exports.docRetractBody = exports.docRemandResponse = exports.docRemandBody = exports.docApproveResponse = exports.docApproveBody = exports.docStartResponse = exports.docStartBody = exports.docStartBodyCriterionDateRegExp = exports.docDraftResponse = exports.docDraftBody = exports.docDraftBodyCriterionDateRegExp = exports.selectWorkflowMessageResponse = exports.selectWorkflowMessageBody = exports.countListWorkflowMessageResponse = exports.countListWorkflowMessageBody = exports.countWorkflowMessageResponse = exports.countWorkflowMessageBody = exports.openDocBody = exports.addDocReferenceResponse = exports.addDocReferenceBody = exports.listDocReferencerResponse = exports.listDocReferencerResponseDocHeaderListEntriesItemCriterionDateRegExp = exports.listDocReferencerBody = exports.getDocReferenceResponse = exports.getDocReferenceResponseDocHeaderCriterionDateRegExp = exports.getDocReferenceBody = void 0;
-exports.findPrivateRoleAppointmentBodyConditionCriterionDateRegExp = exports.findPrivateRoleResponse = exports.findPrivateRoleResponsePrivateRoleListEntriesItemCandidateListEntriesItemCriterionDateRegExp = exports.findPrivateRoleBody = exports.findDeprivationAppointmentResponse = exports.findDeprivationAppointmentResponseDeprivationAppointmentListEntriesItemCriterionDateRegExp = exports.findDeprivationAppointmentResponseDeprivationAppointmentListEntriesItemAvailableDateToRegExp = exports.findDeprivationAppointmentResponseDeprivationAppointmentListEntriesItemAvailableDateFromRegExp = exports.findDeprivationAppointmentBody = exports.findDeprivationAppointmentBodyConditionCriterionDateRegExp = exports.findDelegationAppointmentResponse = exports.findDelegationAppointmentResponseDelegationAppointmentListEntriesItemCriterionDateRegExp = exports.findDelegationAppointmentResponseDelegationAppointmentListEntriesItemAvailableDateToRegExp = exports.findDelegationAppointmentResponseDelegationAppointmentListEntriesItemAvailableDateFromRegExp = exports.findDelegationAppointmentBody = exports.findDelegationAppointmentBodyConditionCriterionDateRegExp = exports.findProxyAppointmentResponse = exports.findProxyAppointmentResponseProxyAppointmentListEntriesItemCriterionDateRegExp = exports.findProxyAppointmentResponseProxyAppointmentListEntriesItemAvailableDateToRegExp = exports.findProxyAppointmentResponseProxyAppointmentListEntriesItemAvailableDateFromRegExp = exports.findProxyAppointmentBody = exports.findProxyAppointmentBodyConditionCriterionDateRegExp = exports.findProxyApplyAppointmentResponse = exports.findProxyApplyAppointmentResponseProxyApplicationAppointmentListEntriesItemCriterionDateRegExp = exports.findProxyApplyAppointmentResponseProxyApplicationAppointmentListEntriesItemAvailableDateToRegExp = exports.findProxyApplyAppointmentResponseProxyApplicationAppointmentListEntriesItemAvailableDateFromRegExp = exports.findProxyApplyAppointmentBody = exports.findProxyApplyAppointmentBodyConditionCriterionDateRegExp = exports.findUnitAppointmentResponse = exports.findUnitAppointmentResponseUnitAppointmentListEntriesItemCriterionDateRegExp = exports.findUnitAppointmentResponseUnitAppointmentListEntriesItemAvailableDateToRegExp = exports.findUnitAppointmentResponseUnitAppointmentListEntriesItemAvailableDateFromRegExp = exports.findUnitAppointmentBody = exports.findUnitAppointmentBodyConditionCriterionDateRegExp = exports.findSectionRoleGroupResponse = exports.findSectionRoleGroupBody = exports.findSectionRoleResponse = exports.findSectionRoleBody = exports.findSectionRoleBodyConditionCriterionDateRegExp = exports.findUnitResponse = exports.findUnitResponseUnitListEntriesItemAvailableDateToRegExp = exports.findUnitResponseUnitListEntriesItemAvailableDateFromRegExp = exports.findUnitResponseUnitListEntriesItemValidityDateToRegExp = exports.findUnitResponseUnitListEntriesItemValidityDateFromRegExp = exports.findUnitBody = exports.findUnitBodyConditionCriterionDateRegExp = exports.findUserResponse = exports.findUserResponseUserListEntriesItemValidityDateFromRegExp = exports.findUserResponseUserListEntriesItemAvailableDateFromRegExp = exports.findUserResponseUserListEntriesItemAvailableDateToRegExp = void 0;
-exports.createRuleBodyRuleDefinitionStepsEntriesItemFlowControlConditionMaxNumberMax = exports.createRuleBodyRuleDefinitionStepsEntriesItemFlowControlConditionMaxNumberMin = exports.createRuleBodyRuleDefinitionStepsEntriesItemFlowControlConditionMinNumberMax = exports.createRuleBodyRuleDefinitionStepsEntriesItemCoordRegExp = exports.createRuleBodyRuleDefinitionStepsEntriesItemCodeRegExp = exports.createRuleBodyRuleDefinitionStepsEntriesItemCodeMax = exports.createRuleBodyRuleDefinitionStepsEntriesItemStepNameMax = exports.createRuleBodyRuleDefinitionCustomMenuEntriesItemNameMax = exports.createRuleBodyRuleDefinitionAvailableDateToRegExp = exports.createRuleBodyRuleDefinitionAvailableDateFromRegExp = exports.createRuleBodyRuleDefinitionRuleNameMax = exports.createRuleBodyRuleDefinitionRuleCodeRegExp = exports.createRuleBodyRuleDefinitionRuleCodeMax = exports.notAdminGetVersionResponse = exports.notAdminGetVersionBody = exports.listPublicFolderInfoResponse = exports.listPublicFolderInfoBody = exports.listPublicFolderInfoBodyCriterionDateRegExp = exports.findFormDefinitionResponse = exports.findFormDefinitionResponseFormPagesEntriesItemFieldsEntriesItemDateFormatRegExp = exports.findFormDefinitionResponseFormPagesEntriesItemFieldsEntriesItemLookupValueRegExp = exports.findFormDefinitionResponseFormPagesEntriesItemFieldsEntriesItemDataTypeRegExp = exports.findFormDefinitionResponseFormPagesEntriesItemFieldsEntriesItemFieldTypeRegExp = exports.findFormDefinitionBody = exports.findFormDefinitionBodyCriterionDateRegExp = exports.listFormResponse = exports.listFormResponseFormProjectEntriesItemFormEntriesItemValidityDateFromRegExp = exports.listFormResponseFormProjectEntriesItemFormEntriesItemValidityDateToRegExp = exports.listFormResponseFormProjectEntriesItemFormEntriesItemTypeRegExp = exports.listFormBody = exports.listFormBodyCriterionDateRegExp = exports.listComponentAutoNumberResponse = exports.listComponentAutoNumberBody = exports.listComponentMasterWindowResponse = exports.listComponentMasterWindowBody = exports.findProjectResponse = exports.findProjectBody = exports.findUniversalRoleAppointmentResponse = exports.findUniversalRoleAppointmentResponseUniversalRoleAppointmentListEntriesItemAvailableDatetoRegExp = exports.findUniversalRoleAppointmentResponseUniversalRoleAppointmentListEntriesItemAvailableDateFromRegExp = exports.findUniversalRoleAppointmentResponseUniversalRoleAppointmentListEntriesItemCriterionDateRegExp = exports.findUniversalRoleAppointmentBody = exports.findUniversalRoleAppointmentBodyConditionCriterionDateRegExp = exports.findUniversalRoleResponse = exports.findUniversalRoleBody = exports.findPrivateRoleAppointmentResponse = exports.findPrivateRoleAppointmentResponsePrivateRoleAppointmentListEntriesItemCriterionDateRegExp = exports.findPrivateRoleAppointmentResponsePrivateRoleAppointmentListEntriesItemAvailableDatetoRegExp = exports.findPrivateRoleAppointmentResponsePrivateRoleAppointmentListEntriesItemAvailableDateFromRegExp = exports.findPrivateRoleAppointmentBody = void 0;
-exports.findRuleResponse = exports.findRuleResponseRuleDefinitionStepsEntriesItemFlowControlConditionMaxNumberMax = exports.findRuleResponseRuleDefinitionStepsEntriesItemFlowControlConditionMaxNumberMin = exports.findRuleResponseRuleDefinitionStepsEntriesItemFlowControlConditionMinNumberMax = exports.findRuleResponseRuleDefinitionStepsEntriesItemCoordRegExp = exports.findRuleResponseRuleDefinitionStepsEntriesItemCodeRegExp = exports.findRuleResponseRuleDefinitionStepsEntriesItemCodeMax = exports.findRuleResponseRuleDefinitionStepsEntriesItemStepNameMax = exports.findRuleResponseRuleDefinitionCustomMenuEntriesItemNameMax = exports.findRuleResponseRuleDefinitionAvailableDateToRegExp = exports.findRuleResponseRuleDefinitionAvailableDateFromRegExp = exports.findRuleResponseRuleDefinitionRuleNameMax = exports.findRuleResponseRuleDefinitionRuleCodeRegExp = exports.findRuleResponseRuleDefinitionRuleCodeMax = exports.findRuleBody = exports.findRuleBodyCriterionDateRegExp = exports.findRuleBodyRuleCodeRegExp = exports.findRuleBodyRuleCodeMax = exports.createRuleResponse = exports.createRuleBody = void 0;
+exports.findUserResponseUserListEntriesItemCriterionDateRegExp = exports.findUserBody = exports.findUserBodyConditionCriterionDateRegExp = exports.listWorkflowJournalResponse = exports.listWorkflowJournalResponseWorkflowJournalListEntriesItemRuleStepHeaderTypeRegExp = exports.listWorkflowJournalResponseWorkflowJournalListEntriesItemRuleEffectorTypeRegExpOne = exports.listWorkflowJournalResponseWorkflowJournalListEntriesItemCreateDateRegExp = exports.listWorkflowJournalBody = exports.findWorkflowTaskResponse = exports.findWorkflowTaskResponseWorkflowTaskListEntriesItemRuleStepHeaderTypeRegExp = exports.findWorkflowTaskResponseWorkflowTaskListEntriesItemDeprivedRuleStepHeaderTypeRegExp = exports.findWorkflowTaskResponseWorkflowTaskListEntriesItemEffectDateRegExp = exports.findWorkflowTaskResponseWorkflowTaskListEntriesItemRuleEffectorTypeRegExpOne = exports.findWorkflowTaskResponseWorkflowTaskListEntriesItemStateRegExp = exports.findWorkflowTaskBody = exports.getWorkflowInfoResponse = exports.getWorkflowInfoResponseWorkflowInfoLastOperateDateRegExp = exports.getWorkflowInfoResponseWorkflowInfoApplyDateRegExp = exports.getWorkflowInfoResponseWorkflowInfoApprovedDateRegExp = exports.getWorkflowInfoResponseWorkflowInfoCreateDateRegExp = exports.getWorkflowInfoResponseWorkflowInfoCriterionDateRegExp = exports.getWorkflowInfoResponseWorkflowInfoCurrentRuleStepHeaderListEntriesItemTypeRegExp = exports.getWorkflowInfoBody = exports.docRetractResponse = exports.docRetractBody = exports.docRemandResponse = exports.docRemandBody = exports.docApproveResponse = exports.docApproveBody = exports.docStartResponse = exports.docStartBody = exports.docStartBodyCriterionDateRegExp = exports.docDraftResponse = exports.docDraftBody = exports.docDraftBodyCriterionDateRegExp = exports.selectWorkflowMessageResponse = exports.selectWorkflowMessageBody = exports.countListWorkflowMessageResponse = exports.countListWorkflowMessageBody = exports.countWorkflowMessageResponse = exports.countWorkflowMessageBody = exports.openDocBody = exports.addDocReferenceResponse = exports.addDocReferenceBody = exports.listDocReferencerResponse = exports.listDocReferencerResponseDocHeaderListEntriesItemCriterionDateRegExp = exports.listDocReferencerBody = exports.getDocReferenceResponse = exports.getDocReferenceResponseDocHeaderCriterionDateRegExp = exports.getDocReferenceBody = void 0;
+exports.findPrivateRoleAppointmentResponsePrivateRoleAppointmentListEntriesItemAvailableDateToRegExp = exports.findPrivateRoleAppointmentResponsePrivateRoleAppointmentListEntriesItemAvailableDateFromRegExp = exports.findPrivateRoleAppointmentBody = exports.findPrivateRoleAppointmentBodyConditionCriterionDateRegExp = exports.findPrivateRoleResponse = exports.findPrivateRoleResponsePrivateRoleListEntriesItemCandidateListEntriesItemCriterionDateRegExp = exports.findPrivateRoleBody = exports.findDeprivationAppointmentResponse = exports.findDeprivationAppointmentResponseDeprivationAppointmentListEntriesItemCriterionDateRegExp = exports.findDeprivationAppointmentResponseDeprivationAppointmentListEntriesItemAvailableDateToRegExp = exports.findDeprivationAppointmentResponseDeprivationAppointmentListEntriesItemAvailableDateFromRegExp = exports.findDeprivationAppointmentBody = exports.findDeprivationAppointmentBodyConditionCriterionDateRegExp = exports.findDelegationAppointmentResponse = exports.findDelegationAppointmentResponseDelegationAppointmentListEntriesItemCriterionDateRegExp = exports.findDelegationAppointmentResponseDelegationAppointmentListEntriesItemAvailableDateToRegExp = exports.findDelegationAppointmentResponseDelegationAppointmentListEntriesItemAvailableDateFromRegExp = exports.findDelegationAppointmentBody = exports.findDelegationAppointmentBodyConditionCriterionDateRegExp = exports.findProxyAppointmentResponse = exports.findProxyAppointmentResponseProxyAppointmentListEntriesItemCriterionDateRegExp = exports.findProxyAppointmentResponseProxyAppointmentListEntriesItemAvailableDateToRegExp = exports.findProxyAppointmentResponseProxyAppointmentListEntriesItemAvailableDateFromRegExp = exports.findProxyAppointmentBody = exports.findProxyAppointmentBodyConditionCriterionDateRegExp = exports.findProxyApplyAppointmentResponse = exports.findProxyApplyAppointmentResponseProxyApplicationAppointmentListEntriesItemCriterionDateRegExp = exports.findProxyApplyAppointmentResponseProxyApplicationAppointmentListEntriesItemAvailableDateToRegExp = exports.findProxyApplyAppointmentResponseProxyApplicationAppointmentListEntriesItemAvailableDateFromRegExp = exports.findProxyApplyAppointmentBody = exports.findProxyApplyAppointmentBodyConditionCriterionDateRegExp = exports.findUnitAppointmentResponse = exports.findUnitAppointmentResponseUnitAppointmentListEntriesItemCriterionDateRegExp = exports.findUnitAppointmentResponseUnitAppointmentListEntriesItemAvailableDateToRegExp = exports.findUnitAppointmentResponseUnitAppointmentListEntriesItemAvailableDateFromRegExp = exports.findUnitAppointmentBody = exports.findUnitAppointmentBodyConditionCriterionDateRegExp = exports.findSectionRoleGroupResponse = exports.findSectionRoleGroupBody = exports.findSectionRoleResponse = exports.findSectionRoleBody = exports.findSectionRoleBodyConditionCriterionDateRegExp = exports.findUnitResponse = exports.findUnitResponseUnitListEntriesItemAvailableDateToRegExp = exports.findUnitResponseUnitListEntriesItemAvailableDateFromRegExp = exports.findUnitResponseUnitListEntriesItemValidityDateToRegExp = exports.findUnitResponseUnitListEntriesItemValidityDateFromRegExp = exports.findUnitBody = exports.findUnitBodyConditionCriterionDateRegExp = exports.findUserResponse = void 0;
+exports.findRuleBodyCriterionDateRegExp = exports.findRuleBodyRuleCodeRegExp = exports.findRuleBodyRuleCodeMax = exports.createRuleResponse = exports.createRuleBody = exports.createRuleBodyRuleDefinitionStepsEntriesItemFlowControlConditionMaxNumberMax = exports.createRuleBodyRuleDefinitionStepsEntriesItemFlowControlConditionMaxNumberMin = exports.createRuleBodyRuleDefinitionStepsEntriesItemFlowControlConditionMinNumberMax = exports.createRuleBodyRuleDefinitionStepsEntriesItemCoordRegExp = exports.createRuleBodyRuleDefinitionStepsEntriesItemCodeRegExp = exports.createRuleBodyRuleDefinitionStepsEntriesItemCodeMax = exports.createRuleBodyRuleDefinitionStepsEntriesItemStepNameMax = exports.createRuleBodyRuleDefinitionCustomMenuEntriesItemNameMax = exports.createRuleBodyRuleDefinitionAvailableDateToRegExp = exports.createRuleBodyRuleDefinitionAvailableDateFromRegExp = exports.createRuleBodyRuleDefinitionRuleNameMax = exports.createRuleBodyRuleDefinitionRuleCodeRegExp = exports.createRuleBodyRuleDefinitionRuleCodeMax = exports.notAdminGetVersionResponse = exports.notAdminGetVersionBody = exports.listPublicFolderInfoResponse = exports.listPublicFolderInfoBody = exports.listPublicFolderInfoBodyCriterionDateRegExp = exports.findFormDefinitionResponse = exports.findFormDefinitionResponseFormPagesEntriesItemFieldsEntriesItemDateFormatRegExp = exports.findFormDefinitionResponseFormPagesEntriesItemFieldsEntriesItemLookupValueRegExp = exports.findFormDefinitionBody = exports.findFormDefinitionBodyCriterionDateRegExp = exports.listFormResponse = exports.listFormResponseFormProjectEntriesItemFormEntriesItemValidityDateFromRegExp = exports.listFormResponseFormProjectEntriesItemFormEntriesItemValidityDateToRegExp = exports.listFormResponseFormProjectEntriesItemFormEntriesItemTypeRegExp = exports.listFormBody = exports.listFormBodyCriterionDateRegExp = exports.listComponentAutoNumberResponse = exports.listComponentAutoNumberBody = exports.listComponentMasterWindowResponse = exports.listComponentMasterWindowBody = exports.findProjectResponse = exports.findProjectBody = exports.findUniversalRoleAppointmentResponse = exports.findUniversalRoleAppointmentResponseUniversalRoleAppointmentListEntriesItemAvailableDateToRegExp = exports.findUniversalRoleAppointmentResponseUniversalRoleAppointmentListEntriesItemAvailableDateFromRegExp = exports.findUniversalRoleAppointmentResponseUniversalRoleAppointmentListEntriesItemCriterionDateRegExp = exports.findUniversalRoleAppointmentBody = exports.findUniversalRoleAppointmentBodyConditionCriterionDateRegExp = exports.findUniversalRoleResponse = exports.findUniversalRoleBody = exports.findPrivateRoleAppointmentResponse = exports.findPrivateRoleAppointmentResponsePrivateRoleAppointmentListEntriesItemCriterionDateRegExp = void 0;
+exports.findRuleResponse = exports.findRuleResponseRuleDefinitionStepsEntriesItemFlowControlConditionMaxNumberMax = exports.findRuleResponseRuleDefinitionStepsEntriesItemFlowControlConditionMaxNumberMin = exports.findRuleResponseRuleDefinitionStepsEntriesItemFlowControlConditionMinNumberMax = exports.findRuleResponseRuleDefinitionStepsEntriesItemCoordRegExp = exports.findRuleResponseRuleDefinitionStepsEntriesItemCodeRegExp = exports.findRuleResponseRuleDefinitionStepsEntriesItemCodeMax = exports.findRuleResponseRuleDefinitionStepsEntriesItemStepNameMax = exports.findRuleResponseRuleDefinitionCustomMenuEntriesItemNameMax = exports.findRuleResponseRuleDefinitionAvailableDateToRegExp = exports.findRuleResponseRuleDefinitionAvailableDateFromRegExp = exports.findRuleResponseRuleDefinitionRuleNameMax = exports.findRuleResponseRuleDefinitionRuleCodeRegExp = exports.findRuleResponseRuleDefinitionRuleCodeMax = exports.findRuleBody = void 0;
 /**
  * Generated by orval v7.21.0 🍺
  * Do not edit manually.
@@ -27,26 +27,26 @@ exports.getDocResponse = zod_1.z.object({
         "criterionDate": zod_1.z.string().regex(exports.getDocResponseDocCriterionDateRegExp).optional().describe('基準日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。'),
         "formCode": zod_1.z.string().optional().describe('フォームコード'),
         "listNames": zod_1.z.object({
-            "listNames1": zod_1.z.string().optional(),
-            "listNames2": zod_1.z.string().optional(),
-            "listNames3": zod_1.z.string().optional(),
-            "listNames4": zod_1.z.string().optional(),
-            "listNames5": zod_1.z.string().optional(),
-            "listNames6": zod_1.z.string().optional(),
-            "listNames7": zod_1.z.string().optional(),
-            "listNames8": zod_1.z.string().optional(),
-            "listNames9": zod_1.z.string().optional(),
-            "listNames10": zod_1.z.string().optional(),
-            "listNames11": zod_1.z.string().optional(),
-            "listNames12": zod_1.z.string().optional(),
-            "listNames13": zod_1.z.string().optional(),
-            "listNames14": zod_1.z.string().optional(),
-            "listNames15": zod_1.z.string().optional(),
-            "listNames16": zod_1.z.string().optional(),
-            "listNames17": zod_1.z.string().optional(),
-            "listNames18": zod_1.z.string().optional(),
-            "listNames19": zod_1.z.string().optional(),
-            "listNames20": zod_1.z.string().optional()
+            "listName1": zod_1.z.string().optional(),
+            "listName2": zod_1.z.string().optional(),
+            "listName3": zod_1.z.string().optional(),
+            "listName4": zod_1.z.string().optional(),
+            "listName5": zod_1.z.string().optional(),
+            "listName6": zod_1.z.string().optional(),
+            "listName7": zod_1.z.string().optional(),
+            "listName8": zod_1.z.string().optional(),
+            "listName9": zod_1.z.string().optional(),
+            "listName10": zod_1.z.string().optional(),
+            "listName11": zod_1.z.string().optional(),
+            "listName12": zod_1.z.string().optional(),
+            "listName13": zod_1.z.string().optional(),
+            "listName14": zod_1.z.string().optional(),
+            "listName15": zod_1.z.string().optional(),
+            "listName16": zod_1.z.string().optional(),
+            "listName17": zod_1.z.string().optional(),
+            "listName18": zod_1.z.string().optional(),
+            "listName19": zod_1.z.string().optional(),
+            "listName20": zod_1.z.string().optional()
         }).describe('件名項目').optional(),
         "adminNo": zod_1.z.string().optional().describe('書類管理番号')
     }).optional().describe('書類情報'),
@@ -84,26 +84,26 @@ exports.prepareDocRequestResponse = zod_1.z.object({
         "criterionDate": zod_1.z.string().regex(exports.prepareDocRequestResponseDocCriterionDateRegExp).optional().describe('基準日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。'),
         "formCode": zod_1.z.string().optional().describe('フォームコード'),
         "listNames": zod_1.z.object({
-            "listNames1": zod_1.z.string().optional(),
-            "listNames2": zod_1.z.string().optional(),
-            "listNames3": zod_1.z.string().optional(),
-            "listNames4": zod_1.z.string().optional(),
-            "listNames5": zod_1.z.string().optional(),
-            "listNames6": zod_1.z.string().optional(),
-            "listNames7": zod_1.z.string().optional(),
-            "listNames8": zod_1.z.string().optional(),
-            "listNames9": zod_1.z.string().optional(),
-            "listNames10": zod_1.z.string().optional(),
-            "listNames11": zod_1.z.string().optional(),
-            "listNames12": zod_1.z.string().optional(),
-            "listNames13": zod_1.z.string().optional(),
-            "listNames14": zod_1.z.string().optional(),
-            "listNames15": zod_1.z.string().optional(),
-            "listNames16": zod_1.z.string().optional(),
-            "listNames17": zod_1.z.string().optional(),
-            "listNames18": zod_1.z.string().optional(),
-            "listNames19": zod_1.z.string().optional(),
-            "listNames20": zod_1.z.string().optional()
+            "listName1": zod_1.z.string().optional(),
+            "listName2": zod_1.z.string().optional(),
+            "listName3": zod_1.z.string().optional(),
+            "listName4": zod_1.z.string().optional(),
+            "listName5": zod_1.z.string().optional(),
+            "listName6": zod_1.z.string().optional(),
+            "listName7": zod_1.z.string().optional(),
+            "listName8": zod_1.z.string().optional(),
+            "listName9": zod_1.z.string().optional(),
+            "listName10": zod_1.z.string().optional(),
+            "listName11": zod_1.z.string().optional(),
+            "listName12": zod_1.z.string().optional(),
+            "listName13": zod_1.z.string().optional(),
+            "listName14": zod_1.z.string().optional(),
+            "listName15": zod_1.z.string().optional(),
+            "listName16": zod_1.z.string().optional(),
+            "listName17": zod_1.z.string().optional(),
+            "listName18": zod_1.z.string().optional(),
+            "listName19": zod_1.z.string().optional(),
+            "listName20": zod_1.z.string().optional()
         }).describe('件名項目').optional(),
         "adminNo": zod_1.z.string().optional().describe('書類管理番号')
     }).optional().describe('書類情報'),
@@ -126,25 +126,25 @@ exports.addDocBody = zod_1.z.object({
         "entryList": zod_1.z.object({
             "entries": zod_1.z.array(zod_1.z.object({
                 "name": zod_1.z.string().nullable().describe('フィールド名<br>\n\*「新規書類データ作成API」で取得した値を指定\n'),
-                "fieldType": zod_1.z.string().nullable().describe('フィールドタイプ<br>\n\*「新規書類データ作成API」で取得した値を指定\n'),
+                "fieldType": zod_1.z.enum(['INTEGERFIELD', 'NUMBERFIELD', 'STAMPFIELD', 'TEXTFIELD', 'TEXTAREA', 'YEARFIELD', 'MONTHFIELD', 'DAYFIELD', 'WEEKFIELD', 'DATEFIELD', 'COMBOBOX', 'LISTBOX', 'RADIOBUTTON', 'CHECKBOX', 'BARCODEFIELD', 'HIDDENFIELD', 'UPLOAD', 'IMAGEUPLOAD']).nullable().describe('フィールドタイプ<br>\n\*「新規書類データ作成API」で取得した値を指定\n'),
                 "fieldId": zod_1.z.string().describe('フィールドID<br>\n\*「新規書類データ作成API」で取得した値を指定\n'),
-                "dataType": zod_1.z.string().nullable().describe('データタイプ<br>\n\*「新規書類データ作成API」で取得した値を指定\n'),
+                "dataType": zod_1.z.enum(['BOOLEAN', 'DATE', 'DATETIME', 'DECIMAL', 'INT', 'LONG', 'STRING', 'TEXT']).nullable().describe('データタイプ<br>\n\*「新規書類データ作成API」で取得した値を指定\n'),
                 "dataValue": zod_1.z.object({
                     "value": zod_1.z.unknown().optional().describe('フィールドの値<br>\n\*任意の値を指定<br>\n\*通常フィールドの場合のみ\n'),
                     "entryList": zod_1.z.object({
                         "entries": zod_1.z.array(zod_1.z.object({
                             "name": zod_1.z.string().nullish().describe('フィールド名'),
-                            "fieldType": zod_1.z.string().nullish().describe('フィールドタイプ'),
+                            "fieldType": zod_1.z.enum(['INTEGERFIELD', 'NUMBERFIELD', 'STAMPFIELD', 'TEXTFIELD', 'TEXTAREA', 'YEARFIELD', 'MONTHFIELD', 'DAYFIELD', 'WEEKFIELD', 'DATEFIELD', 'COMBOBOX', 'LISTBOX', 'RADIOBUTTON', 'CHECKBOX', 'BARCODEFIELD', 'HIDDENFIELD', 'UPLOAD', 'IMAGEUPLOAD']).nullish().describe('フィールドタイプ'),
                             "fieldId": zod_1.z.string().nullish().describe('フィールドID'),
-                            "dataType": zod_1.z.string().nullish().describe('データタイプ'),
+                            "dataType": zod_1.z.enum(['BOOLEAN', 'DATE', 'DATETIME', 'DECIMAL', 'INT', 'LONG', 'STRING', 'TEXT']).nullish().describe('データタイプ'),
                             "dataValue": zod_1.z.object({
                                 "value": zod_1.z.unknown().nullish(),
                                 "entryList": zod_1.z.object({
                                     "entries": zod_1.z.array(zod_1.z.object({
                                         "name": zod_1.z.string().nullish(),
-                                        "fieldType": zod_1.z.string().nullish(),
+                                        "fieldType": zod_1.z.enum(['INTEGERFIELD', 'NUMBERFIELD', 'STAMPFIELD', 'TEXTFIELD', 'TEXTAREA', 'YEARFIELD', 'MONTHFIELD', 'DAYFIELD', 'WEEKFIELD', 'DATEFIELD', 'COMBOBOX', 'LISTBOX', 'RADIOBUTTON', 'CHECKBOX', 'BARCODEFIELD', 'HIDDENFIELD', 'UPLOAD', 'IMAGEUPLOAD']).nullish(),
                                         "fieldId": zod_1.z.string().nullish(),
-                                        "dataType": zod_1.z.string().nullish(),
+                                        "dataType": zod_1.z.enum(['BOOLEAN', 'DATE', 'DATETIME', 'DECIMAL', 'INT', 'LONG', 'STRING', 'TEXT']).nullish(),
                                         "dataValue": zod_1.z.object({
                                             "value": zod_1.z.unknown().nullish(),
                                             "entryList": zod_1.z.object({
@@ -158,7 +158,7 @@ exports.addDocBody = zod_1.z.object({
                     }).optional().describe('表明細フィールドのリスト<br>\n\*任意の値を指定<br>\n\*表明細フィールドの場合のみ\n')
                 }).optional().describe('フィールドの値<br>\n\*任意の値を指定\n')
             })).optional()
-        }).describe('各フィールドのデータ')
+        }).describe('各フィールドのデータ<br>\n\*フォームの各コントロールに対応する fieldId の要素が必要（欠けるとエラーになる場合がある）\n')
     }).describe('書類データ<br>\n\*「新規書類データ作成API」で取得した値に対し、任意の値を指定\n'),
     "id": zod_1.z.number().nullish().describe('書類ID<br>\n\*nullを指定\n'),
     "formCode": zod_1.z.string().describe('フォームコード<br>\n\*「新規書類データ作成API」で取得した値を指定\n'),
@@ -180,26 +180,26 @@ exports.addDocResponse = zod_1.z.object({
         "criterionDate": zod_1.z.string().regex(exports.addDocResponseDocCriterionDateRegExp).optional().describe('基準日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。'),
         "formCode": zod_1.z.string().optional().describe('フォームコード'),
         "listNames": zod_1.z.object({
-            "listNames1": zod_1.z.string().optional(),
-            "listNames2": zod_1.z.string().optional(),
-            "listNames3": zod_1.z.string().optional(),
-            "listNames4": zod_1.z.string().optional(),
-            "listNames5": zod_1.z.string().optional(),
-            "listNames6": zod_1.z.string().optional(),
-            "listNames7": zod_1.z.string().optional(),
-            "listNames8": zod_1.z.string().optional(),
-            "listNames9": zod_1.z.string().optional(),
-            "listNames10": zod_1.z.string().optional(),
-            "listNames11": zod_1.z.string().optional(),
-            "listNames12": zod_1.z.string().optional(),
-            "listNames13": zod_1.z.string().optional(),
-            "listNames14": zod_1.z.string().optional(),
-            "listNames15": zod_1.z.string().optional(),
-            "listNames16": zod_1.z.string().optional(),
-            "listNames17": zod_1.z.string().optional(),
-            "listNames18": zod_1.z.string().optional(),
-            "listNames19": zod_1.z.string().optional(),
-            "listNames20": zod_1.z.string().optional()
+            "listName1": zod_1.z.string().optional(),
+            "listName2": zod_1.z.string().optional(),
+            "listName3": zod_1.z.string().optional(),
+            "listName4": zod_1.z.string().optional(),
+            "listName5": zod_1.z.string().optional(),
+            "listName6": zod_1.z.string().optional(),
+            "listName7": zod_1.z.string().optional(),
+            "listName8": zod_1.z.string().optional(),
+            "listName9": zod_1.z.string().optional(),
+            "listName10": zod_1.z.string().optional(),
+            "listName11": zod_1.z.string().optional(),
+            "listName12": zod_1.z.string().optional(),
+            "listName13": zod_1.z.string().optional(),
+            "listName14": zod_1.z.string().optional(),
+            "listName15": zod_1.z.string().optional(),
+            "listName16": zod_1.z.string().optional(),
+            "listName17": zod_1.z.string().optional(),
+            "listName18": zod_1.z.string().optional(),
+            "listName19": zod_1.z.string().optional(),
+            "listName20": zod_1.z.string().optional()
         }).describe('件名項目').optional(),
         "adminNo": zod_1.z.string().optional().describe('書類管理番号')
     }).optional().describe('書類情報'),
@@ -222,25 +222,25 @@ exports.updateDocBody = zod_1.z.object({
         "entryList": zod_1.z.object({
             "entries": zod_1.z.array(zod_1.z.object({
                 "name": zod_1.z.string().nullable().describe('フィールド名<br>\n\*「書類データ取得API」または「新規書類データ保存API」で取得した値を指定\n'),
-                "fieldType": zod_1.z.string().nullable().describe('フィールドタイプ<br>\n\*「書類データ取得API」または「新規書類データ保存API」で取得した値を指定\n'),
+                "fieldType": zod_1.z.enum(['INTEGERFIELD', 'NUMBERFIELD', 'STAMPFIELD', 'TEXTFIELD', 'TEXTAREA', 'YEARFIELD', 'MONTHFIELD', 'DAYFIELD', 'WEEKFIELD', 'DATEFIELD', 'COMBOBOX', 'LISTBOX', 'RADIOBUTTON', 'CHECKBOX', 'BARCODEFIELD', 'HIDDENFIELD', 'UPLOAD', 'IMAGEUPLOAD']).nullable().describe('フィールドタイプ<br>\n\*「書類データ取得API」または「新規書類データ保存API」で取得した値を指定\n'),
                 "fieldId": zod_1.z.string().describe('フィールドID<br>\n\*「書類データ取得API」または「新規書類データ保存API」で取得した値を指定\n'),
-                "dataType": zod_1.z.string().nullable().describe('データタイプ<br>\n\*「書類データ取得API」または「新規書類データ保存API」で取得した値を指定\n'),
+                "dataType": zod_1.z.enum(['BOOLEAN', 'DATE', 'DATETIME', 'DECIMAL', 'INT', 'LONG', 'STRING', 'TEXT']).nullable().describe('データタイプ<br>\n\*「書類データ取得API」または「新規書類データ保存API」で取得した値を指定\n'),
                 "dataValue": zod_1.z.object({
                     "value": zod_1.z.unknown().optional().describe('フィールドの値<br>\n\*任意の値を指定<br>\n\*通常フィールドの場合のみ\n'),
                     "entryList": zod_1.z.object({
                         "entries": zod_1.z.array(zod_1.z.object({
                             "name": zod_1.z.string().nullish().describe('フィールド名'),
-                            "fieldType": zod_1.z.string().nullish().describe('フィールドタイプ'),
+                            "fieldType": zod_1.z.enum(['INTEGERFIELD', 'NUMBERFIELD', 'STAMPFIELD', 'TEXTFIELD', 'TEXTAREA', 'YEARFIELD', 'MONTHFIELD', 'DAYFIELD', 'WEEKFIELD', 'DATEFIELD', 'COMBOBOX', 'LISTBOX', 'RADIOBUTTON', 'CHECKBOX', 'BARCODEFIELD', 'HIDDENFIELD', 'UPLOAD', 'IMAGEUPLOAD']).nullish().describe('フィールドタイプ'),
                             "fieldId": zod_1.z.string().nullish().describe('フィールドID'),
-                            "dataType": zod_1.z.string().nullish().describe('データタイプ'),
+                            "dataType": zod_1.z.enum(['BOOLEAN', 'DATE', 'DATETIME', 'DECIMAL', 'INT', 'LONG', 'STRING', 'TEXT']).nullish().describe('データタイプ'),
                             "dataValue": zod_1.z.object({
                                 "value": zod_1.z.unknown().nullish(),
                                 "entryList": zod_1.z.object({
                                     "entries": zod_1.z.array(zod_1.z.object({
                                         "name": zod_1.z.string().nullish(),
-                                        "fieldType": zod_1.z.string().nullish(),
+                                        "fieldType": zod_1.z.enum(['INTEGERFIELD', 'NUMBERFIELD', 'STAMPFIELD', 'TEXTFIELD', 'TEXTAREA', 'YEARFIELD', 'MONTHFIELD', 'DAYFIELD', 'WEEKFIELD', 'DATEFIELD', 'COMBOBOX', 'LISTBOX', 'RADIOBUTTON', 'CHECKBOX', 'BARCODEFIELD', 'HIDDENFIELD', 'UPLOAD', 'IMAGEUPLOAD']).nullish(),
                                         "fieldId": zod_1.z.string().nullish(),
-                                        "dataType": zod_1.z.string().nullish(),
+                                        "dataType": zod_1.z.enum(['BOOLEAN', 'DATE', 'DATETIME', 'DECIMAL', 'INT', 'LONG', 'STRING', 'TEXT']).nullish(),
                                         "dataValue": zod_1.z.object({
                                             "value": zod_1.z.unknown().nullish(),
                                             "entryList": zod_1.z.object({
@@ -276,26 +276,26 @@ exports.updateDocResponse = zod_1.z.object({
         "criterionDate": zod_1.z.string().regex(exports.updateDocResponseDocCriterionDateRegExp).optional().describe('基準日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。'),
         "formCode": zod_1.z.string().optional().describe('フォームコード'),
         "listNames": zod_1.z.object({
-            "listNames1": zod_1.z.string().optional(),
-            "listNames2": zod_1.z.string().optional(),
-            "listNames3": zod_1.z.string().optional(),
-            "listNames4": zod_1.z.string().optional(),
-            "listNames5": zod_1.z.string().optional(),
-            "listNames6": zod_1.z.string().optional(),
-            "listNames7": zod_1.z.string().optional(),
-            "listNames8": zod_1.z.string().optional(),
-            "listNames9": zod_1.z.string().optional(),
-            "listNames10": zod_1.z.string().optional(),
-            "listNames11": zod_1.z.string().optional(),
-            "listNames12": zod_1.z.string().optional(),
-            "listNames13": zod_1.z.string().optional(),
-            "listNames14": zod_1.z.string().optional(),
-            "listNames15": zod_1.z.string().optional(),
-            "listNames16": zod_1.z.string().optional(),
-            "listNames17": zod_1.z.string().optional(),
-            "listNames18": zod_1.z.string().optional(),
-            "listNames19": zod_1.z.string().optional(),
-            "listNames20": zod_1.z.string().optional()
+            "listName1": zod_1.z.string().optional(),
+            "listName2": zod_1.z.string().optional(),
+            "listName3": zod_1.z.string().optional(),
+            "listName4": zod_1.z.string().optional(),
+            "listName5": zod_1.z.string().optional(),
+            "listName6": zod_1.z.string().optional(),
+            "listName7": zod_1.z.string().optional(),
+            "listName8": zod_1.z.string().optional(),
+            "listName9": zod_1.z.string().optional(),
+            "listName10": zod_1.z.string().optional(),
+            "listName11": zod_1.z.string().optional(),
+            "listName12": zod_1.z.string().optional(),
+            "listName13": zod_1.z.string().optional(),
+            "listName14": zod_1.z.string().optional(),
+            "listName15": zod_1.z.string().optional(),
+            "listName16": zod_1.z.string().optional(),
+            "listName17": zod_1.z.string().optional(),
+            "listName18": zod_1.z.string().optional(),
+            "listName19": zod_1.z.string().optional(),
+            "listName20": zod_1.z.string().optional()
         }).describe('件名項目').optional(),
         "adminNo": zod_1.z.string().optional().describe('書類管理番号')
     }).optional().describe('書類情報'),
@@ -316,15 +316,20 @@ exports.selectDocBodyConditionDateConditionFromRegExp = new RegExp('^((19|20)[0-
 exports.selectDocBodyConditionDateConditionToRegExp = new RegExp('^((19|20)[0-9]{2})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9]) (2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9]) JST$');
 exports.selectDocBody = zod_1.z.object({
     "docView": zod_1.z.object({
-        "formCode": zod_1.z.string().describe('フォームコード'),
+        "formCode": zod_1.z.string().optional().describe('フォームコード<br>\n\*列項目に書類のフィールド（FIELD）または表明細フィールド（GROUP_FIELD）を指定する場合は必須<br>\n\*書類ID・書類状態などのシステム列だけを指定する場合は不要\n'),
         "groupFormFieldId": zod_1.z.string().optional().describe('表明細フィールドID'),
         "columnList": zod_1.z.object({
             "entries": zod_1.z.array(zod_1.z.object({
-                "type": zod_1.z.enum(['FIELD', 'GROUP_FIELD', 'DOC_ID', 'DOC_ADMIN_NO', 'DOC_LISTNAME1', 'DOC_LISTNAME2', 'DOC_LISTNAME3', 'DOC_LISTNAME4', 'DOC_LISTNAME5', 'DOC_LISTNAME6', 'DOC_LISTNAME7', 'DOC_LISTNAME8', 'DOC_LISTNAME9', 'DOC_LISTNAME10', 'DOC_LISTNAME11', 'DOC_LISTNAME12', 'DOC_LISTNAME13', 'DOC_LISTNAME14', 'DOC_LISTNAME15', 'DOC_LISTNAME16', 'DOC_LISTNAME17', 'DOC_LISTNAME18', 'DOC_LISTNAME19', 'DOC_LISTNAME20', 'DOC_FULL_VERSION', 'DOC_EXIST_ATTACHMENT', 'DOC_EXIST_COMMENT', 'DOC_REFERENCE_STATUS', 'FORM_CODE', 'FORM_NAME', 'FORM_STATUS', 'RULE_CODE', 'RULE_NAME', 'FLOW_STATUS', 'FLOW_CURRENTSTEP_NAME', 'FLOW_CRITERION_DATE', 'FLOW_FIX_DATE', 'CREATOR_UNIT_CODE', 'CREATOR_UNIT_NAME', 'CREATOR_ROLE_CODE', 'CREATOR_ROLE_NAME', 'CREATOR_USER_CODE', 'CREATOR_USER_NAME', 'CREATE_DATE', 'APPLY_UNIT_CODE', 'APPLY_UNIT_NAME', 'APPLY_ROLE_CODE', 'APPLY_ROLE_NAME', 'APPLY_USER_CODE', 'APPLY_USER_NAME', 'APPLY_DATE', 'LASTOPERATOR_UNIT_CODE', 'LASTOPERATOR_UNIT_NAME', 'LASTOPERATOR_ROLE_CODE', 'LASTOPERATOR_ROLE_NAME', 'LASTOPERATOR_USER_CODE', 'LASTOPERATOR_USER_NAME', 'LASTOPERATOR_DATE']).describe('列項目タイプ<br>\n指定可能な値<br>\n|パラメータ|値|\n|----|----|\n|FIELD|書類のフィールド|\n|GROUP_FIELD|書類の表明細フィールド|\n|DOC_ID|書類ID|\n|DOC_ADMIN_NO|書類管理番号|\n|DOC_LISTNAME1～20|件名項目１～２０|\n|DOC_FULL_VERSION|書類バージョン|\n|DOC_EXIST_ATTACHMENT|添付有無|\n|DOC_EXIST_COMMENT|コメント有無|\n|DOC_REFERENCE_STATUS|関連書類有無|\n|FORM_CODE|フォームコード|\n|FORM_NAME|フォーム名|\n|FORM_STATUS|フォームバージョン|\n|RULE_CODE|回付ルールコード|\n|RULE_NAME|回付ルール名|\n|FLOW_STATUS|書類状態|\n|FLOW_CURRENTSTEP_NAME|現在のステップ|\n|FLOW_CRITERION_DATE|基準日|\n|FLOW_FIX_DATE|承認完了日時|\n|CREATOR_UNIT_CODE|作成者組織コード|\n|CREATOR_UNIT_NAME|作成者組織名|\n|CREATOR_ROLE_CODE|作成者ロールコード|\n|CREATOR_ROLE_NAME|作成者ロール名|\n|CREATOR_USER_CODE|作成者コード|\n|CREATOR_USER_NAME|作成者名|\n|CREATE_DATE|作成日時|\n|APPLY_UNIT_CODE|申請者組織コード|\n|APPLY_UNIT_NAME|申請者組織名|\n|APPLY_ROLE_CODE|申請者ロールコード|\n|APPLY_ROLE_NAME|申請者ロール名|\n|APPLY_USER_CODE|申請者コード|\n|APPLY_USER_NAME|申請者名|\n|APPLY_DATE|申請日時|\n|LASTOPERATOR_UNIT_CODE|最終処理者組織コード|\n|LASTOPERATOR_UNIT_NAME|最終処理者組織名|\n|LASTOPERATOR_ROLE_CODE|最終処理者ロールコード|\n|LASTOPERATOR_ROLE_NAME|最終処理者ロール名|\n|LASTOPERATOR_USER_CODE|最終処理者コード|\n|LASTOPERATOR_USER_NAME|最終処理者名|\n|LASTOPERATOR_DATE|最終処理日時|\n').optional(),
+                "type": zod_1.z.enum(['FIELD', 'GROUP_FIELD', 'DOC_ID', 'DOC_ADMIN_NO', 'DOC_LISTNAME1', 'DOC_LISTNAME2', 'DOC_LISTNAME3', 'DOC_LISTNAME4', 'DOC_LISTNAME5', 'DOC_LISTNAME6', 'DOC_LISTNAME7', 'DOC_LISTNAME8', 'DOC_LISTNAME9', 'DOC_LISTNAME10', 'DOC_LISTNAME11', 'DOC_LISTNAME12', 'DOC_LISTNAME13', 'DOC_LISTNAME14', 'DOC_LISTNAME15', 'DOC_LISTNAME16', 'DOC_LISTNAME17', 'DOC_LISTNAME18', 'DOC_LISTNAME19', 'DOC_LISTNAME20', 'DOC_FULL_VERSION', 'DOC_EXIST_ATTACHMENT', 'DOC_EXIST_COMMENT', 'DOC_REFERENCE_STATUS', 'FORM_CODE', 'FORM_NAME', 'FORM_VERSION', 'RULE_CODE', 'RULE_NAME', 'FLOW_STATUS', 'FLOW_CURRENTSTEP_NAME', 'FLOW_CRITERION_DATE', 'FLOW_FIX_DATE', 'CREATOR_UNIT_CODE', 'CREATOR_UNIT_NAME', 'CREATOR_ROLE_CODE', 'CREATOR_ROLE_NAME', 'CREATOR_USER_CODE', 'CREATOR_USER_NAME', 'CREATE_DATE', 'APPLY_UNIT_CODE', 'APPLY_UNIT_NAME', 'APPLY_ROLE_CODE', 'APPLY_ROLE_NAME', 'APPLY_USER_CODE', 'APPLY_USER_NAME', 'APPLY_DATE', 'LASTOPERATOR_UNIT_CODE', 'LASTOPERATOR_UNIT_NAME', 'LASTOPERATOR_ROLE_CODE', 'LASTOPERATOR_ROLE_NAME', 'LASTOPERATOR_USER_CODE', 'LASTOPERATOR_USER_NAME', 'LASTOPERATE_DATE']).describe('列項目タイプ<br>\n指定可能な値<br>\n|パラメータ|値|\n|----|----|\n|FIELD|書類のフィールド|\n|GROUP_FIELD|書類の表明細フィールド|\n|DOC_ID|書類ID|\n|DOC_ADMIN_NO|書類管理番号|\n|DOC_LISTNAME1～20|件名項目１～２０|\n|DOC_FULL_VERSION|書類バージョン|\n|DOC_EXIST_ATTACHMENT|添付有無|\n|DOC_EXIST_COMMENT|コメント有無|\n|DOC_REFERENCE_STATUS|関連書類有無|\n|FORM_CODE|フォームコード|\n|FORM_NAME|フォーム名|\n|FORM_VERSION|フォームバージョン|\n|RULE_CODE|回付ルールコード|\n|RULE_NAME|回付ルール名|\n|FLOW_STATUS|書類状態|\n|FLOW_CURRENTSTEP_NAME|現在のステップ|\n|FLOW_CRITERION_DATE|基準日|\n|FLOW_FIX_DATE|承認完了日時|\n|CREATOR_UNIT_CODE|作成者組織コード|\n|CREATOR_UNIT_NAME|作成者組織名|\n|CREATOR_ROLE_CODE|作成者ロールコード|\n|CREATOR_ROLE_NAME|作成者ロール名|\n|CREATOR_USER_CODE|作成者コード|\n|CREATOR_USER_NAME|作成者名|\n|CREATE_DATE|作成日時|\n|APPLY_UNIT_CODE|申請者組織コード|\n|APPLY_UNIT_NAME|申請者組織名|\n|APPLY_ROLE_CODE|申請者ロールコード|\n|APPLY_ROLE_NAME|申請者ロール名|\n|APPLY_USER_CODE|申請者コード|\n|APPLY_USER_NAME|申請者名|\n|APPLY_DATE|申請日時|\n|LASTOPERATOR_UNIT_CODE|最終処理者組織コード|\n|LASTOPERATOR_UNIT_NAME|最終処理者組織名|\n|LASTOPERATOR_ROLE_CODE|最終処理者ロールコード|\n|LASTOPERATOR_ROLE_NAME|最終処理者ロール名|\n|LASTOPERATOR_USER_CODE|最終処理者コード|\n|LASTOPERATOR_USER_NAME|最終処理者名|\n|LASTOPERATE_DATE|最終処理日時|\n').optional(),
                 "fieldId": zod_1.z.string().optional().describe('フィールドID')
             })).optional()
         }).optional().describe('列項目リスト')
     }).optional().describe('一覧のビュー定義'),
+    "pagination": zod_1.z.object({
+        "pageNo": zod_1.z.number().optional().describe('ページ番号（1 始まり）'),
+        "offset": zod_1.z.number().optional().describe('オフセット'),
+        "pageSize": zod_1.z.number().optional().describe('1 ページの表示件数')
+    }).describe('ページング条件<br>\n\*指定する場合は pageNo と pageSize の両方を指定<br>\n\*省略した場合、または pageSize が 0 以下の場合は全件を返す\n').optional(),
     "condition": zod_1.z.object({
         "criterionDate": zod_1.z.string().regex(exports.selectDocBodyConditionCriterionDateRegExp).optional().describe('基準日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。'),
         "userCode": zod_1.z.string().optional().describe('ユーザーコード'),
@@ -346,7 +351,7 @@ exports.selectDocBody = zod_1.z.object({
             "monthTo": zod_1.z.number().optional().describe('日付指定(月)の終了月数<br>\n\*0～999\n現在月から何ヶ月遡るかを指定する月数（過去の月）。\n例: 0 = 今月まで、1 = 先月まで\n現在月が2025-12の場合、monthTo=0は2025-12を意味します。\nmonthFromより小さい値を指定してください（monthFrom=3, monthTo=0で3ヶ月前から今月までの範囲）。\n'),
             "monthDayFrom": zod_1.z.number().optional().describe('日付指定(月)の開始日<br>\n\*1～31<br>\n\*存在しない日の場合は月末に丸められます\nmonthFromで指定した月の範囲内で、特定の日付を指定します（日数ではなく日付）。\n例: monthDayFrom=15で各月の15日から、monthDayFrom=1で各月の1日から\nmonthFrom=3, monthDayFrom=15の場合、3ヶ月前の15日を意味します。\n'),
             "monthDayTo": zod_1.z.unknown().optional().describe('日付指定(月)の終了日<br>\n\*1～31<br>\n\*存在しない日の場合は月末に丸められます\nmonthToで指定した月の範囲内で、特定の日付を指定します（日数ではなく日付）。\n例: monthDayTo=20で各月の20日まで、monthDayTo=31で各月の末日まで\nmonthTo=0 monthDayTo=20の場合、今月の20日を意味します。\n')
-        }).optional().describe('日付条件'),
+        }).optional().describe('日付条件<br>\n\*type と範囲指定（rangeType および対応する from\/to・dayFrom\/dayTo・monthFrom\/monthTo）は両方必要で、片方だけだと AWPDOC0007 になる<br>\n\*相対月指定では monthFrom と monthDayFrom は対で指定\n'),
         "relativeConditionList": zod_1.z.object({
             "entries": zod_1.z.array(zod_1.z.object({
                 "type": zod_1.z.enum(['OWNER', 'CREATE', 'APPLY', 'APPROVE', 'PROXY_APPROVE', 'PRINCIPAL_APPROVE', 'REJECT', 'CANCEL']).describe('関連タイプ<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|OWNER|書類オーナ|\n|CREATE|作成|\n|APPLY|申請|\n|APPROVE|承認|\n|PROXY_APPROVE|代理承認|\n|PRINCIPAL_APPROVE|被代理承認|\n|REJECT|却下|\n|CANCEL|取下げ|\n').optional(),
@@ -355,7 +360,7 @@ exports.selectDocBody = zod_1.z.object({
                 "userType": zod_1.z.enum(['UNIT_APPOINTMENT', 'UNIT', 'USER', 'LOGIN_USER']).describe('ユーザータイプ<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|UNIT_APPOINTMENT|組織+ユーザ|\n|UNIT|組織|\n|USER|ユーザ|\n|LOGIN_USER|ログインユーザ(WebAPI実行ユーザ)|\n').optional()
             })).optional()
         }).optional().describe('ユーザー関連条件リスト'),
-        "logicalOperatorType": zod_1.z.string().optional().describe('フィールド値条件全体の AND \/ OR<br>\n\*AND または OR を指定\n'),
+        "logicalOperatorType": zod_1.z.enum(['AND', 'OR']).optional().describe('フィールド値条件全体の AND \/ OR<br>\n\*AND または OR を指定\n'),
         "fieldValueConditionList": zod_1.z.object({
             "entries": zod_1.z.array(zod_1.z.object({
                 "type": zod_1.z.enum(['FIELD', 'LISTNAME1', 'LISTNAME2', 'LISTNAME3', 'LISTNAME4', 'LISTNAME5', 'LISTNAME6', 'LISTNAME7', 'LISTNAME8', 'LISTNAME9', 'LISTNAME10', 'LISTNAME11', 'LISTNAME12', 'LISTNAME13', 'LISTNAME14', 'LISTNAME15', 'LISTNAME16', 'LISTNAME17', 'LISTNAME18', 'LISTNAME19', 'LISTNAME20']).describe('フィールド値タイプ<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|FIELD|書類のフィールド|\n|LISTNAME1～20|件名項目１～２０|\n').optional(),
@@ -365,7 +370,7 @@ exports.selectDocBody = zod_1.z.object({
                 "valueFrom": zod_1.z.string().optional().describe('値(From)'),
                 "valueTo": zod_1.z.string().optional().describe('値(To)')
             })).optional()
-        }).optional().describe('フィールド値条件リスト'),
+        }).optional().describe('フィールド値条件リスト<br>\n\*使用できる比較演算子はフィールドの型で制限される（AWPDOC0014、AWPDOC0015）<br>\n\*日付・日時・真偽値のフィールドに対する条件は、エラーにならず無視される\n'),
         "fulltextSearchCondition": zod_1.z.object({
             "logicalOperatorType": zod_1.z.string().optional().describe('全文検索条件全体の AND \/ OR<br>\n\*AND または OR を指定\n'),
             "docContentQuery": zod_1.z.string().optional().describe('書類内容[全文検索]'),
@@ -381,16 +386,17 @@ exports.selectDocResponse = zod_1.z.object({
                 "entryList": zod_1.z.object({
                     "entries": zod_1.z.array(zod_1.z.object({
                         "name": zod_1.z.string().optional().describe('名称'),
-                        "value": zod_1.z.object({}).optional().describe('値')
+                        "value": zod_1.z.unknown().optional().describe('値（文字列・数値・真偽値・日付などのスカラー値）')
                     })).optional()
                 }).optional().describe('エントリのリスト'),
                 "index": zod_1.z.number().optional().describe('レコードインデックス')
             })).optional().describe('レコード')
         }).optional().describe('レコードのリスト'),
+        "totalCount": zod_1.z.number().optional().describe('検索条件に一致した総件数'),
         "fieldList": zod_1.z.object({
             "entries": zod_1.z.array(zod_1.z.object({
                 "name": zod_1.z.string().optional().describe('フィールド名'),
-                "type": zod_1.z.enum(['BOOLEAN', 'DATE', 'DATETIME', 'DECIMAL', 'INT', 'LONG', 'STRING', 'TEXT']).describe('データ型<br>\n|パラメータ|説明|\n|----|----|\n|BOOLEAN|真偽値|\n|DATE|日付|\n|DATETIME|日時|\n|DECIMAL|整数|\n|INT|整数値(int)|\n|LONG|整数値(long)|\n|STRING|文字列|\n|TEXT|テキスト|\n').optional()
+                "type": zod_1.z.enum(['BOOLEAN', 'DATE', 'DATETIME', 'DECIMAL', 'INT', 'LONG', 'STRING', 'TEXT']).describe('データ型<br>\n|パラメータ|説明|\n|----|----|\n|BOOLEAN|真偽値|\n|DATE|日付|\n|DATETIME|日時|\n|DECIMAL|数値|\n|INT|整数値(int)|\n|LONG|整数値(long)|\n|STRING|文字列|\n|TEXT|テキスト|\n').optional()
             })).optional().describe('フィールド')
         }).optional().describe('フィールドのリスト')
     }).optional().describe('結果のセット'),
@@ -811,26 +817,26 @@ exports.getDocReferenceResponse = zod_1.z.object({
         "criterionDate": zod_1.z.string().regex(exports.getDocReferenceResponseDocHeaderCriterionDateRegExp).optional().describe('基準日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。'),
         "formCode": zod_1.z.string().optional().describe('フォームコード'),
         "listNames": zod_1.z.object({
-            "listNames1": zod_1.z.string().optional(),
-            "listNames2": zod_1.z.string().optional(),
-            "listNames3": zod_1.z.string().optional(),
-            "listNames4": zod_1.z.string().optional(),
-            "listNames5": zod_1.z.string().optional(),
-            "listNames6": zod_1.z.string().optional(),
-            "listNames7": zod_1.z.string().optional(),
-            "listNames8": zod_1.z.string().optional(),
-            "listNames9": zod_1.z.string().optional(),
-            "listNames10": zod_1.z.string().optional(),
-            "listNames11": zod_1.z.string().optional(),
-            "listNames12": zod_1.z.string().optional(),
-            "listNames13": zod_1.z.string().optional(),
-            "listNames14": zod_1.z.string().optional(),
-            "listNames15": zod_1.z.string().optional(),
-            "listNames16": zod_1.z.string().optional(),
-            "listNames17": zod_1.z.string().optional(),
-            "listNames18": zod_1.z.string().optional(),
-            "listNames19": zod_1.z.string().optional(),
-            "listNames20": zod_1.z.string().optional()
+            "listName1": zod_1.z.string().optional(),
+            "listName2": zod_1.z.string().optional(),
+            "listName3": zod_1.z.string().optional(),
+            "listName4": zod_1.z.string().optional(),
+            "listName5": zod_1.z.string().optional(),
+            "listName6": zod_1.z.string().optional(),
+            "listName7": zod_1.z.string().optional(),
+            "listName8": zod_1.z.string().optional(),
+            "listName9": zod_1.z.string().optional(),
+            "listName10": zod_1.z.string().optional(),
+            "listName11": zod_1.z.string().optional(),
+            "listName12": zod_1.z.string().optional(),
+            "listName13": zod_1.z.string().optional(),
+            "listName14": zod_1.z.string().optional(),
+            "listName15": zod_1.z.string().optional(),
+            "listName16": zod_1.z.string().optional(),
+            "listName17": zod_1.z.string().optional(),
+            "listName18": zod_1.z.string().optional(),
+            "listName19": zod_1.z.string().optional(),
+            "listName20": zod_1.z.string().optional()
         }).describe('件名項目').optional(),
         "adminNo": zod_1.z.string().optional().describe('書類管理番号')
     }).optional().describe('書類情報'),
@@ -862,26 +868,26 @@ exports.listDocReferencerResponse = zod_1.z.object({
             "criterionDate": zod_1.z.string().regex(exports.listDocReferencerResponseDocHeaderListEntriesItemCriterionDateRegExp).optional().describe('基準日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。'),
             "formCode": zod_1.z.string().optional().describe('フォームコード'),
             "listNames": zod_1.z.object({
-                "listNames1": zod_1.z.string().optional(),
-                "listNames2": zod_1.z.string().optional(),
-                "listNames3": zod_1.z.string().optional(),
-                "listNames4": zod_1.z.string().optional(),
-                "listNames5": zod_1.z.string().optional(),
-                "listNames6": zod_1.z.string().optional(),
-                "listNames7": zod_1.z.string().optional(),
-                "listNames8": zod_1.z.string().optional(),
-                "listNames9": zod_1.z.string().optional(),
-                "listNames10": zod_1.z.string().optional(),
-                "listNames11": zod_1.z.string().optional(),
-                "listNames12": zod_1.z.string().optional(),
-                "listNames13": zod_1.z.string().optional(),
-                "listNames14": zod_1.z.string().optional(),
-                "listNames15": zod_1.z.string().optional(),
-                "listNames16": zod_1.z.string().optional(),
-                "listNames17": zod_1.z.string().optional(),
-                "listNames18": zod_1.z.string().optional(),
-                "listNames19": zod_1.z.string().optional(),
-                "listNames20": zod_1.z.string().optional()
+                "listName1": zod_1.z.string().optional(),
+                "listName2": zod_1.z.string().optional(),
+                "listName3": zod_1.z.string().optional(),
+                "listName4": zod_1.z.string().optional(),
+                "listName5": zod_1.z.string().optional(),
+                "listName6": zod_1.z.string().optional(),
+                "listName7": zod_1.z.string().optional(),
+                "listName8": zod_1.z.string().optional(),
+                "listName9": zod_1.z.string().optional(),
+                "listName10": zod_1.z.string().optional(),
+                "listName11": zod_1.z.string().optional(),
+                "listName12": zod_1.z.string().optional(),
+                "listName13": zod_1.z.string().optional(),
+                "listName14": zod_1.z.string().optional(),
+                "listName15": zod_1.z.string().optional(),
+                "listName16": zod_1.z.string().optional(),
+                "listName17": zod_1.z.string().optional(),
+                "listName18": zod_1.z.string().optional(),
+                "listName19": zod_1.z.string().optional(),
+                "listName20": zod_1.z.string().optional()
             }).describe('件名項目').optional(),
             "adminNo": zod_1.z.string().optional().describe('書類管理番号')
         })).optional().describe('書類情報')
@@ -966,6 +972,11 @@ exports.countListWorkflowMessageResponse = zod_1.z.object({
     }).describe('APIの実行結果').optional()
 });
 exports.selectWorkflowMessageBody = zod_1.z.object({
+    "pagination": zod_1.z.object({
+        "pageNo": zod_1.z.number().optional().describe('ページ番号（1 始まり）'),
+        "offset": zod_1.z.number().optional().describe('オフセット'),
+        "pageSize": zod_1.z.number().optional().describe('1 ページの表示件数')
+    }).describe('ページング条件<br>\n\*指定する場合は pageNo と pageSize の両方を指定<br>\n\*省略した場合、または pageSize が 0 以下の場合は全件を返す\n').optional(),
     "condition": zod_1.z.object({
         "userCode": zod_1.z.string().describe('ユーザーコード'),
         "workflowMessageType": zod_1.z.enum(['APPLY_REQUEST', 'APPROVE_REQUEST', 'CONFIRM_REQUEST', 'PREPARE', 'REMANDED', 'REMIND_EXIST', 'REQUEST_POSSIBLE']).describe('回付情報タイプ<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|APPLY_REQUEST|申請依頼|\n|APPROVE_REQUEST|承認依頼|\n|CONFIRM_REQUEST|報告依頼|\n|PREPARE|下書き|\n|REMANDED|差戻し|\n|REMIND_EXIST|督促あり|\n|REQUEST_POSSIBLE|回付予定|\n')
@@ -973,10 +984,11 @@ exports.selectWorkflowMessageBody = zod_1.z.object({
 });
 exports.selectWorkflowMessageResponse = zod_1.z.object({
     "resultSet": zod_1.z.object({
+        "totalCount": zod_1.z.number().optional().describe('検索条件に一致した総件数'),
         "fieldList": zod_1.z.object({
             "entries": zod_1.z.array(zod_1.z.object({
                 "name": zod_1.z.string().optional().describe('フィールド名'),
-                "type": zod_1.z.enum(['BOOLEAN', 'DATE', 'DATETIME', 'DECIMAL', 'INT', 'LONG', 'STRING', 'TEXT']).describe('データ型<br>\n|パラメータ|説明|\n|----|----|\n|BOOLEAN|真偽値|\n|DATE|日付|\n|DATETIME|日時|\n|DECIMAL|整数|\n|INT|整数値(int)|\n|LONG|整数値(long)|\n|STRING|文字列|\n|TEXT|テキスト|\n').optional()
+                "type": zod_1.z.enum(['BOOLEAN', 'DATE', 'DATETIME', 'DECIMAL', 'INT', 'LONG', 'STRING', 'TEXT']).describe('データ型<br>\n|パラメータ|説明|\n|----|----|\n|BOOLEAN|真偽値|\n|DATE|日付|\n|DATETIME|日時|\n|DECIMAL|数値|\n|INT|整数値(int)|\n|LONG|整数値(long)|\n|STRING|文字列|\n|TEXT|テキスト|\n').optional()
             })).optional().describe('フィールド情報')
         }).optional().describe('フィールド情報一覧'),
         "recordList": zod_1.z.object({
@@ -985,7 +997,7 @@ exports.selectWorkflowMessageResponse = zod_1.z.object({
                 "entryList": zod_1.z.object({
                     "entries": zod_1.z.array(zod_1.z.object({
                         "name": zod_1.z.string().optional().describe('名称'),
-                        "value": zod_1.z.object({}).optional().describe('値')
+                        "value": zod_1.z.unknown().optional().describe('値（文字列・数値・真偽値・日付などのスカラー値）')
                     })).optional().describe('エントリ')
                 }).optional().describe('エントリのリスト')
             })).optional().describe('レコード情報')
@@ -1185,7 +1197,7 @@ exports.findWorkflowTaskBody = zod_1.z.object({
     "condition": zod_1.z.object({
         "docId": zod_1.z.number().describe('書類ID'),
         "ruleStepCode": zod_1.z.string().optional().describe('ステップコード'),
-        "ruleStepType": zod_1.z.enum(['CREATE', 'APPLY', 'APPROVE', 'CONFIRM', 'READ']).optional().describe('ステップ種別<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|CREATE|作成ステップ|\n|APPLY|申請ステップ|\n|APPROVE|承認ステップ|\n|CONFIRM|報告ステップ|\n|READ|閲覧ステップ|\n')
+        "ruleStepType": zod_1.z.enum(['START', 'CREATE', 'APPLY', 'APPROVE', 'AUTOAPPLY', 'OUTPUTDOCDATA', 'CONFIRM', 'READ', 'STORE', 'SWITCH', 'SYNC', 'DISTRIBUTE', 'COLLECTION', 'END']).optional().describe('ステップ種別<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|START|開始ステップ|\n|CREATE|作成ステップ|\n|APPLY|申請ステップ|\n|APPROVE|承認ステップ|\n|AUTOAPPLY|自動申請ステップ|\n|OUTPUTDOCDATA|自動出力ステップ|\n|CONFIRM|報告ステップ|\n|READ|閲覧ステップ|\n|STORE|保管ステップ|\n|SWITCH|分岐開始|\n|SYNC|分岐合流|\n|DISTRIBUTE|並列開始|\n|COLLECTION|並列合流|\n|END|終了ステップ|\n')
     }).describe('回付情報タスクの検索条件')
 });
 exports.findWorkflowTaskResponseWorkflowTaskListEntriesItemStateRegExp = new RegExp('workflow.EnumWorkflowTaskStateType');
@@ -1290,9 +1302,9 @@ exports.findUserBody = zod_1.z.object({
         "loginId": zod_1.z.string().optional().describe('ログインID'),
         "name": zod_1.z.string().optional().describe('ユーザー名'),
         "isAccountLock": zod_1.z.boolean().optional().describe('アカウントロックされているかどうか'),
-        "unitCode": zod_1.z.string().optional().describe('所属組織コード'),
-        "sectionRoleCode": zod_1.z.string().optional().describe('所有セクションロールコード'),
-        "universalRoleCode": zod_1.z.string().optional().describe('所有ユニバーサルロールコード'),
+        "unitCode": zod_1.z.string().optional().describe('所属組織コード<br>\n\*存在しないコードを指定すると、空配列ではなく AWPORG0005 エラーになる\n'),
+        "sectionRoleCode": zod_1.z.string().optional().describe('所有セクションロールコード<br>\n\*存在しないコードを指定すると、空配列ではなく AWPORG0005 エラーになる\n'),
+        "universalRoleCode": zod_1.z.string().optional().describe('所有ユニバーサルロールコード<br>\n\*存在しないコードを指定すると、空配列ではなく AWPORG0005 エラーになる\n'),
         "reserveItem1": zod_1.z.string().optional().describe('拡張項目1'),
         "reserveItem2": zod_1.z.string().optional().describe('拡張項目2'),
         "reserveItem3": zod_1.z.string().optional().describe('拡張項目3'),
@@ -1305,27 +1317,25 @@ exports.findUserBody = zod_1.z.object({
         "reserveItem10": zod_1.z.string().optional().describe('拡張項目10'),
         "columnValueConditionList": zod_1.z.object({
             "entries": zod_1.z.array(zod_1.z.object({
-                "column": zod_1.z.enum(['Code', 'ImportId', 'Name', 'LocalizedName', 'LocaleName', 'Kana', 'LoginId', 'MailAddress', 'StampName', 'Remarks', 'AvailableDateFrom', 'AvailableDateTo', 'ReserveItem1', 'ReserveItem2', 'ReserveItem3', 'ReserveItem4', 'ReserveItem5', 'ReserveItem6', 'ReserveItem7', 'ReserveItem8', 'ReserveItem9', 'ReserveItem10']).optional().describe('フィールド値タイプ<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|Code|コード|\n|ImportId|インポートコード|\n|Name|名称|\n|LocalizedName|ローカル名称|\n|LocaleName|ロケール名|\n|Kana|カナ|\n|LoginId|ログインID|\n|MailAddress|メールアドレス|\n|StampName|印影名|\n|Remarks|備考|\n|AvailableDateFrom|運用開始日|\n|AvailableDateTo|運用終了日|\n|ReserveItem1～10|拡張項目1～10|\n'),
-                "compareOperatorType": zod_1.z.enum(['EQUAL', 'LESS_THAN', 'LESS_EQUAL', 'GREATER_THAN', 'GREATER_EQUAL', 'NOT_EQUAL', 'LIKE', 'NOT_LIKE', 'START_WITH', 'END_WITH', 'BETWEEN', 'EMPTY', 'NOT_EMPTY']).describe('比較演算子<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|EQUAL|～と等しい|\n|LESS_THAN|～より小さい|\n|LESS_EQUAL|～以下|\n|GREATER_THAN|～より大きい|\n|GREATER_EQUAL|～以上|\n|NOT_EQUAL|～と異なる|\n|LIKE|～を含む|\n|NOT_LIKE|～を含まない|\n|START_WITH|～から始まる|\n|END_WITH|～で終わる|\n|BETWEEN|～と～の間|\n|EMPTY|未入力|\n|NOT_EMPTY|入力されている|\n').optional(),
+                "column": zod_1.z.enum(['Code', 'ImportId', 'Name', 'LocalizedName', 'LocaleName', 'Kana', 'LoginId', 'MailAddress', 'StampName', 'Remarks', 'AvailableDateFrom', 'AvailableDateTo', 'ReserveItem1', 'ReserveItem2', 'ReserveItem3', 'ReserveItem4', 'ReserveItem5', 'ReserveItem6', 'ReserveItem7', 'ReserveItem8', 'ReserveItem9', 'ReserveItem10']).describe('フィールド値タイプ<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|Code|コード|\n|ImportId|インポートコード|\n|Name|名称|\n|LocalizedName|ローカル名称|\n|LocaleName|ロケール名|\n|Kana|カナ|\n|LoginId|ログインID|\n|MailAddress|メールアドレス|\n|StampName|印影名|\n|Remarks|備考|\n|AvailableDateFrom|運用開始日|\n|AvailableDateTo|運用終了日|\n|ReserveItem1～10|拡張項目1～10|\n'),
+                "compareOperatorType": zod_1.z.enum(['EQUAL', 'LESS_THAN', 'LESS_EQUAL', 'GREATER_THAN', 'GREATER_EQUAL', 'NOT_EQUAL', 'LIKE', 'NOT_LIKE', 'START_WITH', 'END_WITH', 'BETWEEN', 'EMPTY', 'NOT_EMPTY']).describe('比較演算子<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|EQUAL|～と等しい|\n|LESS_THAN|～より小さい|\n|LESS_EQUAL|～以下|\n|GREATER_THAN|～より大きい|\n|GREATER_EQUAL|～以上|\n|NOT_EQUAL|～と異なる|\n|LIKE|～を含む|\n|NOT_LIKE|～を含まない|\n|START_WITH|～から始まる|\n|END_WITH|～で終わる|\n|BETWEEN|～と～の間|\n|EMPTY|未入力|\n|NOT_EMPTY|入力されている|\n').describe('比較演算子<br>\n\*組織系の検索では BETWEEN は指定不可（AWPORG0015 で拒否される）\n'),
                 "value": zod_1.z.string().optional().describe('値')
             })).optional().describe('任意検索条件'),
-            "logicalOperator": zod_1.z.string().optional().describe('任意検索全体のAND \/ OR<br>\n\*AND または OR を指定\n')
+            "logicalOperator": zod_1.z.enum(['AND', 'OR']).optional().describe('任意検索全体のAND \/ OR<br>\n\*columnValueConditionList を指定する場合は必須（省略するとエラーになる）\n')
         }).optional().describe('任意検索条件一覧'),
         "criterionDate": zod_1.z.string().regex(exports.findUserBodyConditionCriterionDateRegExp).describe('基準日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。')
     }).optional().describe('ユーザー検索条件')
 });
-exports.findUserResponseUserListEntriesItemValidityDateToRegExp = new RegExp('^((19|20)[0-9]{2})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9]) (2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9]) JST$');
-exports.findUserResponseUserListEntriesItemAvailableDateToRegExp = new RegExp('^((19|20)[0-9]{2})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9]) (2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9]) JST$');
-exports.findUserResponseUserListEntriesItemAvailableDateFromRegExp = new RegExp('^((19|20)[0-9]{2})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9]) (2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9]) JST$');
-exports.findUserResponseUserListEntriesItemValidityDateFromRegExp = new RegExp('^((19|20)[0-9]{2})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9]) (2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9]) JST$');
+exports.findUserResponseUserListEntriesItemCriterionDateRegExp = new RegExp('^((19|20)[0-9]{2})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9]) (2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9]) JST$');
 exports.findUserResponse = zod_1.z.object({
     "userList": zod_1.z.object({
         "entries": zod_1.z.array(zod_1.z.object({
-            "name": zod_1.z.string().describe('ユーザー名称'),
-            "diplayLanguage": zod_1.z.string().optional().describe('表示言語<br>\n以下のいずれかを指定<br>\nauto：ブラウザ設定に従う<br>\nja：日本語<br>\nen：英語<br>\nzh_CN：中文（簡体）<br>\nzh_TW：中文（繁体）\n'),
+            "id": zod_1.z.number().optional().describe('ユーザーのid'),
+            "criterionDate": zod_1.z.string().regex(exports.findUserResponseUserListEntriesItemCriterionDateRegExp).optional().describe('基準日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付与します。'),
+            "name": zod_1.z.string().optional().describe('ユーザー名称'),
+            "displayLanguage": zod_1.z.string().optional().describe('表示言語<br>\nauto：ブラウザ設定に従う<br>\nja：日本語<br>\nen：英語<br>\nzh_CN：中文（簡体）<br>\nzh_TW：中文（繁体）\n'),
             "localeName": zod_1.z.string().optional().describe('ローカル名称の言語名'),
             "localizedName": zod_1.z.string().optional().describe('ローカル名称'),
-            "password": zod_1.z.string().describe('パスワード'),
             "reserveItems": zod_1.z.object({
                 "reserveItem1": zod_1.z.string().optional(),
                 "reserveItem2": zod_1.z.string().optional(),
@@ -1348,19 +1358,19 @@ exports.findUserResponse = zod_1.z.object({
                 "reserveItem19": zod_1.z.string().optional(),
                 "reserveItem20": zod_1.z.string().optional()
             }).describe('拡張項目').optional(),
-            "validityDateTo": zod_1.z.string().regex(exports.findUserResponseUserListEntriesItemValidityDateToRegExp).optional().describe('履歴終了日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。'),
-            "loginId": zod_1.z.string().describe('ログインID'),
-            "code": zod_1.z.string().describe('ユーザーコード'),
+            "validityDateTo": zod_1.z.string().optional().describe('履歴終了日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。'),
+            "loginId": zod_1.z.string().optional().describe('ログインID'),
+            "code": zod_1.z.string().optional().describe('ユーザーコード'),
             "kana": zod_1.z.string().optional().describe('ユーザー名称カナ'),
-            "availableDateTo": zod_1.z.string().regex(exports.findUserResponseUserListEntriesItemAvailableDateToRegExp).optional().describe('適用終了日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。'),
+            "availableDateTo": zod_1.z.string().optional().describe('適用終了日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。'),
             "stampName": zod_1.z.string().optional().describe('印影'),
             "mailAddress": zod_1.z.string().optional().describe('メールアドレス'),
             "remarks": zod_1.z.string().optional().describe('備考'),
             "importCode": zod_1.z.string().optional().describe('インポートコード'),
-            "availableDateFrom": zod_1.z.string().regex(exports.findUserResponseUserListEntriesItemAvailableDateFromRegExp).optional().describe('適用開始日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。'),
-            "validityDateFrom": zod_1.z.string().regex(exports.findUserResponseUserListEntriesItemValidityDateFromRegExp).optional().describe('履歴開始日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。'),
-            "isNeedStampImage": zod_1.z.string().optional(),
-            "isForceChangePassword": zod_1.z.boolean().optional().describe('次回ログイン時にパスワード変更を求めるかどうか<br>\n\*true の指定は無効\n'),
+            "availableDateFrom": zod_1.z.string().optional().describe('適用開始日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。'),
+            "validityDateFrom": zod_1.z.string().optional().describe('履歴開始日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。'),
+            "isNeedStampImage": zod_1.z.boolean().optional().describe('印影画像が必要かどうか（非推奨）'),
+            "isForceChangePassword": zod_1.z.boolean().optional().describe('次回ログイン時にパスワード変更を求めるかどうか'),
             "isAccountLock": zod_1.z.boolean().optional().describe('アカウントロックフラグ')
         })).optional().describe('ユーザー参照一覧')
     }).optional().describe('ユーザー参照結果一覧'),
@@ -1381,15 +1391,15 @@ exports.findUnitBody = zod_1.z.object({
     "condition": zod_1.z.object({
         "code": zod_1.z.string().optional().describe('組織コード'),
         "name": zod_1.z.string().optional().describe('組織名称'),
-        "parentCode": zod_1.z.string().nullish().describe('親組織コード'),
+        "parentCode": zod_1.z.string().nullish().describe('親組織コード<br>\n\*null または未指定の場合は親組織で絞り込まない（ルート直下の意味ではない）<br>\n\*指定する場合は criterionDate も必須（省略するとエラーになる）\n'),
         "importCode": zod_1.z.string().optional().describe('インポート組織コード'),
         "columnValueConditionList": zod_1.z.object({
             "entries": zod_1.z.array(zod_1.z.object({
-                "column": zod_1.z.enum(['Code', 'ImportId', 'Name', 'LocalizedName', 'LocaleName', 'Kana', 'LoginId', 'MailAddress', 'StampName', 'Remarks', 'AvailableDateFrom', 'AvailableDateTo', 'ReserveItem1', 'ReserveItem2', 'ReserveItem3', 'ReserveItem4', 'ReserveItem5', 'ReserveItem6', 'ReserveItem7', 'ReserveItem8', 'ReserveItem9', 'ReserveItem10']).optional().describe('フィールド値タイプ<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|Code|コード|\n|ImportId|インポートコード|\n|Name|名称|\n|LocalizedName|ローカル名称|\n|LocaleName|ロケール名|\n|Kana|カナ|\n|LoginId|ログインID|\n|MailAddress|メールアドレス|\n|StampName|印影名|\n|Remarks|備考|\n|AvailableDateFrom|運用開始日|\n|AvailableDateTo|運用終了日|\n|ReserveItem1～10|拡張項目1～10|\n'),
-                "compareOperatorType": zod_1.z.enum(['EQUAL', 'LESS_THAN', 'LESS_EQUAL', 'GREATER_THAN', 'GREATER_EQUAL', 'NOT_EQUAL', 'LIKE', 'NOT_LIKE', 'START_WITH', 'END_WITH', 'BETWEEN', 'EMPTY', 'NOT_EMPTY']).describe('比較演算子<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|EQUAL|～と等しい|\n|LESS_THAN|～より小さい|\n|LESS_EQUAL|～以下|\n|GREATER_THAN|～より大きい|\n|GREATER_EQUAL|～以上|\n|NOT_EQUAL|～と異なる|\n|LIKE|～を含む|\n|NOT_LIKE|～を含まない|\n|START_WITH|～から始まる|\n|END_WITH|～で終わる|\n|BETWEEN|～と～の間|\n|EMPTY|未入力|\n|NOT_EMPTY|入力されている|\n').optional(),
+                "column": zod_1.z.enum(['Code', 'ImportId', 'Name', 'OfficialName', 'LocalizedName', 'LocaleName', 'Remarks', 'AvailableDateFrom', 'AvailableDateTo', 'ValidityDateFrom', 'ValidityDateTo', 'ReserveItem1', 'ReserveItem2', 'ReserveItem3', 'ReserveItem4', 'ReserveItem5', 'ReserveItem6', 'ReserveItem7', 'ReserveItem8', 'ReserveItem9', 'ReserveItem10']).describe('フィールド値タイプ<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|Code|コード|\n|ImportId|インポートコード|\n|Name|名称|\n|OfficialName|正式名称|\n|LocalizedName|ローカル名称|\n|LocaleName|ロケール名|\n|Remarks|備考|\n|AvailableDateFrom|運用開始日|\n|AvailableDateTo|運用終了日|\n|ValidityDateFrom|履歴開始日|\n|ValidityDateTo|履歴終了日|\n|ReserveItem1～10|拡張項目1～10|\n'),
+                "compareOperatorType": zod_1.z.enum(['EQUAL', 'LESS_THAN', 'LESS_EQUAL', 'GREATER_THAN', 'GREATER_EQUAL', 'NOT_EQUAL', 'LIKE', 'NOT_LIKE', 'START_WITH', 'END_WITH', 'BETWEEN', 'EMPTY', 'NOT_EMPTY']).describe('比較演算子<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|EQUAL|～と等しい|\n|LESS_THAN|～より小さい|\n|LESS_EQUAL|～以下|\n|GREATER_THAN|～より大きい|\n|GREATER_EQUAL|～以上|\n|NOT_EQUAL|～と異なる|\n|LIKE|～を含む|\n|NOT_LIKE|～を含まない|\n|START_WITH|～から始まる|\n|END_WITH|～で終わる|\n|BETWEEN|～と～の間|\n|EMPTY|未入力|\n|NOT_EMPTY|入力されている|\n').describe('比較演算子<br>\n\*組織系の検索では BETWEEN は指定不可（AWPORG0015 で拒否される）\n'),
                 "value": zod_1.z.string().optional().describe('値')
             })).optional().describe('任意検索条件'),
-            "logicalOperator": zod_1.z.string().optional().describe('任意検索全体のAND \/ OR<br>\n\*AND または OR を指定\n')
+            "logicalOperator": zod_1.z.enum(['AND', 'OR']).optional().describe('任意検索全体のAND \/ OR<br>\n\*columnValueConditionList を指定する場合は必須（省略するとエラーになる）\n')
         }).optional().describe('任意検索条件一覧'),
         "criterionDate": zod_1.z.string().regex(exports.findUnitBodyConditionCriterionDateRegExp).optional().describe('基準日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。')
     }).optional().describe('組織検索条件')
@@ -1459,11 +1469,11 @@ exports.findSectionRoleBody = zod_1.z.object({
         "unitCode": zod_1.z.string().optional().describe('組織コード'),
         "columnValueConditionList": zod_1.z.object({
             "entries": zod_1.z.array(zod_1.z.object({
-                "column": zod_1.z.enum(['Code', 'ImportId', 'Name', 'Rank']).optional().describe('フィールド値タイプ<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|Code|コード|\n|ImportId|インポートコード|\n|Name|名称|\n|Rank|ランク|\n'),
-                "compareOperatorType": zod_1.z.enum(['EQUAL', 'LESS_THAN', 'LESS_EQUAL', 'GREATER_THAN', 'GREATER_EQUAL', 'NOT_EQUAL', 'LIKE', 'NOT_LIKE', 'START_WITH', 'END_WITH', 'BETWEEN', 'EMPTY', 'NOT_EMPTY']).describe('比較演算子<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|EQUAL|～と等しい|\n|LESS_THAN|～より小さい|\n|LESS_EQUAL|～以下|\n|GREATER_THAN|～より大きい|\n|GREATER_EQUAL|～以上|\n|NOT_EQUAL|～と異なる|\n|LIKE|～を含む|\n|NOT_LIKE|～を含まない|\n|START_WITH|～から始まる|\n|END_WITH|～で終わる|\n|BETWEEN|～と～の間|\n|EMPTY|未入力|\n|NOT_EMPTY|入力されている|\n').optional(),
+                "column": zod_1.z.enum(['Code', 'ImportId', 'Name', 'Rank']).describe('フィールド値タイプ<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|Code|コード|\n|ImportId|インポートコード|\n|Name|名称|\n|Rank|ランク|\n'),
+                "compareOperatorType": zod_1.z.enum(['EQUAL', 'LESS_THAN', 'LESS_EQUAL', 'GREATER_THAN', 'GREATER_EQUAL', 'NOT_EQUAL', 'LIKE', 'NOT_LIKE', 'START_WITH', 'END_WITH', 'BETWEEN', 'EMPTY', 'NOT_EMPTY']).describe('比較演算子<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|EQUAL|～と等しい|\n|LESS_THAN|～より小さい|\n|LESS_EQUAL|～以下|\n|GREATER_THAN|～より大きい|\n|GREATER_EQUAL|～以上|\n|NOT_EQUAL|～と異なる|\n|LIKE|～を含む|\n|NOT_LIKE|～を含まない|\n|START_WITH|～から始まる|\n|END_WITH|～で終わる|\n|BETWEEN|～と～の間|\n|EMPTY|未入力|\n|NOT_EMPTY|入力されている|\n').describe('比較演算子<br>\n\*組織系の検索では BETWEEN は指定不可（AWPORG0015 で拒否される）\n'),
                 "value": zod_1.z.string().optional().describe('値')
             })).optional().describe('任意検索条件'),
-            "logicalOperator": zod_1.z.string().optional().describe('任意検索全体のAND \/ OR<br>\n\*AND または OR を指定\n')
+            "logicalOperator": zod_1.z.enum(['AND', 'OR']).optional().describe('任意検索全体のAND \/ OR<br>\n\*指定しても無視され、常に AND で結合される\n')
         }).optional().describe('任意検索条件一覧'),
         "criterionDate": zod_1.z.string().regex(exports.findSectionRoleBodyConditionCriterionDateRegExp).optional().describe('基準日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。')
     }).optional().describe('セクションロール検索条件')
@@ -1498,11 +1508,11 @@ exports.findSectionRoleGroupBody = zod_1.z.object({
         "roleCode": zod_1.z.string().optional().describe('セクションロールコード'),
         "columnValueConditionList": zod_1.z.object({
             "entries": zod_1.z.array(zod_1.z.object({
-                "column": zod_1.z.enum(['Code', 'Name', 'SectionRoleCode']).optional().describe('フィールド値タイプ<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|Code|コード|\n|Name|名称|\n|SectionRoleCode|セクションロールコード|\n'),
-                "compareOperatorType": zod_1.z.enum(['EQUAL', 'LESS_THAN', 'LESS_EQUAL', 'GREATER_THAN', 'GREATER_EQUAL', 'NOT_EQUAL', 'LIKE', 'NOT_LIKE', 'START_WITH', 'END_WITH', 'BETWEEN', 'EMPTY', 'NOT_EMPTY']).describe('比較演算子<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|EQUAL|～と等しい|\n|LESS_THAN|～より小さい|\n|LESS_EQUAL|～以下|\n|GREATER_THAN|～より大きい|\n|GREATER_EQUAL|～以上|\n|NOT_EQUAL|～と異なる|\n|LIKE|～を含む|\n|NOT_LIKE|～を含まない|\n|START_WITH|～から始まる|\n|END_WITH|～で終わる|\n|BETWEEN|～と～の間|\n|EMPTY|未入力|\n|NOT_EMPTY|入力されている|\n').optional(),
+                "column": zod_1.z.enum(['Code', 'Name', 'SectionRoleCode']).describe('フィールド値タイプ<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|Code|コード|\n|Name|名称|\n|SectionRoleCode|セクションロールコード|\n'),
+                "compareOperatorType": zod_1.z.enum(['EQUAL', 'LESS_THAN', 'LESS_EQUAL', 'GREATER_THAN', 'GREATER_EQUAL', 'NOT_EQUAL', 'LIKE', 'NOT_LIKE', 'START_WITH', 'END_WITH', 'BETWEEN', 'EMPTY', 'NOT_EMPTY']).describe('比較演算子<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|EQUAL|～と等しい|\n|LESS_THAN|～より小さい|\n|LESS_EQUAL|～以下|\n|GREATER_THAN|～より大きい|\n|GREATER_EQUAL|～以上|\n|NOT_EQUAL|～と異なる|\n|LIKE|～を含む|\n|NOT_LIKE|～を含まない|\n|START_WITH|～から始まる|\n|END_WITH|～で終わる|\n|BETWEEN|～と～の間|\n|EMPTY|未入力|\n|NOT_EMPTY|入力されている|\n').describe('比較演算子<br>\n\*組織系の検索では BETWEEN は指定不可（AWPORG0015 で拒否される）\n'),
                 "value": zod_1.z.string().optional().describe('値')
             })).optional().describe('任意検索条件'),
-            "logicalOperator": zod_1.z.string().optional().describe('任意検索全体のAND \/ OR<br>\n\*AND または OR を指定\n')
+            "logicalOperator": zod_1.z.enum(['AND', 'OR']).optional().describe('任意検索全体のAND \/ OR<br>\n\*columnValueConditionList を指定する場合は必須（省略するとエラーになる）\n')
         }).optional().describe('任意検索条件一覧')
     }).optional().describe('セクションロールグループ検索条件')
 });
@@ -1511,7 +1521,7 @@ exports.findSectionRoleGroupResponse = zod_1.z.object({
         "entries": zod_1.z.array(zod_1.z.object({
             "code": zod_1.z.string().describe('セクションロールグループコード'),
             "name": zod_1.z.string().describe('セッションロールグループ名称'),
-            "sortNo": zod_1.z.string().optional().describe('ソート順序'),
+            "sortNo": zod_1.z.number().optional().describe('ソート順序'),
             "explanation": zod_1.z.string().optional().describe('説明'),
             "roleCodeList": zod_1.z.object({
                 "entries": zod_1.z.array(zod_1.z.object({
@@ -1537,16 +1547,18 @@ exports.findUnitAppointmentBody = zod_1.z.object({
     "condition": zod_1.z.object({
         "userCode": zod_1.z.string().optional().describe('ユーザーコード'),
         "unitCode": zod_1.z.string().optional().describe('組織コード<br>\n\*unitDirection と共に指定\n'),
+        "sectionRoleCode": zod_1.z.string().optional().describe('セクションロールコード'),
+        "isMainUnit": zod_1.z.boolean().optional().describe('主所属組織かどうか<br>\n\*指定する場合は criterionDate も必須（省略すると AWPORG0017 になる）\n'),
         "unitDirection": zod_1.z.enum(['ABSOLUTE', 'ESCALATE', 'CASCADE']).optional().describe('組織の検索種別<br>\n\*unitCode と共に指定<br>\n\*省略時は該当組織のみ<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|ABSOLUTE|対象組織のみ|\n|ESCALATE|対象組織と、組織の上位にある 全ての組織 or 所属を返す|\n|CASCADE|対象組織と、対称組織の配下にある 全ての組織 or 所属を返す|\n'),
         "columnValueConditionList": zod_1.z.object({
             "entries": zod_1.z.array(zod_1.z.object({
-                "column": zod_1.z.enum(['UnitCode', 'UnitName', 'UnitOfficialName', 'UnitValidityDateFrom', 'UnitValidityDateTo', 'UnitAvailableDateFrom', 'UnitAvailableDateTo', 'UserCode', 'UserName', 'UserKana', 'UserLoginId', 'UserMailAddress', 'UserStampName', 'UserAvailableDateFrom', 'UserAvailableDateTo', 'RoleCode', 'RoleName', 'RoleRank', 'ValidityDateFrom', 'ValidityDateTo', 'UnitReserveItem1', 'UnitReserveItem2', 'UnitReserveItem3', 'UnitReserveItem4', 'UnitReserveItem5', 'UnitReserveItem6', 'UnitReserveItem7', 'UnitReserveItem8', 'UnitReserveItem9', 'UnitReserveItem10', 'UserReserveItem1', 'UserReserveItem2', 'UserReserveItem3', 'UserReserveItem4', 'UserReserveItem5', 'UserReserveItem6', 'UserReserveItem7', 'UserReserveItem8', 'UserReserveItem9', 'UserReserveItem10']).optional().describe('フィールド値タイプ<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|UnitCode|組織コード|\n|UnitName|インポートコード|\n|UnitOfficialName|名称|\n|UnitValidityDateFrom|ローカル名称|\n|UnitValidityDateTo|ロケール名|\n|UnitAvailableDateFrom|カナ|\n|UnitAvailableDateTo|ログインID|\n|UserCode|メールアドレス|\n|UserName|印影名|\n|UserKana|備考|\n|UserLoginId|運用開始日|\n|UserMailAddress|運用終了日|\n|UserStampName|説明|\n|UserAvailableDateFrom|コード|\n|UserAvailableDateTo|インポートコード|\n|RoleCode|名称|\n|RoleName|ローカル名称|\n|RoleRank|ロケール名|\n|ValidityDateFrom|カナ|\n|ValidityDateTo|ログインID|\n|UnitReserveItem1～10|組織拡張項目1～10|\n|UserReserveItem1～10|ユーザー拡張項目1～10|\n'),
-                "compareOperatorType": zod_1.z.enum(['EQUAL', 'LESS_THAN', 'LESS_EQUAL', 'GREATER_THAN', 'GREATER_EQUAL', 'NOT_EQUAL', 'LIKE', 'NOT_LIKE', 'START_WITH', 'END_WITH', 'BETWEEN', 'EMPTY', 'NOT_EMPTY']).describe('比較演算子<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|EQUAL|～と等しい|\n|LESS_THAN|～より小さい|\n|LESS_EQUAL|～以下|\n|GREATER_THAN|～より大きい|\n|GREATER_EQUAL|～以上|\n|NOT_EQUAL|～と異なる|\n|LIKE|～を含む|\n|NOT_LIKE|～を含まない|\n|START_WITH|～から始まる|\n|END_WITH|～で終わる|\n|BETWEEN|～と～の間|\n|EMPTY|未入力|\n|NOT_EMPTY|入力されている|\n').optional(),
+                "column": zod_1.z.enum(['UnitCode', 'UnitName', 'UnitOfficialName', 'UnitValidityDateFrom', 'UnitValidityDateTo', 'UnitAvailableDateFrom', 'UnitAvailableDateTo', 'UserCode', 'UserName', 'UserKana', 'UserLoginId', 'UserMailAddress', 'UserStampName', 'UserAvailableDateFrom', 'UserAvailableDateTo', 'RoleCode', 'RoleName', 'RoleRank', 'ValidityDateFrom', 'ValidityDateTo', 'UnitReserveItem1', 'UnitReserveItem2', 'UnitReserveItem3', 'UnitReserveItem4', 'UnitReserveItem5', 'UnitReserveItem6', 'UnitReserveItem7', 'UnitReserveItem8', 'UnitReserveItem9', 'UnitReserveItem10', 'UserReserveItem1', 'UserReserveItem2', 'UserReserveItem3', 'UserReserveItem4', 'UserReserveItem5', 'UserReserveItem6', 'UserReserveItem7', 'UserReserveItem8', 'UserReserveItem9', 'UserReserveItem10']).describe('フィールド値タイプ<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|UnitCode|組織コード|\n|UnitName|組織名称|\n|UnitOfficialName|組織正式名称|\n|UnitValidityDateFrom|組織履歴開始日|\n|UnitValidityDateTo|組織履歴終了日|\n|UnitAvailableDateFrom|組織運用開始日|\n|UnitAvailableDateTo|組織運用終了日|\n|UserCode|ユーザーコード|\n|UserName|ユーザー名称|\n|UserKana|ユーザーカナ|\n|UserLoginId|ログインID|\n|UserMailAddress|メールアドレス|\n|UserStampName|印影名|\n|UserAvailableDateFrom|ユーザー運用開始日|\n|UserAvailableDateTo|ユーザー運用終了日|\n|RoleCode|セクションロールコード|\n|RoleName|セクションロール名称|\n|RoleRank|セクションロールランク|\n|ValidityDateFrom|所属履歴開始日|\n|ValidityDateTo|所属履歴終了日|\n|UnitReserveItem1～10|組織拡張項目1～10|\n|UserReserveItem1～10|ユーザー拡張項目1～10|\n'),
+                "compareOperatorType": zod_1.z.enum(['EQUAL', 'LESS_THAN', 'LESS_EQUAL', 'GREATER_THAN', 'GREATER_EQUAL', 'NOT_EQUAL', 'LIKE', 'NOT_LIKE', 'START_WITH', 'END_WITH', 'BETWEEN', 'EMPTY', 'NOT_EMPTY']).describe('比較演算子<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|EQUAL|～と等しい|\n|LESS_THAN|～より小さい|\n|LESS_EQUAL|～以下|\n|GREATER_THAN|～より大きい|\n|GREATER_EQUAL|～以上|\n|NOT_EQUAL|～と異なる|\n|LIKE|～を含む|\n|NOT_LIKE|～を含まない|\n|START_WITH|～から始まる|\n|END_WITH|～で終わる|\n|BETWEEN|～と～の間|\n|EMPTY|未入力|\n|NOT_EMPTY|入力されている|\n').describe('比較演算子<br>\n\*組織系の検索では BETWEEN は指定不可（AWPORG0015 で拒否される）\n'),
                 "value": zod_1.z.string().optional().describe('値')
             })).optional().describe('任意検索条件'),
-            "logicalOperator": zod_1.z.string().optional().describe('任意検索全体のAND \/ OR<br>\n\*AND または OR を指定\n')
+            "logicalOperator": zod_1.z.enum(['AND', 'OR']).optional().describe('任意検索全体のAND \/ OR<br>\n\*columnValueConditionList を指定する場合は必須（省略するとエラーになる）\n')
         }).optional().describe('任意検索条件一覧'),
-        "criterionDate": zod_1.z.string().regex(exports.findUnitAppointmentBodyConditionCriterionDateRegExp).optional().describe('基準日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。')
+        "criterionDate": zod_1.z.string().regex(exports.findUnitAppointmentBodyConditionCriterionDateRegExp).optional().describe('基準日<br> \*unitCode・userCode・isMainUnit のいずれかを指定する場合は必須（省略すると AWPCMN0001 などのエラーになる）<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。')
     }).optional().describe('組織所属検索条件')
 });
 exports.findUnitAppointmentResponseUnitAppointmentListEntriesItemAvailableDateFromRegExp = new RegExp('^((19|20)[0-9]{2})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9]) (2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9]) JST$');
@@ -1772,11 +1784,11 @@ exports.findPrivateRoleBody = zod_1.z.object({
         "name": zod_1.z.string().optional().describe('プライベートロール名称'),
         "columnValueConditionList": zod_1.z.object({
             "entries": zod_1.z.array(zod_1.z.object({
-                "column": zod_1.z.enum(['Code', 'Name']).optional().describe('フィールド値タイプ<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|Code|コード|\n|Name|名称|\n'),
-                "compareOperatorType": zod_1.z.enum(['EQUAL', 'LESS_THAN', 'LESS_EQUAL', 'GREATER_THAN', 'GREATER_EQUAL', 'NOT_EQUAL', 'LIKE', 'NOT_LIKE', 'START_WITH', 'END_WITH', 'BETWEEN', 'EMPTY', 'NOT_EMPTY']).describe('比較演算子<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|EQUAL|～と等しい|\n|LESS_THAN|～より小さい|\n|LESS_EQUAL|～以下|\n|GREATER_THAN|～より大きい|\n|GREATER_EQUAL|～以上|\n|NOT_EQUAL|～と異なる|\n|LIKE|～を含む|\n|NOT_LIKE|～を含まない|\n|START_WITH|～から始まる|\n|END_WITH|～で終わる|\n|BETWEEN|～と～の間|\n|EMPTY|未入力|\n|NOT_EMPTY|入力されている|\n').optional(),
+                "column": zod_1.z.enum(['Code', 'Name']).describe('フィールド値タイプ<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|Code|コード|\n|Name|名称|\n'),
+                "compareOperatorType": zod_1.z.enum(['EQUAL', 'LESS_THAN', 'LESS_EQUAL', 'GREATER_THAN', 'GREATER_EQUAL', 'NOT_EQUAL', 'LIKE', 'NOT_LIKE', 'START_WITH', 'END_WITH', 'BETWEEN', 'EMPTY', 'NOT_EMPTY']).describe('比較演算子<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|EQUAL|～と等しい|\n|LESS_THAN|～より小さい|\n|LESS_EQUAL|～以下|\n|GREATER_THAN|～より大きい|\n|GREATER_EQUAL|～以上|\n|NOT_EQUAL|～と異なる|\n|LIKE|～を含む|\n|NOT_LIKE|～を含まない|\n|START_WITH|～から始まる|\n|END_WITH|～で終わる|\n|BETWEEN|～と～の間|\n|EMPTY|未入力|\n|NOT_EMPTY|入力されている|\n').describe('比較演算子<br>\n\*組織系の検索では BETWEEN は指定不可（AWPORG0015 で拒否される）\n'),
                 "value": zod_1.z.string().optional().describe('値')
             })).optional().describe('任意検索条件'),
-            "logicalOperator": zod_1.z.unknown().optional().describe('任意検索全体の AND \/ OR<br>\n\*AND または OR を指定\n')
+            "logicalOperator": zod_1.z.enum(['AND', 'OR']).optional().describe('任意検索全体の AND \/ OR<br>\n\*columnValueConditionList を指定する場合は必須（省略するとエラーになる）\n')
         }).optional().describe('任意検索条件一覧')
     }).optional().describe('プライベートロール検索条件')
 });
@@ -1827,17 +1839,17 @@ exports.findPrivateRoleAppointmentBody = zod_1.z.object({
         "candidateCode": zod_1.z.string().optional().describe('候補者のユーザーコード'),
         "columnValueConditionList": zod_1.z.object({
             "entries": zod_1.z.array(zod_1.z.object({
-                "column": zod_1.z.enum(['ValidityDateFrom', 'ValidityDateTo', 'RoleCode', 'RoleName', 'UserCode', 'UserImportCode', 'UserName', 'UserKana', 'UserLoginId', 'UserMailAddress', 'UserStampName', 'UserAvailableDateFrom', 'UserAvailableDateTo', 'UserReserveItem1', 'UserReserveItem2', 'UserReserveItem3', 'UserReserveItem4', 'UserReserveItem5', 'UserReserveItem6', 'UserReserveItem7', 'UserReserveItem8', 'UserReserveItem9', 'UserReserveItem10', 'CandidateCode', 'CandidateImportCode', 'CandidateName', 'CandidateKana', 'CandidateLoginId', 'CandidateMailAddress', 'CandidateStampName', 'CandidateAvailableDateFrom', 'CandidateAvailableDateTo', 'CandidateReserveItem1', 'CandidateReserveItem2', 'CandidateReserveItem3', 'CandidateReserveItem4', 'CandidateReserveItem5', 'CandidateReserveItem6', 'CandidateReserveItem7', 'CandidateReserveItem8', 'CandidateReserveItem9', 'CandidateReserveItem10']).optional().describe('フィールド値タイプ<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|ValidityDateFrom|プライベートロール所属履歴開始日|\n|ValidityDateTo|プライベートロール所属履歴終了日|\n|RoleCode|プライベートロールコード|\n|RoleName|プライベートロール名称|\n|UserCode|ユーザーコード|\n|UserImportCode|ユーザーインポートコード|\n|UserName|ユーザー名称|\n|UserKana|ユーザーカナ|\n|UserLoginId|ユーザーログインID|\n|UserMailAddress|ユーザーメールアドレス|\n|UserStampName|ユーザーの印影上の表示名称|\n|UserAvailableDateFrom|ユーザー運用開始日|\n|UserAvailableDateTo|ユーザー運用終了日|\n|UserReserveItem1|ユーザーの拡張項目１|\n|UserReserveItem2|ユーザーの拡張項目２|\n|UserReserveItem3|ユーザーの拡張項目３|\n|UserReserveItem4|ユーザーの拡張項目４|\n|UserReserveItem5|ユーザーの拡張項目５|\n|UserReserveItem6|ユーザーの拡張項目６|\n|UserReserveItem7|ユーザーの拡張項目７|\n|UserReserveItem8|ユーザーの拡張項目８|\n|UserReserveItem9|ユーザーの拡張項目９|\n|UserReserveItem10|ユーザーの拡張項目１０|\n|CandidateCode|候補者のユーザーコード|\n|CandidateImportCode|候補者インポートコード|\n|CandidateName|候補者のユーザー名称|\n|CandidateKana|候補者カナ|\n|CandidateLoginId|候補者ログインID|\n|CandidateMailAddress|候補者メールアドレス|\n|CandidateStampName|候補者の印影上の表示名称|\n|CandidateAvailableDateFrom|候補者運用開始日|\n|CandidateAvailableDateTo|候補者運用終了日|\n|CandidateReserveItem1|候補者のユーザー拡張項目１|\n|CandidateReserveItem2|候補者のユーザー拡張項目２|\n|CandidateReserveItem3|候補者のユーザー拡張項目３|\n|CandidateReserveItem4|候補者のユーザー拡張項目４|\n|CandidateReserveItem5|候補者のユーザー拡張項目５|\n|CandidateReserveItem6|候補者のユーザー拡張項目６|\n|CandidateReserveItem7|候補者のユーザー拡張項目７|\n|CandidateReserveItem8|候補者のユーザー拡張項目８|\n|CandidateReserveItem9|候補者のユーザー拡張項目９|\n|CandidateReserveItem10|候補者のユーザー拡張項目１０|\n'),
-                "compareOperatorType": zod_1.z.enum(['EQUAL', 'LESS_THAN', 'LESS_EQUAL', 'GREATER_THAN', 'GREATER_EQUAL', 'NOT_EQUAL', 'LIKE', 'NOT_LIKE', 'START_WITH', 'END_WITH', 'BETWEEN', 'EMPTY', 'NOT_EMPTY']).describe('比較演算子<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|EQUAL|～と等しい|\n|LESS_THAN|～より小さい|\n|LESS_EQUAL|～以下|\n|GREATER_THAN|～より大きい|\n|GREATER_EQUAL|～以上|\n|NOT_EQUAL|～と異なる|\n|LIKE|～を含む|\n|NOT_LIKE|～を含まない|\n|START_WITH|～から始まる|\n|END_WITH|～で終わる|\n|BETWEEN|～と～の間|\n|EMPTY|未入力|\n|NOT_EMPTY|入力されている|\n').optional(),
+                "column": zod_1.z.enum(['ValidityDateFrom', 'ValidityDateTo', 'RoleCode', 'RoleName', 'UserCode', 'UserImportId', 'UserName', 'UserKana', 'UserLoginId', 'UserMailAddress', 'UserStampName', 'UserAvailableDateFrom', 'UserAvailableDateTo', 'UserReserveItem1', 'UserReserveItem2', 'UserReserveItem3', 'UserReserveItem4', 'UserReserveItem5', 'UserReserveItem6', 'UserReserveItem7', 'UserReserveItem8', 'UserReserveItem9', 'UserReserveItem10', 'CandidateCode', 'CandidateImportId', 'CandidateName', 'CandidateKana', 'CandidateLoginId', 'CandidateMailAddress', 'CandidateStampName', 'CandidateAvailableDateFrom', 'CandidateAvailableDateTo', 'CandidateReserveItem1', 'CandidateReserveItem2', 'CandidateReserveItem3', 'CandidateReserveItem4', 'CandidateReserveItem5', 'CandidateReserveItem6', 'CandidateReserveItem7', 'CandidateReserveItem8', 'CandidateReserveItem9', 'CandidateReserveItem10']).describe('フィールド値タイプ<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|ValidityDateFrom|プライベートロール所属履歴開始日|\n|ValidityDateTo|プライベートロール所属履歴終了日|\n|RoleCode|プライベートロールコード|\n|RoleName|プライベートロール名称|\n|UserCode|ユーザーコード|\n|UserImportId|ユーザーインポートコード|\n|UserName|ユーザー名称|\n|UserKana|ユーザーカナ|\n|UserLoginId|ユーザーログインID|\n|UserMailAddress|ユーザーメールアドレス|\n|UserStampName|ユーザーの印影上の表示名称|\n|UserAvailableDateFrom|ユーザー運用開始日|\n|UserAvailableDateTo|ユーザー運用終了日|\n|UserReserveItem1|ユーザーの拡張項目１|\n|UserReserveItem2|ユーザーの拡張項目２|\n|UserReserveItem3|ユーザーの拡張項目３|\n|UserReserveItem4|ユーザーの拡張項目４|\n|UserReserveItem5|ユーザーの拡張項目５|\n|UserReserveItem6|ユーザーの拡張項目６|\n|UserReserveItem7|ユーザーの拡張項目７|\n|UserReserveItem8|ユーザーの拡張項目８|\n|UserReserveItem9|ユーザーの拡張項目９|\n|UserReserveItem10|ユーザーの拡張項目１０|\n|CandidateCode|候補者のユーザーコード|\n|CandidateImportId|候補者インポートコード|\n|CandidateName|候補者のユーザー名称|\n|CandidateKana|候補者カナ|\n|CandidateLoginId|候補者ログインID|\n|CandidateMailAddress|候補者メールアドレス|\n|CandidateStampName|候補者の印影上の表示名称|\n|CandidateAvailableDateFrom|候補者運用開始日|\n|CandidateAvailableDateTo|候補者運用終了日|\n|CandidateReserveItem1|候補者のユーザー拡張項目１|\n|CandidateReserveItem2|候補者のユーザー拡張項目２|\n|CandidateReserveItem3|候補者のユーザー拡張項目３|\n|CandidateReserveItem4|候補者のユーザー拡張項目４|\n|CandidateReserveItem5|候補者のユーザー拡張項目５|\n|CandidateReserveItem6|候補者のユーザー拡張項目６|\n|CandidateReserveItem7|候補者のユーザー拡張項目７|\n|CandidateReserveItem8|候補者のユーザー拡張項目８|\n|CandidateReserveItem9|候補者のユーザー拡張項目９|\n|CandidateReserveItem10|候補者のユーザー拡張項目１０|\n'),
+                "compareOperatorType": zod_1.z.enum(['EQUAL', 'LESS_THAN', 'LESS_EQUAL', 'GREATER_THAN', 'GREATER_EQUAL', 'NOT_EQUAL', 'LIKE', 'NOT_LIKE', 'START_WITH', 'END_WITH', 'BETWEEN', 'EMPTY', 'NOT_EMPTY']).describe('比較演算子<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|EQUAL|～と等しい|\n|LESS_THAN|～より小さい|\n|LESS_EQUAL|～以下|\n|GREATER_THAN|～より大きい|\n|GREATER_EQUAL|～以上|\n|NOT_EQUAL|～と異なる|\n|LIKE|～を含む|\n|NOT_LIKE|～を含まない|\n|START_WITH|～から始まる|\n|END_WITH|～で終わる|\n|BETWEEN|～と～の間|\n|EMPTY|未入力|\n|NOT_EMPTY|入力されている|\n').describe('比較演算子<br>\n\*組織系の検索では BETWEEN は指定不可（AWPORG0015 で拒否される）\n'),
                 "value": zod_1.z.string().optional().describe('値')
             })).optional().describe('任意検索条件'),
-            "logicalOperator": zod_1.z.unknown().optional().describe('任意検索全体の AND \/ OR<br>\n\*AND または OR を指定\n')
+            "logicalOperator": zod_1.z.enum(['AND', 'OR']).optional().describe('任意検索全体の AND \/ OR<br>\n\*columnValueConditionList を指定する場合は必須（省略するとエラーになる）\n')
         }).optional().describe('任意検索条件一覧'),
-        "criterionDate": zod_1.z.string().regex(exports.findPrivateRoleAppointmentBodyConditionCriterionDateRegExp).optional().describe('基準日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。')
+        "criterionDate": zod_1.z.string().regex(exports.findPrivateRoleAppointmentBodyConditionCriterionDateRegExp).optional().describe('基準日<br> \*userCode または candidateCode を指定する場合は必須（省略すると AWPCMN0001 になる）<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。')
     }).optional().describe('プライベートロール所属検索条件')
 });
 exports.findPrivateRoleAppointmentResponsePrivateRoleAppointmentListEntriesItemAvailableDateFromRegExp = new RegExp('^((19|20)[0-9]{2})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9]) (2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9]) JST$');
-exports.findPrivateRoleAppointmentResponsePrivateRoleAppointmentListEntriesItemAvailableDatetoRegExp = new RegExp('^((19|20)[0-9]{2})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9]) (2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9]) JST$');
+exports.findPrivateRoleAppointmentResponsePrivateRoleAppointmentListEntriesItemAvailableDateToRegExp = new RegExp('^((19|20)[0-9]{2})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9]) (2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9]) JST$');
 exports.findPrivateRoleAppointmentResponsePrivateRoleAppointmentListEntriesItemCriterionDateRegExp = new RegExp('^((19|20)[0-9]{2})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9]) (2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9]) JST$');
 exports.findPrivateRoleAppointmentResponse = zod_1.z.object({
     "privateRoleAppointmentList": zod_1.z.object({
@@ -1846,7 +1858,7 @@ exports.findPrivateRoleAppointmentResponse = zod_1.z.object({
             "privateRoleCode": zod_1.z.string().describe('プライベートロールコード'),
             "candidateCode": zod_1.z.string().describe('候補者のユーザーコード'),
             "availableDateFrom": zod_1.z.string().regex(exports.findPrivateRoleAppointmentResponsePrivateRoleAppointmentListEntriesItemAvailableDateFromRegExp).optional().describe('適用開始日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。'),
-            "availableDateto": zod_1.z.string().regex(exports.findPrivateRoleAppointmentResponsePrivateRoleAppointmentListEntriesItemAvailableDatetoRegExp).optional().describe('適用終了日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。'),
+            "availableDateTo": zod_1.z.string().regex(exports.findPrivateRoleAppointmentResponsePrivateRoleAppointmentListEntriesItemAvailableDateToRegExp).optional().describe('適用終了日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。'),
             "criterionDate": zod_1.z.string().regex(exports.findPrivateRoleAppointmentResponsePrivateRoleAppointmentListEntriesItemCriterionDateRegExp).optional().describe('基準日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。')
         })).optional().describe('プライベートロール所属情報')
     }).optional().describe('プライベートロール所属一覧'),
@@ -1868,11 +1880,11 @@ exports.findUniversalRoleBody = zod_1.z.object({
         "name": zod_1.z.string().optional().describe('ユニバーサルロール名称'),
         "columnValueConditionList": zod_1.z.object({
             "entries": zod_1.z.array(zod_1.z.object({
-                "column": zod_1.z.enum(['Code', 'ImportId', 'Name', 'Rank']).optional().describe('フィールド値タイプ<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|Code|コード|\n|ImportId|インポートコード|\n|Name|名称|\n|Rank|ランク|\n'),
-                "compareOperatorType": zod_1.z.enum(['EQUAL', 'LESS_THAN', 'LESS_EQUAL', 'GREATER_THAN', 'GREATER_EQUAL', 'NOT_EQUAL', 'LIKE', 'NOT_LIKE', 'START_WITH', 'END_WITH', 'BETWEEN', 'EMPTY', 'NOT_EMPTY']).describe('比較演算子<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|EQUAL|～と等しい|\n|LESS_THAN|～より小さい|\n|LESS_EQUAL|～以下|\n|GREATER_THAN|～より大きい|\n|GREATER_EQUAL|～以上|\n|NOT_EQUAL|～と異なる|\n|LIKE|～を含む|\n|NOT_LIKE|～を含まない|\n|START_WITH|～から始まる|\n|END_WITH|～で終わる|\n|BETWEEN|～と～の間|\n|EMPTY|未入力|\n|NOT_EMPTY|入力されている|\n').optional(),
+                "column": zod_1.z.enum(['Code', 'ImportId', 'Name', 'Rank']).describe('フィールド値タイプ<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|Code|コード|\n|ImportId|インポートコード|\n|Name|名称|\n|Rank|ランク|\n'),
+                "compareOperatorType": zod_1.z.enum(['EQUAL', 'LESS_THAN', 'LESS_EQUAL', 'GREATER_THAN', 'GREATER_EQUAL', 'NOT_EQUAL', 'LIKE', 'NOT_LIKE', 'START_WITH', 'END_WITH', 'BETWEEN', 'EMPTY', 'NOT_EMPTY']).describe('比較演算子<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|EQUAL|～と等しい|\n|LESS_THAN|～より小さい|\n|LESS_EQUAL|～以下|\n|GREATER_THAN|～より大きい|\n|GREATER_EQUAL|～以上|\n|NOT_EQUAL|～と異なる|\n|LIKE|～を含む|\n|NOT_LIKE|～を含まない|\n|START_WITH|～から始まる|\n|END_WITH|～で終わる|\n|BETWEEN|～と～の間|\n|EMPTY|未入力|\n|NOT_EMPTY|入力されている|\n').describe('比較演算子<br>\n\*組織系の検索では BETWEEN は指定不可（AWPORG0015 で拒否される）\n'),
                 "value": zod_1.z.string().optional().describe('値')
             })).optional().describe('任意検索条件'),
-            "logicalOperator": zod_1.z.unknown().optional().describe('任意検索全体の AND \/ OR<br>\n\*AND または OR を指定\n')
+            "logicalOperator": zod_1.z.enum(['AND', 'OR']).optional().describe('任意検索全体の AND \/ OR<br>\n\*columnValueConditionList を指定する場合は必須（省略するとエラーになる）\n')
         }).optional().describe('任意検索条件一覧')
     }).optional().describe('ユニバーサルロール検索条件')
 });
@@ -1905,18 +1917,18 @@ exports.findUniversalRoleAppointmentBody = zod_1.z.object({
         "roleCode": zod_1.z.string().optional().describe('ユニバーサルロールコード'),
         "columnValueConditionList": zod_1.z.object({
             "entries": zod_1.z.array(zod_1.z.object({
-                "column": zod_1.z.enum(['ValidityDateFrom', 'ValidityDateTo', 'RoleCode', 'RoleName', 'UserCode', 'UserImportCode', 'UserName', 'UserKana', 'UserLoginId', 'UserMailAddress', 'UserStampName', 'UserAvailableDateFrom', 'UserAvailableDateTo', 'UserReserveItem1', 'UserReserveItem2', 'UserReserveItem3', 'UserReserveItem4', 'UserReserveItem5', 'UserReserveItem6', 'UserReserveItem7', 'UserReserveItem8', 'UserReserveItem9', 'UserReserveItem10']).optional().describe('フィールド値タイプ<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|ValidityDateFrom|ユニバーサルロール所属履歴開始日|\n|ValidityDateTo|ユニバーサルロール所属履歴終了日|\n|RoleCode|ユニバーサルロールコード|\n|RoleName|ユニバーサルロール名称|\n|UserCode|ユーザーコード|\n|UserImportCode|ユーザーインポートコード|\n|UserName|ユーザー名称|\n|UserKana|ユーザーカナ|\n|UserLoginId|ユーザーログインID|\n|UserMailAddress|ユーザーメールアドレス|\n|UserStampName|ユーザーの印影上の表示名称|\n|UserAvailableDateFrom|ユーザー運用開始日|\n|UserAvailableDateTo|ユーザー運用終了日|\n|UserReserveItem1|ユーザーの拡張項目１|\n|UserReserveItem2|ユーザーの拡張項目２|\n|UserReserveItem3|ユーザーの拡張項目３|\n|UserReserveItem4|ユーザーの拡張項目４|\n|UserReserveItem5|ユーザーの拡張項目５|\n|UserReserveItem6|ユーザーの拡張項目６|\n|UserReserveItem7|ユーザーの拡張項目７|\n|UserReserveItem8|ユーザーの拡張項目８|\n|UserReserveItem9|ユーザーの拡張項目９|\n|UserReserveItem10|ユーザーの拡張項目１０|\n'),
-                "compareOperatorType": zod_1.z.enum(['EQUAL', 'LESS_THAN', 'LESS_EQUAL', 'GREATER_THAN', 'GREATER_EQUAL', 'NOT_EQUAL', 'LIKE', 'NOT_LIKE', 'START_WITH', 'END_WITH', 'BETWEEN', 'EMPTY', 'NOT_EMPTY']).describe('比較演算子<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|EQUAL|～と等しい|\n|LESS_THAN|～より小さい|\n|LESS_EQUAL|～以下|\n|GREATER_THAN|～より大きい|\n|GREATER_EQUAL|～以上|\n|NOT_EQUAL|～と異なる|\n|LIKE|～を含む|\n|NOT_LIKE|～を含まない|\n|START_WITH|～から始まる|\n|END_WITH|～で終わる|\n|BETWEEN|～と～の間|\n|EMPTY|未入力|\n|NOT_EMPTY|入力されている|\n').optional(),
+                "column": zod_1.z.enum(['ValidityDateFrom', 'ValidityDateTo', 'RoleCode', 'RoleName', 'UserCode', 'UserImportId', 'UserName', 'UserKana', 'UserLoginId', 'UserMailAddress', 'UserStampName', 'UserAvailableDateFrom', 'UserAvailableDateTo', 'UserReserveItem1', 'UserReserveItem2', 'UserReserveItem3', 'UserReserveItem4', 'UserReserveItem5', 'UserReserveItem6', 'UserReserveItem7', 'UserReserveItem8', 'UserReserveItem9', 'UserReserveItem10']).describe('フィールド値タイプ<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|ValidityDateFrom|ユニバーサルロール所属履歴開始日|\n|ValidityDateTo|ユニバーサルロール所属履歴終了日|\n|RoleCode|ユニバーサルロールコード|\n|RoleName|ユニバーサルロール名称|\n|UserCode|ユーザーコード|\n|UserImportId|ユーザーインポートコード|\n|UserName|ユーザー名称|\n|UserKana|ユーザーカナ|\n|UserLoginId|ユーザーログインID|\n|UserMailAddress|ユーザーメールアドレス|\n|UserStampName|ユーザーの印影上の表示名称|\n|UserAvailableDateFrom|ユーザー運用開始日|\n|UserAvailableDateTo|ユーザー運用終了日|\n|UserReserveItem1|ユーザーの拡張項目１|\n|UserReserveItem2|ユーザーの拡張項目２|\n|UserReserveItem3|ユーザーの拡張項目３|\n|UserReserveItem4|ユーザーの拡張項目４|\n|UserReserveItem5|ユーザーの拡張項目５|\n|UserReserveItem6|ユーザーの拡張項目６|\n|UserReserveItem7|ユーザーの拡張項目７|\n|UserReserveItem8|ユーザーの拡張項目８|\n|UserReserveItem9|ユーザーの拡張項目９|\n|UserReserveItem10|ユーザーの拡張項目１０|\n'),
+                "compareOperatorType": zod_1.z.enum(['EQUAL', 'LESS_THAN', 'LESS_EQUAL', 'GREATER_THAN', 'GREATER_EQUAL', 'NOT_EQUAL', 'LIKE', 'NOT_LIKE', 'START_WITH', 'END_WITH', 'BETWEEN', 'EMPTY', 'NOT_EMPTY']).describe('比較演算子<br>\n指定可能な値<br>\n|パラメータ|説明|\n|----|----|\n|EQUAL|～と等しい|\n|LESS_THAN|～より小さい|\n|LESS_EQUAL|～以下|\n|GREATER_THAN|～より大きい|\n|GREATER_EQUAL|～以上|\n|NOT_EQUAL|～と異なる|\n|LIKE|～を含む|\n|NOT_LIKE|～を含まない|\n|START_WITH|～から始まる|\n|END_WITH|～で終わる|\n|BETWEEN|～と～の間|\n|EMPTY|未入力|\n|NOT_EMPTY|入力されている|\n').describe('比較演算子<br>\n\*組織系の検索では BETWEEN は指定不可（AWPORG0015 で拒否される）\n'),
                 "value": zod_1.z.string().optional().describe('値')
             })).optional().describe('任意検索条件'),
-            "logicalOperator": zod_1.z.unknown().optional().describe('任意検索全体の AND \/ OR<br>\n\*AND または OR を指定\n')
+            "logicalOperator": zod_1.z.enum(['AND', 'OR']).optional().describe('任意検索全体の AND \/ OR<br>\n\*columnValueConditionList を指定する場合は必須（省略するとエラーになる）\n')
         }).optional().describe('任意検索条件一覧'),
-        "criterionDate": zod_1.z.string().regex(exports.findUniversalRoleAppointmentBodyConditionCriterionDateRegExp).optional().describe('検索基準日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。')
+        "criterionDate": zod_1.z.string().regex(exports.findUniversalRoleAppointmentBodyConditionCriterionDateRegExp).optional().describe('検索基準日<br> \*userCode を指定する場合は必須（省略すると AWPCMN0001 になる）<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。')
     }).optional().describe('ユニバーサルロール所属検索条件')
 });
 exports.findUniversalRoleAppointmentResponseUniversalRoleAppointmentListEntriesItemCriterionDateRegExp = new RegExp('^((19|20)[0-9]{2})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9]) (2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9]) JST$');
 exports.findUniversalRoleAppointmentResponseUniversalRoleAppointmentListEntriesItemAvailableDateFromRegExp = new RegExp('^((19|20)[0-9]{2})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9]) (2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9]) JST$');
-exports.findUniversalRoleAppointmentResponseUniversalRoleAppointmentListEntriesItemAvailableDatetoRegExp = new RegExp('^((19|20)[0-9]{2})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9]) (2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9]) JST$');
+exports.findUniversalRoleAppointmentResponseUniversalRoleAppointmentListEntriesItemAvailableDateToRegExp = new RegExp('^((19|20)[0-9]{2})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9]) (2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9]) JST$');
 exports.findUniversalRoleAppointmentResponse = zod_1.z.object({
     "universalRoleAppointmentList": zod_1.z.object({
         "entries": zod_1.z.array(zod_1.z.object({
@@ -1924,7 +1936,7 @@ exports.findUniversalRoleAppointmentResponse = zod_1.z.object({
             "criterionDate": zod_1.z.string().regex(exports.findUniversalRoleAppointmentResponseUniversalRoleAppointmentListEntriesItemCriterionDateRegExp).optional().describe('基準日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。'),
             "universalRoleCode": zod_1.z.string().describe('ユニバーサルロールコード'),
             "availableDateFrom": zod_1.z.string().regex(exports.findUniversalRoleAppointmentResponseUniversalRoleAppointmentListEntriesItemAvailableDateFromRegExp).optional().describe('適用開始日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。'),
-            "availableDateto": zod_1.z.string().regex(exports.findUniversalRoleAppointmentResponseUniversalRoleAppointmentListEntriesItemAvailableDatetoRegExp).optional().describe('適用終了日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。')
+            "availableDateTo": zod_1.z.string().regex(exports.findUniversalRoleAppointmentResponseUniversalRoleAppointmentListEntriesItemAvailableDateToRegExp).optional().describe('適用終了日<br> フォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。')
         })).optional().describe('ユニバーサルロール所属情報')
     }).optional().describe('ユニバーサルロール所属一覧'),
     "resultStatus": zod_1.z.object({
@@ -2087,10 +2099,9 @@ exports.findFormDefinitionBodyCriterionDateRegExp = new RegExp('^((19|20)[0-9]{2
 exports.findFormDefinitionBody = zod_1.z.object({
     "formCode": zod_1.z.string().describe('フォームコード'),
     "ruleCode": zod_1.z.string().optional().describe('ルールコード<br>\n\*未指定の場合は、レスポンスの項目ルールは空。\n'),
-    "criterionDate": zod_1.z.string().regex(exports.findFormDefinitionBodyCriterionDateRegExp).optional().describe('基準日<br>\n\*未指定の場合は、当日日付でレスポンスの」回付ルール情報を取得<br>\nフォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。\n')
+    "criterionDate": zod_1.z.string().regex(exports.findFormDefinitionBodyCriterionDateRegExp).optional().describe('基準日<br>\n\*未指定の場合は、当日日付でレスポンスの」回付ルール情報を取得<br>\nフォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。\n'),
+    "isIncludeXwfData": zod_1.z.boolean().optional().describe('XWF由来のデータを出力するか<br>\n\*未指定の場合は true<br>\nfalse を指定すると、レスポンスの fieldTypeNo、checkItemList、options、columns、selectList は出力されません。\n')
 });
-exports.findFormDefinitionResponseFormPagesEntriesItemFieldsEntriesItemFieldTypeRegExp = new RegExp('EnumFieldType');
-exports.findFormDefinitionResponseFormPagesEntriesItemFieldsEntriesItemDataTypeRegExp = new RegExp('EnumDataType');
 exports.findFormDefinitionResponseFormPagesEntriesItemFieldsEntriesItemLookupValueRegExp = new RegExp('FormFieldLookupValueType');
 exports.findFormDefinitionResponseFormPagesEntriesItemFieldsEntriesItemDateFormatRegExp = new RegExp('XWEBDateFormatType');
 exports.findFormDefinitionResponse = zod_1.z.object({
@@ -2103,11 +2114,17 @@ exports.findFormDefinitionResponse = zod_1.z.object({
                 "name": zod_1.z.string().optional().describe('回付ルール名称'),
                 "ruleField": zod_1.z.object({
                     "entries": zod_1.z.array(zod_1.z.object({
-                        "fieldName": zod_1.z.string().optional().describe('フィールド名'),
-                        "id": zod_1.z.string().optional().describe('ID'),
-                        "invisible": zod_1.z.boolean().optional().describe('閲覧可<br>\nfalse：不可<br>\ntrue：可\n'),
-                        "disable": zod_1.z.boolean().optional().describe('編集可<br>\nfalse：不可<br>\ntrue：可\n'),
-                        "necessary": zod_1.z.boolean().optional().describe('必須<br>\nfalse：不可<br>\ntrue：可\n')
+                        "ruleStepName": zod_1.z.string().optional().describe('ステップ名称'),
+                        "ruleStepCode": zod_1.z.string().optional().describe('ステップコード'),
+                        "stepField": zod_1.z.object({
+                            "entries": zod_1.z.array(zod_1.z.object({
+                                "fieldName": zod_1.z.string().optional().describe('フィールド名'),
+                                "id": zod_1.z.string().optional().describe('ID'),
+                                "invisible": zod_1.z.boolean().optional().describe('閲覧可<br>\nfalse：不可<br>\ntrue：可\n'),
+                                "disable": zod_1.z.boolean().optional().describe('編集可<br>\nfalse：不可<br>\ntrue：可\n'),
+                                "necessary": zod_1.z.boolean().optional().describe('必須<br>\nfalse：不可<br>\ntrue：可\n')
+                            })).optional()
+                        }).optional().describe('ステップごとの項目ルール')
                     })).optional()
                 }).optional().describe('項目ルール<br>\n\*リクエストのルールコードが未指定の場合は、空\n\*リクエストのルールコードが設定された場合、設定したルールコードの内容のみ表示\n')
             })).optional()
@@ -2120,8 +2137,8 @@ exports.findFormDefinitionResponse = zod_1.z.object({
                         "fieldNo": zod_1.z.number().optional().describe('フィールド番号'),
                         "fieldId": zod_1.z.string().optional().describe('フィールドID'),
                         "fieldTypeNo": zod_1.z.number().optional().describe('フィールドタイプ番号<br>\n\*詳細はfieldTypeを参照\n'),
-                        "fieldType": zod_1.z.string().regex(exports.findFormDefinitionResponseFormPagesEntriesItemFieldsEntriesItemFieldTypeRegExp).optional().describe('フィールドタイプ<br>\n|フィールドタイプ番号|フィールドタイプ名|意味|備考|\n|----|----|----|----|\n|9|TEXTFIELD|文字フィールド||\n|10|NUMBERFIELD|数値フィールド||\n|11|INTEGERFIELD|整数フィールド||\n|12|TEXTAREA|テキストエリア||\n|14|BUTTON|ボタン|AWでは表示されない|\n|15|RADIOBUTTON|ラジオボタン||\n|16|CHECKBOX|チェックボックス||\n|17|COMBOBOX|コンボボックス||\n|18|LISTBOX|リストボックス||\n|23|BARCODEFIELD|バーコード|AWでは画面に表示されないため、出力しない|\n|24|IMAGE|イメージ|AWでは表示されない|\n|25|YEARFIELD|西暦フィールド||\n|26|MONTHFIELD|月フィールド||\n|27|DAYFIELD|日フィールド||\n|28|WEEKFIELD|曜日フィールド||\n|29|STAMPFIELD|印影フィールド||\n|34|DATEFIELD|日時フィールド||\n'),
-                        "dataType": zod_1.z.string().regex(exports.findFormDefinitionResponseFormPagesEntriesItemFieldsEntriesItemDataTypeRegExp).optional().describe('データタイプ<br>\n\*既存モデルのフィールド<br>\n|値|意味|\n|----|----|\n|STRING|文字列|\n|DECIMAL|数値|\n|INT|整数値(int)|\n|TEXT|テキスト|\n'),
+                        "fieldType": zod_1.z.enum(['INTEGERFIELD', 'NUMBERFIELD', 'STAMPFIELD', 'TEXTFIELD', 'TEXTAREA', 'YEARFIELD', 'MONTHFIELD', 'DAYFIELD', 'WEEKFIELD', 'DATEFIELD', 'COMBOBOX', 'LISTBOX', 'RADIOBUTTON', 'CHECKBOX', 'BARCODEFIELD', 'HIDDENFIELD', 'UPLOAD', 'IMAGEUPLOAD']).optional().describe('フィールドタイプ<br>\n|フィールドタイプ番号|フィールドタイプ名|意味|備考|\n|----|----|----|----|\n|9|TEXTFIELD|文字フィールド||\n|10|NUMBERFIELD|数値フィールド||\n|11|INTEGERFIELD|整数フィールド||\n|12|TEXTAREA|テキストエリア||\n          |15|RADIOBUTTON|ラジオボタン||\n|16|CHECKBOX|チェックボックス||\n|17|COMBOBOX|コンボボックス||\n|18|LISTBOX|リストボックス||\n|23|BARCODEFIELD|バーコード|AWでは画面に表示されないため、出力しない|\n          |25|YEARFIELD|西暦フィールド||\n|26|MONTHFIELD|月フィールド||\n|27|DAYFIELD|日フィールド||\n|28|WEEKFIELD|曜日フィールド||\n|29|STAMPFIELD|印影フィールド||\n|34|DATEFIELD|日時フィールド||\n|-|HIDDENFIELD|隠しフィールド||\n|-|UPLOAD|アップロード||\n|-|IMAGEUPLOAD|イメージアップロード||\n'),
+                        "dataType": zod_1.z.enum(['STRING', 'TEXT', 'INT', 'LONG', 'DECIMAL', 'BOOLEAN', 'DATE', 'DATETIME']).optional().describe('データタイプ<br>\n\*既存モデルのフィールド<br>\n|値|意味|\n|----|----|\n|STRING|文字列|\n|DECIMAL|数値|\n|INT|整数値(int)|\n|TEXT|テキスト|\n|LONG|整数値(long)|\n|BOOLEAN|真偽値|\n|DATE|日付|\n|DATETIME|日時|\n'),
                         "length": zod_1.z.number().optional().describe('フィールド最大値'),
                         "tagName": zod_1.z.string().optional().describe('タグ名'),
                         "groupIdName": zod_1.z.string().optional().describe('グループID名<br>\n\*グループ(表明細)を作った場合にID名が必須。グループでない、ラジオボタンなど一括設定の場合はnull。\n'),
@@ -2129,11 +2146,41 @@ exports.findFormDefinitionResponse = zod_1.z.object({
                         "isEditable": zod_1.z.boolean().optional().describe('編集禁止<br>\nfalse：無し<br>\ntrue：有り\n'),
                         "isDisabled": zod_1.z.boolean().optional().describe('無効<br>\nfalse：無し<br>\ntrue：有り\n'),
                         "isComma": zod_1.z.boolean().optional().describe('カンマ区切り<br>\nfalse：無し<br>\ntrue：有り\n'),
-                        "lookupValue": zod_1.z.string().regex(exports.findFormDefinitionResponseFormPagesEntriesItemFieldsEntriesItemLookupValueRegExp).optional().describe('ルックアップ設定<br>\n\*ない場合は null<br>\n|値|意味|\n|----|----|\n|DOCUMENT_ID|書類ID|\n|LOGIN_USER_CODE|ログインユーザーコード|\n|LOGIN_USER_NAME|ログインユーザー名|\n|LOGIN_USER_LOCALIZED_NAME|ログインユーザーローカル名|\n|LOGIN_USER_KANA|ログインユーザーカナ|\n|LOGIN_USER_STAMPNAME|ログインユーザーの印影上の表示名|\n|LOGIN_USER_LOGINID|ログインユーザーログインID|\n|LOGIN_USER_MAILADDRESS|ログインユーザーメールアドレス|\n|LOGIN_USER_RESERVE1～20|ログインユーザー予備項目1～20|\n|LOGIN_UNIT_CODE|ログインユーザー組織コード|\n|LOGIN_UNIT_OFFICIAL_NAME|ログインユーザー組織名称|\n|LOGIN_UNIT_NAME|ログインユーザー組織画面表示名称|\n|LOGIN_UNIT_LOCALIZED_NAME|ログインユーザー組織ローカル表示名称|\n|LOGIN_UNIT_RESERVE1～20|ログインユーザー組織予備項目1～20|\n|LOGIN_SECTIONROLE_CODE|ログインユーザーセクションロールコード|\n|LOGIN_SECTIONROLE_NAME|ログインユーザーセクションロール名称|\n|LOGIN_SECTIONROLE_RANK|ログインユーザーセクションロールランク|\n|USER_CODE|申請ユーザーコード|\n|USER_NAME|申請ユーザー名|\n|USER_LOCALIZED_NAME|申請ユーザーローカル名|\n|USER_KANA|申請ユーザーカナ|\n|USER_STAMPNAME|申請ユーザーの印影上の表示名|\n|USER_LOGINID|申請ユーザーログインID|\n|USER_MAILADDRESS|申請ユーザーメールアドレス|\n|USER_RESERVE1～20|申請ユーザー予備項目1～20|\n|UNIT_CODE|申請組織コード|\n|UNIT_OFFICIAL_NAME|背院生組織名称|\n|UNIT_NAME|申請組織画面表示名称|\n|UNIT_LOCALIZED_NAME|申請組織ローカル表示名称|\n|UNIT_RESERVE1～20|申請組織予備項目1～20|\n|SECTIONROLE_CODE|申請組織セクションロールコード|\n|SECTIONROLE_NAME|申請組織セクションロール名称|\n|SECTIONROLE_RANK|申請組織セクションロールランク|\n|FORM_CODE|フォームコード|\n|FORM_NAME|フォーム名称|\n|RULE_CODE|回付ルールコード|\n|RULE_NAME|回付ルール名称|\n|BAGGAGE_CREATE_DATE|申請日|\n|APLLY_CRITERION_DATE|申請基準日|\n|BAGGAGE_FIX_DATE|承認完了日|\n|DOC_REGIST_DATE|作成日|\n|DOC_ID|書類ID|\n|DOC_VERSION|書類バージョン|\n|DOC_LISTNAME1～20|件名1～20|\n|DOC_ADMINNO|書類管理番号|\n|DOC_OWNER_NAME|書類オーナー名称|\n|DOC_FORM_CODE|フォームコード|\n|DOC_FORM_NAME|フォーム名称|\n|TASK_SEQUENCE|順序|\n|TASK_NODE_CLASS|ステップ種類|\n|TASK_NODE_NAME|ステップ名称|\n|TASK_UNIT_CODE|組織コード|\n|TASK_UNIT_NAME|組織名称|\n|TASK_ROLE_CODE|ロールコード|\n|TASK_ROLE_NAME|ロール名称|\n|TASK_USER_CODE|ユーザーコード|\n|TASK_USER_NAME|ユーザー名称|\n|TASK_PRINCIPAL_UNIT_CODE|被代理組織コード|\n|TASK_PRINCIPAL_UNIT_NAME|被代理組織名称|\n|TASK_PRINCIPAL_ROLE_CODE|被代理ロールコード|\n|TASK_PRINCIPAL_ROLE_NAME|被代理ロール名称|\n|TASK_PRINCIPAL_USER_CODE|被代理ユーザーコード|\n|TASK_PRINCIPAL_USER_NAME|被代理ユーザー名称|\n|TASK_EFFECTNAME|処理名称|\n|TASK_EFFECTDATE|処理日時|\n|TASK_ISPROXYUSER|代理ユーザーかどうか|\n|TASK_ISDEPRIVED|引上げされたかどうか|\n|TASK_DEPRIVED_NODE_NAME|引上げステップ名称|\n|TASK_COMMENT|処理時コメント|\n|TASK_RESERVE1～20|タスク予備項目1～10|\n'),
+                        "lookupValue": zod_1.z.string().regex(exports.findFormDefinitionResponseFormPagesEntriesItemFieldsEntriesItemLookupValueRegExp).optional().describe('ルックアップ設定<br>\n\*ない場合は null<br>\n|値|意味|\n|----|----|\n|DOCUMENT_ID|書類ID|\n|LOGIN_USER_CODE|ログインユーザーコード|\n|LOGIN_USER_NAME|ログインユーザー名|\n|LOGIN_USER_LOCALIZED_NAME|ログインユーザーローカル名|\n|LOGIN_USER_KANA|ログインユーザーカナ|\n|LOGIN_USER_STAMPNAME|ログインユーザーの印影上の表示名|\n|LOGIN_USER_LOGINID|ログインユーザーログインID|\n|LOGIN_USER_MAILADDRESS|ログインユーザーメールアドレス|\n|LOGIN_USER_RESERVE1～20|ログインユーザー予備項目1～20|\n|LOGIN_UNIT_CODE|ログインユーザー組織コード|\n|LOGIN_UNIT_OFFICIAL_NAME|ログインユーザー組織名称|\n|LOGIN_UNIT_NAME|ログインユーザー組織画面表示名称|\n|LOGIN_UNIT_LOCALIZED_NAME|ログインユーザー組織ローカル表示名称|\n|LOGIN_UNIT_RESERVE1～20|ログインユーザー組織予備項目1～20|\n|LOGIN_SECTIONROLE_CODE|ログインユーザーセクションロールコード|\n|LOGIN_SECTIONROLE_NAME|ログインユーザーセクションロール名称|\n|LOGIN_SECTIONROLE_RANK|ログインユーザーセクションロールランク|\n|USER_CODE|申請ユーザーコード|\n|USER_NAME|申請ユーザー名|\n|USER_LOCALIZED_NAME|申請ユーザーローカル名|\n|USER_KANA|申請ユーザーカナ|\n|USER_STAMPNAME|申請ユーザーの印影上の表示名|\n|USER_LOGINID|申請ユーザーログインID|\n|USER_MAILADDRESS|申請ユーザーメールアドレス|\n|USER_RESERVE1～20|申請ユーザー予備項目1～20|\n|UNIT_CODE|申請組織コード|\n|UNIT_OFFICIAL_NAME|申請組織名称|\n|UNIT_NAME|申請組織画面表示名称|\n|UNIT_LOCALIZED_NAME|申請組織ローカル表示名称|\n|UNIT_RESERVE1～20|申請組織予備項目1～20|\n|SECTIONROLE_CODE|申請組織セクションロールコード|\n|SECTIONROLE_NAME|申請組織セクションロール名称|\n|SECTIONROLE_RANK|申請組織セクションロールランク|\n|FORM_CODE|フォームコード|\n|FORM_NAME|フォーム名称|\n|RULE_CODE|回付ルールコード|\n|RULE_NAME|回付ルール名称|\n|BAGGAGE_CREATE_DATE|申請日|\n|APPLY_CRITERION_DATE|申請基準日|\n|BAGGAGE_FIX_DATE|承認完了日|\n|DOC_REGIST_DATE|作成日|\n|DOC_ID|書類ID|\n|DOC_VERSION|書類バージョン|\n|DOC_LISTNAME1～20|件名1～20|\n|DOC_ADMINNO|書類管理番号|\n|DOC_OWNER_NAME|書類オーナー名称|\n|DOC_FORM_CODE|フォームコード|\n|DOC_FORM_NAME|フォーム名称|\n|TASK_SEQUENCE|順序|\n|TASK_NODE_CLASS|ステップ種類|\n|TASK_NODE_NAME|ステップ名称|\n|TASK_UNIT_CODE|組織コード|\n|TASK_UNIT_NAME|組織名称|\n|TASK_ROLE_CODE|ロールコード|\n|TASK_ROLE_NAME|ロール名称|\n|TASK_USER_CODE|ユーザーコード|\n|TASK_USER_NAME|ユーザー名称|\n|TASK_PRINCIPAL_UNIT_CODE|被代理組織コード|\n|TASK_PRINCIPAL_UNIT_NAME|被代理組織名称|\n|TASK_PRINCIPAL_ROLE_CODE|被代理ロールコード|\n|TASK_PRINCIPAL_ROLE_NAME|被代理ロール名称|\n|TASK_PRINCIPAL_USER_CODE|被代理ユーザーコード|\n|TASK_PRINCIPAL_USER_NAME|被代理ユーザー名称|\n|TASK_EFFECTNAME|処理名称|\n|TASK_EFFECTDATE|処理日時|\n|TASK_ISPROXYUSER|代理ユーザーかどうか|\n|TASK_ISDEPRIVED|引上げされたかどうか|\n|TASK_DEPRIVED_NODE_NAME|引上げステップ名称|\n|TASK_COMMENT|処理時コメント|\n|TASK_RESERVE1～10|タスク予備項目1～10|\n'),
                         "defaultValue": zod_1.z.string().optional().describe('初期値<br>\n\*ない場合は空白(\"\")\n'),
-                        "dateFormat": zod_1.z.string().regex(exports.findFormDefinitionResponseFormPagesEntriesItemFieldsEntriesItemDateFormatRegExp).optional().describe('日付書式<br>\n\*ない場合は null<br>\n|値|意味|\n|----|----|\n|YYYYMMDD_ZERO|yyyy年MM月dd日(前0あり)|\n|YYYYMMDD_NONZERO|yyyy年MM月dd日(前0なし)|\n|YYYYMMDD_ZERO_SLASH|yyyy\/MM\/dd(前0あり)|\n|YYYYMMDD_ZERO_HYPHEN|yyyy-MM-dd(前0あり)|\n|YYYYMMDD_NONZERO_SLASH|yyyy\/MM\/dd(前0なし)|\n|YYYYMMDD_NONZERO_HYPHEN|yyyy-MM-dd(前0なし)|\n|YYYYMMDD_ZERO_DEF|yyyyMMdd(前0あり)|\n|YYYYMMDD_NONZERO_DEF|yyyyMMdd(前0なし)|\n|YYYYMM_ZERO_SLASH|yyyy\/MM(前0あり)|\n|YYYYMM_ZERO_HYPHEN|yyyy-MM(前0あり)|\n|YYYYMM_NONZERO_SLASH|yyyy\/MM(前0なし)|\n|YYYYMM_NONZERO_HYPHEN|yyyy-MM(前0なし)|\n|MMDD_ZERO_SLASH|MM\/DD(前0あり)|\n|MMDD_ZERO_HYHPEN|MM-dd(前0あり)|\n|MMDD_NONZERO_SLASH|MM\/DD(前0なし)|\n|MMDD_NONZERO_HYHPEN|MM-dd(前0なし)|\n|YYYYMM_ZERO_DEF|yyyyMM(前0あり)|\n|YYYYMM_NONZERO_DEF|yyyyMM(前0なし)|\n|MMDD_ZERO_DEF|MMDD(前0あり)|\n|MMDD_NONZERO_DEF|MMDD(前0なし)|\n'),
-                        "fieldList": zod_1.z.object({}).optional().describe('フィールド一覧<br>\n\*空で表示、本APIではグループID名を使用するため表明細も判断可能\n'),
-                        "maxRows": zod_1.z.unknown().optional().describe('表明細行数<br>\n\*ない場合は 0\n')
+                        "dateFormat": zod_1.z.string().regex(exports.findFormDefinitionResponseFormPagesEntriesItemFieldsEntriesItemDateFormatRegExp).optional().describe('日付書式<br>\n\*ない場合は null<br>\n|値|意味|\n|----|----|\n|YYYYMMDD_ZERO|yyyy年MM月dd日(前0あり)|\n|YYYYMMDD_NONZERO|yyyy年MM月dd日(前0なし)|\n|YYYYMMDD_ZERO_SLASH|yyyy\/MM\/dd(前0あり)|\n|YYYYMMDD_ZERO_HYPHEN|yyyy-MM-dd(前0あり)|\n|YYYYMMDD_NONZERO_SLASH|yyyy\/MM\/dd(前0なし)|\n|YYYYMMDD_NONZERO_HYPHEN|yyyy-MM-dd(前0なし)|\n|YYYYMMDD_ZERO_DEF|yyyyMMdd(前0あり)|\n|YYYYMMDD_NONZERO_DEF|yyyyMMdd(前0なし)|\n|YYYYMM_ZERO_SLASH|yyyy\/MM(前0あり)|\n|YYYYMM_ZERO_HYPHEN|yyyy-MM(前0あり)|\n|YYYYMM_NONZERO_SLASH|yyyy\/MM(前0なし)|\n|YYYYMM_NONZERO_HYPHEN|yyyy-MM(前0なし)|\n|MMDD_ZERO_SLASH|MM\/DD(前0あり)|\n|MMDD_ZERO_HYPHEN|MM-dd(前0あり)|\n|MMDD_NONZERO_SLASH|MM\/DD(前0なし)|\n|MMDD_NONZERO_HYPHEN|MM-dd(前0なし)|\n|YYYYMM_ZERO_DEF|yyyyMM(前0あり)|\n|YYYYMM_NONZERO_DEF|yyyyMM(前0なし)|\n|MMDD_ZERO_DEF|MMDD(前0あり)|\n|MMDD_NONZERO_DEF|MMDD(前0なし)|\n'),
+                        "fieldList": zod_1.z.object({
+                            "entries": zod_1.z.array(zod_1.z.unknown()).optional()
+                        }).optional().describe('フィールド一覧<br>\n\*表明細(グループ)のとき、グループ内のフィールドが入る。グループでない場合は空\n'),
+                        "maxRows": zod_1.z.unknown().optional().describe('表明細行数<br>\n\*ない場合は 0\n'),
+                        "checkItemList": zod_1.z.object({
+                            "entries": zod_1.z.array(zod_1.z.object({
+                                "checkedMark": zod_1.z.string().optional().describe('チェック時の表示マーク'),
+                                "uncheckedMark": zod_1.z.string().optional().describe('未チェック時の表示マーク'),
+                                "checkedValue": zod_1.z.string().optional().describe('チェック時の値'),
+                                "uncheckedValue": zod_1.z.string().optional().describe('未チェック時の値')
+                            })).optional()
+                        }).optional().describe('チェックボックスの設定<br>\n\*isIncludeXwfData=false の場合は出力されない\n'),
+                        "options": zod_1.z.string().optional().describe('選択肢<br>\n\*コンボボックス・ラジオボタンなどの選択肢。isIncludeXwfData=false の場合は出力されない\n'),
+                        "columns": zod_1.z.number().optional().describe('列数<br>\n\*isIncludeXwfData=false の場合は出力されない\n'),
+                        "selectList": zod_1.z.object({
+                            "type": zod_1.z.string().optional().describe('種別'),
+                            "schema": zod_1.z.string().optional().describe('スキーマ名'),
+                            "table": zod_1.z.string().optional().describe('テーブル名'),
+                            "maxRow": zod_1.z.number().optional().describe('最大行数'),
+                            "emptyItem": zod_1.z.boolean().optional().describe('空の選択肢を含めるか'),
+                            "listField": zod_1.z.object({
+                                "entries": zod_1.z.array(zod_1.z.object({
+                                    "fieldId": zod_1.z.string().optional().describe('フィールドID'),
+                                    "visibled": zod_1.z.boolean().optional().describe('表示するか'),
+                                    "valued": zod_1.z.boolean().optional().describe('値として使用するか'),
+                                    "orderBy": zod_1.z.string().optional().describe('並び順'),
+                                    "whereType": zod_1.z.string().optional().describe('検索条件種別'),
+                                    "whereToken": zod_1.z.string().optional().describe('検索条件'),
+                                    "groupId": zod_1.z.string().optional().describe('グループID')
+                                })).optional()
+                            }).optional().describe('選択リストのフィールド設定')
+                        }).optional().describe('選択リストの設定<br>\n\*isIncludeXwfData=false の場合は出力されない\n')
                     })).optional()
                 }).optional().describe('フィールド情報')
             })).optional()
@@ -2153,8 +2200,8 @@ exports.findFormDefinitionResponse = zod_1.z.object({
 });
 exports.listPublicFolderInfoBodyCriterionDateRegExp = new RegExp('^((19|20)[0-9]{2})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9]) (2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9]) JST$');
 exports.listPublicFolderInfoBody = zod_1.z.object({
-    "userCode": zod_1.z.string().describe('ユーザーコード'),
-    "criterionDate": zod_1.z.string().regex(exports.listPublicFolderInfoBodyCriterionDateRegExp).optional().describe('基準日<br>\n\*未指定の場合は現在日付<br>\nフォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。\n')
+    "userCode": zod_1.z.string().describe('ユーザーコード<br>\n\*基準日時点で実在するユーザーである必要があります。存在しない場合は AWPPUB3001 エラーになります。\n'),
+    "criterionDate": zod_1.z.string().regex(exports.listPublicFolderInfoBodyCriterionDateRegExp).optional().describe('基準日<br>\n\*未指定の場合は現在日付<br>\n\*未来日、または申請可能範囲外の日付を指定すると AWPPUB3002 エラーになります。<br>\nフォーマットは「yyyy-MM-dd HH:mm:ss JST」です。省略せず、必ず JST まで付けてください。\n')
 });
 exports.listPublicFolderInfoResponse = zod_1.z.object({
     "publicFolderList": zod_1.z.object({
@@ -2170,7 +2217,24 @@ exports.listPublicFolderInfoResponse = zod_1.z.object({
                     "ruleName": zod_1.z.string().optional().describe('回付ルール名称')
                 })).optional()
             }).optional().describe('公開フォームのリスト'),
-            "publicFolderList": zod_1.z.object({}).optional().describe('公開フォルダのリスト')
+            "publicFolderList": zod_1.z.object({
+                "entries": zod_1.z.array(zod_1.z.object({
+                    "name": zod_1.z.string().optional().describe('公開フォルダ名称'),
+                    "id": zod_1.z.number().optional().describe('公開フォルダID'),
+                    "code": zod_1.z.string().optional().describe('公開フォルダコード'),
+                    "publicFormList": zod_1.z.object({
+                        "entries": zod_1.z.array(zod_1.z.object({
+                            "formCode": zod_1.z.string().optional().describe('フォームコード'),
+                            "formName": zod_1.z.string().optional().describe('フォーム名称'),
+                            "ruleCode": zod_1.z.string().optional().describe('回付ルールコード'),
+                            "ruleName": zod_1.z.string().optional().describe('回付ルール名称')
+                        })).optional()
+                    }).optional().describe('公開フォームのリスト'),
+                    "publicFolderList": zod_1.z.object({
+                        "entries": zod_1.z.array(zod_1.z.unknown()).optional()
+                    }).optional().describe('子の公開フォルダのリスト<br>\n\*各要素は親と同じ構造(再帰)\n')
+                })).optional()
+            }).optional().describe('子の公開フォルダのリスト<br>\n\*各要素は親と同じ構造(再帰)\n')
         })).optional()
     }).optional().describe('公開フォルダのリスト'),
     "resultStatus": zod_1.z.object({
@@ -2188,7 +2252,7 @@ exports.listPublicFolderInfoResponse = zod_1.z.object({
 exports.notAdminGetVersionBody = zod_1.z.object({});
 exports.notAdminGetVersionResponse = zod_1.z.object({
     "versionInfo": zod_1.z.object({
-        "versionInfo": zod_1.z.string().optional().describe('AgileWorksのリリースバージョン'),
+        "version": zod_1.z.string().optional().describe('AgileWorksのリリースバージョン'),
         "buildNumber": zod_1.z.number().optional().describe('AgileWorksのビルド番号')
     }).optional().describe('バージョン情報のモデル'),
     "resultStatus": zod_1.z.object({

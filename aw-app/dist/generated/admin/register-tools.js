@@ -4,7 +4,7 @@ exports.registerTools = registerTools;
 const handlers_1 = require("./handlers");
 const tool_schemas_zod_1 = require("./tool-schemas.zod");
 function registerTools(server) {
-    server.tool('agileworks_get_document', '書類データ取得。書類ID(docId)を指定して、申請書・稟議書・フォームなど1件の書類データを取得します。書類のフィールド値や入力内容、承認状況を確認したいときに使用します。', {
+    server.tool('agileworks_get_document', '書類データ取得。書類ID(docId)を指定して、申請書・稟議書・フォームなど1件の書類データを取得します。書類のフィールド値や入力内容を確認したいときに使用します。承認状況は返らないため、承認状況は getWorkflowInfo で確認してください。', {
         bodyParams: tool_schemas_zod_1.getDocBody
     }, {
         readOnlyHint: true
@@ -141,7 +141,7 @@ function registerTools(server) {
     }, {
         readOnlyHint: true
     }, handlers_1.getWorkflowInfoHandler);
-    server.tool('agileworks_find_workflow_tasks', '回付情報タスク検索。検索条件(condition: docId、ruleStepCode、ruleStepType(CREATE/APPLY/APPROVE/CONFIRM/READ)など)を指定して、書類の回付情報タスク(各処理ステップの担当者や処理状況)を検索します。特定の書類の各ステップの処理状況を確認したいときに使用します。', {
+    server.tool('agileworks_find_workflow_tasks', '回付情報タスク検索。検索条件(condition: docId、ruleStepCode、ruleStepType(CREATE/APPLY/APPROVE/CONFIRM/READなど全14種別)など)を指定して、書類の回付情報タスク(各処理ステップの担当者や処理状況)を検索します。特定の書類の各ステップの処理状況を確認したいときに使用します。', {
         bodyParams: tool_schemas_zod_1.findWorkflowTaskBody
     }, {
         readOnlyHint: true
@@ -236,7 +236,7 @@ function registerTools(server) {
     }, {
         readOnlyHint: true
     }, handlers_1.listFormHandler);
-    server.tool('agileworks_get_form_definition', 'フォーム定義情報取得。フォームID(formId)を指定して、そのフォームの定義情報(項目構成・入力項目・レイアウトなど)を取得します。申請書のフォーム構造を確認したいときに使用します。', {
+    server.tool('agileworks_get_form_definition', 'フォーム定義情報取得。フォームコード(formCode)を指定して、そのフォームの定義情報(項目構成・入力項目・レイアウトなど)を取得します。申請書のフォーム構造を確認したいときに使用します。', {
         bodyParams: tool_schemas_zod_1.findFormDefinitionBody
     }, {
         readOnlyHint: true

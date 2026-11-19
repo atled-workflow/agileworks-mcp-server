@@ -14,7 +14,7 @@ exports.FindUniversalRoleAppointmentRequestConditionColumnValueConditionListEntr
     RoleCode: 'RoleCode',
     RoleName: 'RoleName',
     UserCode: 'UserCode',
-    UserImportCode: 'UserImportCode',
+    UserImportId: 'UserImportId',
     UserName: 'UserName',
     UserKana: 'UserKana',
     UserLoginId: 'UserLoginId',

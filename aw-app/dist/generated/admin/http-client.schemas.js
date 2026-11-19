@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.AutoApplyPolicyModelStartPolicy = exports.FlowExpirationModelExpirationActionType = exports.RuleCompleteConditionModelMethod = exports.FlowControlConditionModelMethod = exports.RuleCandidateModelRoleType = exports.RuleCandidateModelType = exports.ControlledOperationModelShareControlType = exports.ControlledOperationModelMemoControlType = exports.ControlledOperationModelCommentControlType = exports.ControlledOperationModelAttachmentControlType = exports.RuleMenuPolicyModelEnableType = exports.RuleMenuPolicyModelEffectorType = exports.StepModelStepType = exports.RulePolicyModelAttachmentPolicy = exports.RulePolicyModelSharePolicy = exports.RulePolicyModelElectionType = exports.RulePolicyModelMenuControlPolicy = exports.NotAdminGetDocOwnerType = exports.GetDocOwnerType = exports.SCIMPatchGroupsIdRequestOperationsItemPath = exports.SCIMPatchUsersIdRequestOperationsItemPath = exports.FindUniversalRoleAppointmentRequestConditionColumnValueConditionListEntriesItemColumn = exports.FindUniversalRoleRequestConditionColumnValueConditionListEntriesItemColumn = exports.FindPrivateRoleAppointmentRequestConditionColumnValueConditionListEntriesItemColumn = exports.FindPrivateRoleRequestConditionColumnValueConditionListEntriesItemColumn = exports.UpdatePrivateRoleRequestCandidateListEntriesItemRoleType = exports.UpdatePrivateRoleRequestCandidateListEntriesItemType = exports.AddPrivateRoleRequestCandidateListEntriesItemRoleType = exports.AddPrivateRoleRequestCandidateListEntriesItemType = exports.UpdateDelegationAppointmentRequestTaskUnitPolicy = exports.AddDelegationAppointmentRequestTaskUnitPolicy = exports.FindUnitAppointmentRequestConditionColumnValueConditionListEntriesItemColumn = exports.FindUnitAppointmentRequestConditionUnitDirection = exports.FindSectionRoleGroupRequestConditionColumnValueConditionListEntriesItemColumn = exports.FindSectionRoleRequestConditionColumnValueConditionListEntriesItemColumn = exports.FindUnitRequestConditionColumnValueConditionListEntriesItemColumn = exports.FindUserRequestConditionColumnValueConditionListEntriesItemColumn = exports.NotAdminWorkflowMessageRequestWorkflowMessageType = exports.UpdateDocAttachmentRequestType = exports.AddDocAttachmentRequestType = exports.EnumFieldValueType = exports.EnumRelativeUserType = exports.EnumRelativeType = exports.EnumRangeType = exports.EnumDateConditionType = exports.EnumWorkflowStateType = exports.EnumDocViewColumnType = exports.WorkflowMessageType = exports.EnumDataType = exports.CompareOperatorType = void 0;
-exports.FindProjectBodyContent = exports.ImportUserMasterBodyStrategy = exports.ImportTinyUserMasterBodyStrategy = exports.FindWorkflowTaskBodyConditionRuleStepType = exports.FlowActivityModelEffectorType = exports.FlowActivityModelEventType = exports.OrgRoleUserComparisonModelType = exports.FormVersionConditionModelLogicalCondition = exports.RuleAutoReferenceModelAutoReferenceType = exports.OutputDocDataModelReOutputType = exports.AutoApplyPolicyModelEnterPolicy = void 0;
+exports.FindUniversalRoleAppointmentRequestConditionColumnValueConditionListEntriesItemColumn = exports.FindUniversalRoleRequestConditionColumnValueConditionListLogicalOperator = exports.FindUniversalRoleRequestConditionColumnValueConditionListEntriesItemColumn = exports.FindPrivateRoleAppointmentRequestConditionColumnValueConditionListLogicalOperator = exports.FindPrivateRoleAppointmentRequestConditionColumnValueConditionListEntriesItemColumn = exports.FindPrivateRoleRequestConditionColumnValueConditionListLogicalOperator = exports.FindPrivateRoleRequestConditionColumnValueConditionListEntriesItemColumn = exports.UpdatePrivateRoleRequestCandidateListEntriesItemRoleType = exports.UpdatePrivateRoleRequestCandidateListEntriesItemType = exports.AddPrivateRoleRequestCandidateListEntriesItemRoleType = exports.AddPrivateRoleRequestCandidateListEntriesItemType = exports.UpdateDelegationAppointmentRequestTaskUnitPolicy = exports.AddDelegationAppointmentRequestTaskUnitPolicy = exports.FindUnitAppointmentRequestConditionColumnValueConditionListLogicalOperator = exports.FindUnitAppointmentRequestConditionColumnValueConditionListEntriesItemColumn = exports.FindUnitAppointmentRequestConditionUnitDirection = exports.FindSectionRoleGroupRequestConditionColumnValueConditionListLogicalOperator = exports.FindSectionRoleGroupRequestConditionColumnValueConditionListEntriesItemColumn = exports.FindSectionRoleRequestConditionColumnValueConditionListLogicalOperator = exports.FindSectionRoleRequestConditionColumnValueConditionListEntriesItemColumn = exports.FindUnitRequestConditionColumnValueConditionListLogicalOperator = exports.FindUnitRequestConditionColumnValueConditionListEntriesItemColumn = exports.FindUserRequestConditionColumnValueConditionListLogicalOperator = exports.FindUserRequestConditionColumnValueConditionListEntriesItemColumn = exports.NotAdminWorkflowMessageRequestWorkflowMessageType = exports.UpdateDocAttachmentRequestType = exports.AddDocAttachmentRequestType = exports.SelectDocRequestConditionLogicalOperatorType = exports.UpdateDocRequestDocDataEntryListEntriesItemDataValueEntryListEntriesItemDataValueEntryListEntriesItemDataType = exports.UpdateDocRequestDocDataEntryListEntriesItemDataValueEntryListEntriesItemDataValueEntryListEntriesItemFieldType = exports.UpdateDocRequestDocDataEntryListEntriesItemDataValueEntryListEntriesItemDataType = exports.UpdateDocRequestDocDataEntryListEntriesItemDataValueEntryListEntriesItemFieldType = exports.UpdateDocRequestDocDataEntryListEntriesItemDataType = exports.UpdateDocRequestDocDataEntryListEntriesItemFieldType = exports.AddDocRequestDocDataEntryListEntriesItemDataValueEntryListEntriesItemDataValueEntryListEntriesItemDataType = exports.AddDocRequestDocDataEntryListEntriesItemDataValueEntryListEntriesItemDataValueEntryListEntriesItemFieldType = exports.AddDocRequestDocDataEntryListEntriesItemDataValueEntryListEntriesItemDataType = exports.AddDocRequestDocDataEntryListEntriesItemDataValueEntryListEntriesItemFieldType = exports.AddDocRequestDocDataEntryListEntriesItemDataType = exports.AddDocRequestDocDataEntryListEntriesItemFieldType = exports.EnumFieldValueType = exports.EnumRelativeUserType = exports.EnumRelativeType = exports.EnumRangeType = exports.EnumDateConditionType = exports.EnumWorkflowStateType = exports.EnumDocViewColumnType = exports.WorkflowMessageType = exports.EnumDataType = exports.CompareOperatorType = void 0;
+exports.FindProjectBodyContent = exports.ImportUserMasterBodyStrategy = exports.ImportTinyUserMasterBodyStrategy = exports.FindWorkflowTaskBodyConditionRuleStepType = exports.FlowActivityModelEffectorType = exports.FlowActivityModelEventType = exports.OrgRoleUserComparisonModelType = exports.FormVersionConditionModelLogicalCondition = exports.RuleAutoReferenceModelAutoReferenceType = exports.OutputDocDataModelReOutputType = exports.AutoApplyPolicyModelEnterPolicy = exports.AutoApplyPolicyModelStartPolicy = exports.FlowExpirationModelExpirationActionType = exports.RuleCompleteConditionModelMethod = exports.FlowControlConditionModelMethod = exports.RuleCandidateModelRoleType = exports.RuleCandidateModelType = exports.ControlledOperationModelShareControlType = exports.ControlledOperationModelMemoControlType = exports.ControlledOperationModelCommentControlType = exports.ControlledOperationModelAttachmentControlType = exports.RuleMenuPolicyModelEnableType = exports.RuleMenuPolicyModelEffectorType = exports.StepModelStepType = exports.RulePolicyModelAttachmentPolicy = exports.RulePolicyModelSharePolicy = exports.RulePolicyModelElectionType = exports.RulePolicyModelMenuControlPolicy = exports.FormDefinitionFieldDataType = exports.FormDefinitionFieldFieldType = exports.DocResponseDocDocDataEntryListEntriesItemDataType = exports.DocResponseDocDocDataEntryListEntriesItemFieldType = exports.NotAdminGetDocOwnerType = exports.GetDocOwnerType = exports.SCIMPatchGroupsIdRequestOperationsItemPath = exports.SCIMPatchUsersIdRequestOperationsItemPath = exports.FindUniversalRoleAppointmentRequestConditionColumnValueConditionListLogicalOperator = void 0;
 // eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.CompareOperatorType = {
     EQUAL: 'EQUAL',
@@ -71,7 +71,7 @@ exports.EnumDocViewColumnType = {
     DOC_REFERENCE_STATUS: 'DOC_REFERENCE_STATUS',
     FORM_CODE: 'FORM_CODE',
     FORM_NAME: 'FORM_NAME',
-    FORM_STATUS: 'FORM_STATUS',
+    FORM_VERSION: 'FORM_VERSION',
     RULE_CODE: 'RULE_CODE',
     RULE_NAME: 'RULE_NAME',
     FLOW_STATUS: 'FLOW_STATUS',
@@ -98,7 +98,7 @@ exports.EnumDocViewColumnType = {
     LASTOPERATOR_ROLE_NAME: 'LASTOPERATOR_ROLE_NAME',
     LASTOPERATOR_USER_CODE: 'LASTOPERATOR_USER_CODE',
     LASTOPERATOR_USER_NAME: 'LASTOPERATOR_USER_NAME',
-    LASTOPERATOR_DATE: 'LASTOPERATOR_DATE',
+    LASTOPERATE_DATE: 'LASTOPERATE_DATE',
 };
 // eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.EnumWorkflowStateType = {
@@ -166,6 +166,203 @@ exports.EnumFieldValueType = {
     LISTNAME20: 'LISTNAME20',
 };
 // eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.AddDocRequestDocDataEntryListEntriesItemFieldType = {
+    INTEGERFIELD: 'INTEGERFIELD',
+    NUMBERFIELD: 'NUMBERFIELD',
+    STAMPFIELD: 'STAMPFIELD',
+    TEXTFIELD: 'TEXTFIELD',
+    TEXTAREA: 'TEXTAREA',
+    YEARFIELD: 'YEARFIELD',
+    MONTHFIELD: 'MONTHFIELD',
+    DAYFIELD: 'DAYFIELD',
+    WEEKFIELD: 'WEEKFIELD',
+    DATEFIELD: 'DATEFIELD',
+    COMBOBOX: 'COMBOBOX',
+    LISTBOX: 'LISTBOX',
+    RADIOBUTTON: 'RADIOBUTTON',
+    CHECKBOX: 'CHECKBOX',
+    BARCODEFIELD: 'BARCODEFIELD',
+    HIDDENFIELD: 'HIDDENFIELD',
+    UPLOAD: 'UPLOAD',
+    IMAGEUPLOAD: 'IMAGEUPLOAD',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.AddDocRequestDocDataEntryListEntriesItemDataType = {
+    BOOLEAN: 'BOOLEAN',
+    DATE: 'DATE',
+    DATETIME: 'DATETIME',
+    DECIMAL: 'DECIMAL',
+    INT: 'INT',
+    LONG: 'LONG',
+    STRING: 'STRING',
+    TEXT: 'TEXT',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.AddDocRequestDocDataEntryListEntriesItemDataValueEntryListEntriesItemFieldType = {
+    INTEGERFIELD: 'INTEGERFIELD',
+    NUMBERFIELD: 'NUMBERFIELD',
+    STAMPFIELD: 'STAMPFIELD',
+    TEXTFIELD: 'TEXTFIELD',
+    TEXTAREA: 'TEXTAREA',
+    YEARFIELD: 'YEARFIELD',
+    MONTHFIELD: 'MONTHFIELD',
+    DAYFIELD: 'DAYFIELD',
+    WEEKFIELD: 'WEEKFIELD',
+    DATEFIELD: 'DATEFIELD',
+    COMBOBOX: 'COMBOBOX',
+    LISTBOX: 'LISTBOX',
+    RADIOBUTTON: 'RADIOBUTTON',
+    CHECKBOX: 'CHECKBOX',
+    BARCODEFIELD: 'BARCODEFIELD',
+    HIDDENFIELD: 'HIDDENFIELD',
+    UPLOAD: 'UPLOAD',
+    IMAGEUPLOAD: 'IMAGEUPLOAD',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.AddDocRequestDocDataEntryListEntriesItemDataValueEntryListEntriesItemDataType = {
+    BOOLEAN: 'BOOLEAN',
+    DATE: 'DATE',
+    DATETIME: 'DATETIME',
+    DECIMAL: 'DECIMAL',
+    INT: 'INT',
+    LONG: 'LONG',
+    STRING: 'STRING',
+    TEXT: 'TEXT',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.AddDocRequestDocDataEntryListEntriesItemDataValueEntryListEntriesItemDataValueEntryListEntriesItemFieldType = {
+    INTEGERFIELD: 'INTEGERFIELD',
+    NUMBERFIELD: 'NUMBERFIELD',
+    STAMPFIELD: 'STAMPFIELD',
+    TEXTFIELD: 'TEXTFIELD',
+    TEXTAREA: 'TEXTAREA',
+    YEARFIELD: 'YEARFIELD',
+    MONTHFIELD: 'MONTHFIELD',
+    DAYFIELD: 'DAYFIELD',
+    WEEKFIELD: 'WEEKFIELD',
+    DATEFIELD: 'DATEFIELD',
+    COMBOBOX: 'COMBOBOX',
+    LISTBOX: 'LISTBOX',
+    RADIOBUTTON: 'RADIOBUTTON',
+    CHECKBOX: 'CHECKBOX',
+    BARCODEFIELD: 'BARCODEFIELD',
+    HIDDENFIELD: 'HIDDENFIELD',
+    UPLOAD: 'UPLOAD',
+    IMAGEUPLOAD: 'IMAGEUPLOAD',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.AddDocRequestDocDataEntryListEntriesItemDataValueEntryListEntriesItemDataValueEntryListEntriesItemDataType = {
+    BOOLEAN: 'BOOLEAN',
+    DATE: 'DATE',
+    DATETIME: 'DATETIME',
+    DECIMAL: 'DECIMAL',
+    INT: 'INT',
+    LONG: 'LONG',
+    STRING: 'STRING',
+    TEXT: 'TEXT',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.UpdateDocRequestDocDataEntryListEntriesItemFieldType = {
+    INTEGERFIELD: 'INTEGERFIELD',
+    NUMBERFIELD: 'NUMBERFIELD',
+    STAMPFIELD: 'STAMPFIELD',
+    TEXTFIELD: 'TEXTFIELD',
+    TEXTAREA: 'TEXTAREA',
+    YEARFIELD: 'YEARFIELD',
+    MONTHFIELD: 'MONTHFIELD',
+    DAYFIELD: 'DAYFIELD',
+    WEEKFIELD: 'WEEKFIELD',
+    DATEFIELD: 'DATEFIELD',
+    COMBOBOX: 'COMBOBOX',
+    LISTBOX: 'LISTBOX',
+    RADIOBUTTON: 'RADIOBUTTON',
+    CHECKBOX: 'CHECKBOX',
+    BARCODEFIELD: 'BARCODEFIELD',
+    HIDDENFIELD: 'HIDDENFIELD',
+    UPLOAD: 'UPLOAD',
+    IMAGEUPLOAD: 'IMAGEUPLOAD',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.UpdateDocRequestDocDataEntryListEntriesItemDataType = {
+    BOOLEAN: 'BOOLEAN',
+    DATE: 'DATE',
+    DATETIME: 'DATETIME',
+    DECIMAL: 'DECIMAL',
+    INT: 'INT',
+    LONG: 'LONG',
+    STRING: 'STRING',
+    TEXT: 'TEXT',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.UpdateDocRequestDocDataEntryListEntriesItemDataValueEntryListEntriesItemFieldType = {
+    INTEGERFIELD: 'INTEGERFIELD',
+    NUMBERFIELD: 'NUMBERFIELD',
+    STAMPFIELD: 'STAMPFIELD',
+    TEXTFIELD: 'TEXTFIELD',
+    TEXTAREA: 'TEXTAREA',
+    YEARFIELD: 'YEARFIELD',
+    MONTHFIELD: 'MONTHFIELD',
+    DAYFIELD: 'DAYFIELD',
+    WEEKFIELD: 'WEEKFIELD',
+    DATEFIELD: 'DATEFIELD',
+    COMBOBOX: 'COMBOBOX',
+    LISTBOX: 'LISTBOX',
+    RADIOBUTTON: 'RADIOBUTTON',
+    CHECKBOX: 'CHECKBOX',
+    BARCODEFIELD: 'BARCODEFIELD',
+    HIDDENFIELD: 'HIDDENFIELD',
+    UPLOAD: 'UPLOAD',
+    IMAGEUPLOAD: 'IMAGEUPLOAD',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.UpdateDocRequestDocDataEntryListEntriesItemDataValueEntryListEntriesItemDataType = {
+    BOOLEAN: 'BOOLEAN',
+    DATE: 'DATE',
+    DATETIME: 'DATETIME',
+    DECIMAL: 'DECIMAL',
+    INT: 'INT',
+    LONG: 'LONG',
+    STRING: 'STRING',
+    TEXT: 'TEXT',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.UpdateDocRequestDocDataEntryListEntriesItemDataValueEntryListEntriesItemDataValueEntryListEntriesItemFieldType = {
+    INTEGERFIELD: 'INTEGERFIELD',
+    NUMBERFIELD: 'NUMBERFIELD',
+    STAMPFIELD: 'STAMPFIELD',
+    TEXTFIELD: 'TEXTFIELD',
+    TEXTAREA: 'TEXTAREA',
+    YEARFIELD: 'YEARFIELD',
+    MONTHFIELD: 'MONTHFIELD',
+    DAYFIELD: 'DAYFIELD',
+    WEEKFIELD: 'WEEKFIELD',
+    DATEFIELD: 'DATEFIELD',
+    COMBOBOX: 'COMBOBOX',
+    LISTBOX: 'LISTBOX',
+    RADIOBUTTON: 'RADIOBUTTON',
+    CHECKBOX: 'CHECKBOX',
+    BARCODEFIELD: 'BARCODEFIELD',
+    HIDDENFIELD: 'HIDDENFIELD',
+    UPLOAD: 'UPLOAD',
+    IMAGEUPLOAD: 'IMAGEUPLOAD',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.UpdateDocRequestDocDataEntryListEntriesItemDataValueEntryListEntriesItemDataValueEntryListEntriesItemDataType = {
+    BOOLEAN: 'BOOLEAN',
+    DATE: 'DATE',
+    DATETIME: 'DATETIME',
+    DECIMAL: 'DECIMAL',
+    INT: 'INT',
+    LONG: 'LONG',
+    STRING: 'STRING',
+    TEXT: 'TEXT',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.SelectDocRequestConditionLogicalOperatorType = {
+    AND: 'AND',
+    OR: 'OR',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.AddDocAttachmentRequestType = {
     URL: 'URL',
 };
@@ -209,19 +406,23 @@ exports.FindUserRequestConditionColumnValueConditionListEntriesItemColumn = {
     ReserveItem10: 'ReserveItem10',
 };
 // eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.FindUserRequestConditionColumnValueConditionListLogicalOperator = {
+    AND: 'AND',
+    OR: 'OR',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.FindUnitRequestConditionColumnValueConditionListEntriesItemColumn = {
     Code: 'Code',
     ImportId: 'ImportId',
     Name: 'Name',
+    OfficialName: 'OfficialName',
     LocalizedName: 'LocalizedName',
     LocaleName: 'LocaleName',
-    Kana: 'Kana',
-    LoginId: 'LoginId',
-    MailAddress: 'MailAddress',
-    StampName: 'StampName',
     Remarks: 'Remarks',
     AvailableDateFrom: 'AvailableDateFrom',
     AvailableDateTo: 'AvailableDateTo',
+    ValidityDateFrom: 'ValidityDateFrom',
+    ValidityDateTo: 'ValidityDateTo',
     ReserveItem1: 'ReserveItem1',
     ReserveItem2: 'ReserveItem2',
     ReserveItem3: 'ReserveItem3',
@@ -234,6 +435,11 @@ exports.FindUnitRequestConditionColumnValueConditionListEntriesItemColumn = {
     ReserveItem10: 'ReserveItem10',
 };
 // eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.FindUnitRequestConditionColumnValueConditionListLogicalOperator = {
+    AND: 'AND',
+    OR: 'OR',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.FindSectionRoleRequestConditionColumnValueConditionListEntriesItemColumn = {
     Code: 'Code',
     ImportId: 'ImportId',
@@ -241,10 +447,20 @@ exports.FindSectionRoleRequestConditionColumnValueConditionListEntriesItemColumn
     Rank: 'Rank',
 };
 // eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.FindSectionRoleRequestConditionColumnValueConditionListLogicalOperator = {
+    AND: 'AND',
+    OR: 'OR',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.FindSectionRoleGroupRequestConditionColumnValueConditionListEntriesItemColumn = {
     Code: 'Code',
     Name: 'Name',
     SectionRoleCode: 'SectionRoleCode',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.FindSectionRoleGroupRequestConditionColumnValueConditionListLogicalOperator = {
+    AND: 'AND',
+    OR: 'OR',
 };
 // eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.FindUnitAppointmentRequestConditionUnitDirection = {
@@ -294,6 +510,11 @@ exports.FindUnitAppointmentRequestConditionColumnValueConditionListEntriesItemCo
     UserReserveItem8: 'UserReserveItem8',
     UserReserveItem9: 'UserReserveItem9',
     UserReserveItem10: 'UserReserveItem10',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.FindUnitAppointmentRequestConditionColumnValueConditionListLogicalOperator = {
+    AND: 'AND',
+    OR: 'OR',
 };
 // eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.AddDelegationAppointmentRequestTaskUnitPolicy = {
@@ -349,13 +570,18 @@ exports.FindPrivateRoleRequestConditionColumnValueConditionListEntriesItemColumn
     Name: 'Name',
 };
 // eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.FindPrivateRoleRequestConditionColumnValueConditionListLogicalOperator = {
+    AND: 'AND',
+    OR: 'OR',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.FindPrivateRoleAppointmentRequestConditionColumnValueConditionListEntriesItemColumn = {
     ValidityDateFrom: 'ValidityDateFrom',
     ValidityDateTo: 'ValidityDateTo',
     RoleCode: 'RoleCode',
     RoleName: 'RoleName',
     UserCode: 'UserCode',
-    UserImportCode: 'UserImportCode',
+    UserImportId: 'UserImportId',
     UserName: 'UserName',
     UserKana: 'UserKana',
     UserLoginId: 'UserLoginId',
@@ -374,7 +600,7 @@ exports.FindPrivateRoleAppointmentRequestConditionColumnValueConditionListEntrie
     UserReserveItem9: 'UserReserveItem9',
     UserReserveItem10: 'UserReserveItem10',
     CandidateCode: 'CandidateCode',
-    CandidateImportCode: 'CandidateImportCode',
+    CandidateImportId: 'CandidateImportId',
     CandidateName: 'CandidateName',
     CandidateKana: 'CandidateKana',
     CandidateLoginId: 'CandidateLoginId',
@@ -394,11 +620,21 @@ exports.FindPrivateRoleAppointmentRequestConditionColumnValueConditionListEntrie
     CandidateReserveItem10: 'CandidateReserveItem10',
 };
 // eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.FindPrivateRoleAppointmentRequestConditionColumnValueConditionListLogicalOperator = {
+    AND: 'AND',
+    OR: 'OR',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.FindUniversalRoleRequestConditionColumnValueConditionListEntriesItemColumn = {
     Code: 'Code',
     ImportId: 'ImportId',
     Name: 'Name',
     Rank: 'Rank',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.FindUniversalRoleRequestConditionColumnValueConditionListLogicalOperator = {
+    AND: 'AND',
+    OR: 'OR',
 };
 // eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.FindUniversalRoleAppointmentRequestConditionColumnValueConditionListEntriesItemColumn = {
@@ -407,7 +643,7 @@ exports.FindUniversalRoleAppointmentRequestConditionColumnValueConditionListEntr
     RoleCode: 'RoleCode',
     RoleName: 'RoleName',
     UserCode: 'UserCode',
-    UserImportCode: 'UserImportCode',
+    UserImportId: 'UserImportId',
     UserName: 'UserName',
     UserKana: 'UserKana',
     UserLoginId: 'UserLoginId',
@@ -425,6 +661,11 @@ exports.FindUniversalRoleAppointmentRequestConditionColumnValueConditionListEntr
     UserReserveItem8: 'UserReserveItem8',
     UserReserveItem9: 'UserReserveItem9',
     UserReserveItem10: 'UserReserveItem10',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.FindUniversalRoleAppointmentRequestConditionColumnValueConditionListLogicalOperator = {
+    AND: 'AND',
+    OR: 'OR',
 };
 // eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.SCIMPatchUsersIdRequestOperationsItemPath = {
@@ -452,6 +693,70 @@ exports.GetDocOwnerType = {
 exports.NotAdminGetDocOwnerType = {
     UNIT: 'UNIT',
     USER: 'USER',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.DocResponseDocDocDataEntryListEntriesItemFieldType = {
+    INTEGERFIELD: 'INTEGERFIELD',
+    NUMBERFIELD: 'NUMBERFIELD',
+    STAMPFIELD: 'STAMPFIELD',
+    TEXTFIELD: 'TEXTFIELD',
+    TEXTAREA: 'TEXTAREA',
+    YEARFIELD: 'YEARFIELD',
+    MONTHFIELD: 'MONTHFIELD',
+    DAYFIELD: 'DAYFIELD',
+    WEEKFIELD: 'WEEKFIELD',
+    DATEFIELD: 'DATEFIELD',
+    COMBOBOX: 'COMBOBOX',
+    LISTBOX: 'LISTBOX',
+    RADIOBUTTON: 'RADIOBUTTON',
+    CHECKBOX: 'CHECKBOX',
+    BARCODEFIELD: 'BARCODEFIELD',
+    HIDDENFIELD: 'HIDDENFIELD',
+    UPLOAD: 'UPLOAD',
+    IMAGEUPLOAD: 'IMAGEUPLOAD',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.DocResponseDocDocDataEntryListEntriesItemDataType = {
+    BOOLEAN: 'BOOLEAN',
+    DATE: 'DATE',
+    DATETIME: 'DATETIME',
+    DECIMAL: 'DECIMAL',
+    INT: 'INT',
+    LONG: 'LONG',
+    STRING: 'STRING',
+    TEXT: 'TEXT',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.FormDefinitionFieldFieldType = {
+    INTEGERFIELD: 'INTEGERFIELD',
+    NUMBERFIELD: 'NUMBERFIELD',
+    STAMPFIELD: 'STAMPFIELD',
+    TEXTFIELD: 'TEXTFIELD',
+    TEXTAREA: 'TEXTAREA',
+    YEARFIELD: 'YEARFIELD',
+    MONTHFIELD: 'MONTHFIELD',
+    DAYFIELD: 'DAYFIELD',
+    WEEKFIELD: 'WEEKFIELD',
+    DATEFIELD: 'DATEFIELD',
+    COMBOBOX: 'COMBOBOX',
+    LISTBOX: 'LISTBOX',
+    RADIOBUTTON: 'RADIOBUTTON',
+    CHECKBOX: 'CHECKBOX',
+    BARCODEFIELD: 'BARCODEFIELD',
+    HIDDENFIELD: 'HIDDENFIELD',
+    UPLOAD: 'UPLOAD',
+    IMAGEUPLOAD: 'IMAGEUPLOAD',
+};
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+exports.FormDefinitionFieldDataType = {
+    STRING: 'STRING',
+    TEXT: 'TEXT',
+    INT: 'INT',
+    LONG: 'LONG',
+    DECIMAL: 'DECIMAL',
+    BOOLEAN: 'BOOLEAN',
+    DATE: 'DATE',
+    DATETIME: 'DATETIME',
 };
 // eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.RulePolicyModelMenuControlPolicy = {
@@ -668,11 +973,20 @@ exports.FlowActivityModelEffectorType = {
 };
 // eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.FindWorkflowTaskBodyConditionRuleStepType = {
+    START: 'START',
     CREATE: 'CREATE',
     APPLY: 'APPLY',
     APPROVE: 'APPROVE',
+    AUTOAPPLY: 'AUTOAPPLY',
+    OUTPUTDOCDATA: 'OUTPUTDOCDATA',
     CONFIRM: 'CONFIRM',
     READ: 'READ',
+    STORE: 'STORE',
+    SWITCH: 'SWITCH',
+    SYNC: 'SYNC',
+    DISTRIBUTE: 'DISTRIBUTE',
+    COLLECTION: 'COLLECTION',
+    END: 'END',
 };
 // eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.ImportTinyUserMasterBodyStrategy = {

@@ -1,19 +1,18 @@
-version: '3.8'
 services:
   agileworks-mcp:
     build:
       context: .
       args:
         BUILD_DATE: ${BUILD_DATE:-unknown}
-        VERSION: v0.3.1
+        VERSION: R1.0.0
         MCP_PORT: ${MCP_PORT:-8002}
         IS_CLOUD: ${IS_CLOUD:-false}
-    image: agileworks-mcp:v0.3.1
+    image: agileworks-mcp:R1.0.0
     container_name: agileworks_mcp
-    # .envを用意する場合は以下の設定が必要
-    # 反対に.envを用意しない場合はenv_fileを削除すること
-    # env_file:
-    #   - .env
+    # MCP_SERVER_BASE_URL などの設定をコンテナに渡す。.env.example をコピーして .env を作成すること
+    env_file:
+      - .env
+    # 外部には公開せず、同じサーバー上のリバースプロキシ（nginx 等）からのみ接続させる
     ports:
-      - "${MCP_PORT:-8002}:${MCP_PORT:-8002}"
+      - "127.0.0.1:${MCP_PORT:-8002}:${MCP_PORT:-8002}"
     restart: always
